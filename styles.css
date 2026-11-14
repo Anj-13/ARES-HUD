@@ -53,3 +53,7 @@ legend{display:flex;flex-wrap:wrap;gap:14px;font-size:12px;margin-top:18px}
 
 @media(max-width:800px){main{grid-template-columns:1fr}header,main,footer{padding:16px}.section-heading{align-items:start;flex-direction:column}section{padding:16px}h1{font-size:28px}.badge{font-size:10px}#sector-map{height:380px}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}button{transition:none!important}}
+
+dialog{background:#121c24;color:#e5edf1;border:1px solid #66818b;width:min(420px,96vw);max-height:94vh;overflow:auto;padding:12px}dialog::backdrop{background:#0009}#tablet-frame{width:100%;height:620px;border:0}#tablet-url{width:100%}#sol-progress{width:100%}dialog[open]{animation:tablet-enter .25s ease-out}@keyframes tablet-enter{from{opacity:0;translate:30px 0}to{opacity:1;translate:0 0}}@media(prefers-reduced-motion:reduce){dialog[open]{animation:none}}
+
+.current-sol{border-left:3px solid #ffd38a;padding-left:8px;color:#ffd38a}#sol-mission-log{font-size:12px}

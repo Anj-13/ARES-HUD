@@ -17,9 +17,10 @@ const HAZARD_STYLE = {
 };
 
 /** All sector gridlines as individual polylines in the grid pane. */
-export function drawGrid(map, renderer) {
+export function drawGrid(map) {
   const group = L.layerGroup();
-  const style = { ...GRID_STYLE, renderer };
+  // Let Leaflet create a canvas per pane; one shared renderer ignores pane order.
+  const style = { ...GRID_STYLE };
   for (let i = 0; i <= SECTOR.cols; i++) {
     const a = gridCornerToLatLng(SECTOR, i, 0);
     const b = gridCornerToLatLng(SECTOR, i, SECTOR.rows);
@@ -34,9 +35,9 @@ export function drawGrid(map, renderer) {
 }
 
 /** Blocked cells as merged horizontal rectangles. */
-export function drawHazards(group, grid, renderer) {
+export function drawHazards(group, grid) {
   group.clearLayers();
-  const style = { ...HAZARD_STYLE, renderer };
+  const style = { ...HAZARD_STYLE };
   for (let y = 0; y < SECTOR.rows; y++) {
     let start = null;
     for (let x = 0; x <= SECTOR.cols; x++) {
@@ -54,7 +55,7 @@ export function drawHazards(group, grid, renderer) {
 }
 
 /** Route polyline from grid cells. */
-export function drawRoute(group, path, { dashed = false, color = '#79e9cc', renderer } = {}) {
+export function drawRoute(group, path, { dashed = false, color = '#79e9cc' } = {}) {
   if (!path || path.length === 0) return group;
   const points = path.map((p) => {
     const ll = gridToLatLng(SECTOR, p.x, p.y);
@@ -66,8 +67,7 @@ export function drawRoute(group, path, { dashed = false, color = '#79e9cc', rend
     opacity: 0.95,
     dashArray: dashed ? '6 6' : null,
     interactive: false,
-    pane: 'routes',
-    renderer
+    pane: 'routes'
   }).addTo(group);
   return group;
 }
@@ -104,7 +104,7 @@ export function drawMarkers(group, { hab, stops, current, selected = [], onSelec
       String(index + 1),
       selected[index] ? 'stop' : 'stop-off',
       `${stop.name}, simulated science stop ${index + 1}. Select as destination`,
-      () => onSelectStop(stop)
+      onSelectStop ? () => onSelectStop(stop) : undefined
     );
   });
   if (current && !(current.x === hab.x && current.y === hab.y)) {

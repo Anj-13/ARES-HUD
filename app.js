@@ -1,3 +1,4 @@
+import {mountMissionControls} from './mission-controls.js';
 import { planMission, moveStop } from './mission.js';
 import { createGrid } from './pathfinding.js';
 import { SECTOR } from './sector.js';
@@ -18,6 +19,7 @@ const state = {
   stops: SECTOR.stops.map((stop) => ({ ...stop, selected: true }))
 };
 
+let features;
 let tileMessage = '';
 let lastZoom = 12;
 
@@ -74,11 +76,13 @@ const sameRoute = (a, b) =>
   Boolean(a && b && a.path.length === b.path.length && a.path.every((p, i) => p.x === b.path[i].x && p.y === b.path[i].y));
 
 function draw() {
-  const baseGrid = createGrid(state.hazard);
+  features?.leave();
+  features?.reveal(state.current);
+  const baseGrid = features ? features.grid() : createGrid(state.hazard);
   const grid = state.override ? state.override(baseGrid) : baseGrid;
   const targets = state.mission ? state.stops.filter((stop) => stop.selected) : [state.goal];
   const result = planMission(grid, state.current, targets);
-  const before = state.hazard ? planMission(createGrid(), state.current, targets) : null;
+  const before = state.hazard ? planMission(features ? features.grid(false) : createGrid(), state.current, targets) : null;
 
   hazardLayer.clearLayers();
   if ($('hazards-visible').checked) drawHazards(hazardLayer, grid, view.renderer);
@@ -165,6 +169,7 @@ $('return').onclick = () => {
   draw();
 };
 $('reset').onclick = () => {
+  features?.resetKnowledge();
   state.hazard = false;
   state.current = { x: HAB.x, y: HAB.y };
   state.goal = { x: DEST.x, y: DEST.y, name: DEST.name };
@@ -217,6 +222,7 @@ $('plan').onclick = () => {
   draw();
 };
 $('markers-visible').onchange = () => {
+  if (features?.active) { features.preview(); return; }
   if ($('markers-visible').checked) markerLayer.addTo(view.map);
   else markerLayer.remove();
 };
@@ -270,3 +276,5 @@ window.__aresHudTest = {
     view.probeTileError();
   }
 };
+
+features=mountMissionControls({view,state,draw,baseLayers:{routeLayer,markerLayer},getTargets:()=>state.mission?state.stops.filter(s=>s.selected):[state.goal]});
