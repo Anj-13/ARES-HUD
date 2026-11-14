@@ -1,0 +1,11 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync,existsSync} from 'node:fs';
+import {planMission,moveStop,layerState} from './mission.js';
+import {createGrid,HAB,SCIENCE} from './pathfinding.js';
+import {datasets} from './datasets.js';
+test('ordered stops and cumulative cost',()=>{const stops=[SCIENCE,{x:30,y:32}],r=planMission(createGrid(),HAB,stops);assert.deepEqual(r.segments.map(s=>s.path.at(-1)),stops);assert.equal(r.cost,r.segments.reduce((n,s)=>n+s.cost,0));assert.deepEqual(moveStop(stops,1,-1),[stops[1],stops[0]]);});
+test('hazard recalculates traverse and return',()=>{const a=planMission(createGrid(),HAB,[SCIENCE,HAB]),b=planMission(createGrid(true),HAB,[SCIENCE,HAB]);assert.ok(b.cost>a.cost);assert.deepEqual(b.path.at(-1),HAB);assert.ok(b.path.every(p=>!createGrid(true)[p.y][p.x].blocked));});
+test('unreachable mission yields no misleading partial route',()=>{const g=createGrid();g[SCIENCE.y][SCIENCE.x].blocked=true;assert.equal(planMission(g,HAB,[SCIENCE]),null);assert.equal(planMission(g,HAB,[]).cost,0);});
+test('layer state is independent and immutable',()=>{const a={trek:true,geology:false};assert.deepEqual(layerState(a,'trek',false),{trek:false,geology:false});assert.equal(a.trek,true);});
+test('dataset identifiers, attribution and local assets',()=>{assert.equal(new Set(datasets.map(d=>d.id)).size,datasets.length);for(const d of datasets){assert.ok(d.attribution);assert.ok(new URL(d.source).protocol==='https:');assert.ok(existsSync(d.local));}for(const t of JSON.parse(readFileSync('assets/trek/manifest.json'))){assert.equal(readFileSync(t.file).subarray(1,4).toString(),'PNG');}});

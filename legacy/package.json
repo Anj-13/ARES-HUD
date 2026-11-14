@@ -1,0 +1,8 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test pathfinding.test.js mission.test.js geo.test.js plan.test.js sols.test.js fog.test.js"
+  },
+  "dependencies": {}
+}
