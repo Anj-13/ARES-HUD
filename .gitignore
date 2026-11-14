@@ -34,5 +34,17 @@ bin/
 ### Mac OS ###
 .DS_Store
 
-### md ###
-*.md
+### Markdown files in every directory ###
+**/*.md
+
+### etc ###
+.browser-qa/
+browser-test.html
+
+### Node.js / npm generated files ###
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.npm/
