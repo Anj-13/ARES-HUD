@@ -1,0 +1,110 @@
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Every geologic map is broken into rock and sediment units that were deposited by unique geologic processes. Together, they tell a 
+story about how this region of Mars formed and changed over time. Each color shows a different kind of rock or sediment that the 
+rover will study. These units each have names and short symbols that geologists use as codes to talk about the map. 
+Aeb – Eolian bedform unit 
+Dunes! “Eolian” means blown by the wind. These sediments are 
+blown around by the wind, and most reflect sunlight very well, 
+making them appear bright in the daytime. Scientists think this 
+unit also includes larger sediments like gravel that are only 
+sometimes moved by wind. The sediments accumulate into 
+ripples and dunes (called “bedforms”) that are usually a few 
+meters tall and are found in low areas like impact craters and at 
+the bottom of steep slopes around the inside of Jezero crater. 
+cr – Crater rim unit 
+Crater rim! These rocks and sediments were blasted out from 
+underground when an asteroid or comet hit the surface of 
+Mars at very high speed, causing a massive explosion. The 
+explosion was so strong that the rocks that form this unit were 
+pushed up, sort of like when you throw a rock into mud. 
+NHjf1 – Jezero fan unit 1 
+Ancient river delta! The delta sits at the mouth of an ancient 
+river that cuts through the martian cratered landscape in an 
+area known as Nili Planum. This unit is smooth and light-
+colored and contains very few impact craters. Lots of 
+different layers are sometimes visible along the edge of the 
+unit. The Jezero “fan” has two main parts. This unit is one 
+part that is located north of the landing site and below the 
+Jezero fan unit 2 (described below). Thus, scientists think that 
+it is older than Jezero fan unit 2. 
+NHjf2 – Jezero fan unit 2 
+Ancient river delta! Deltas are shaped like fans and form 
+when a river enters a lake and slows down, dropping sediment 
+carried in the water. This process forms curving layers that 
+tell a story of the history of water in Jezero crater. Deltas on 
+Earth are excellent at trapping and preserving evidence of life, 
+so scientists think this delta on Mars is a prime target to help 
+answer the question of whether there was ever life on the Red 
+Planet. The delta in Jezero crater used to be much larger but 
+has been eroded away over time. 
+yellow 
+brown 
+         aqua 
+        blue 
+Njf – Jezero floor unit 
+Crater floor! This unit covers most of the Jezero crater 
+floor. It is rugged or flat, depending on where it is located, 
+and contains many small impact craters. The unit sits on top 
+of and buries older units. The edges of the unit are defined 
+by short, curvy cliffs. Scientists are not sure how these 
+rocks formed but think that it may be an ancient lava flow, 
+ash from a volcano, or sediment deposited by wind or 
+water. Hopefully, the Perseverance rover will make 
+discoveries that will help scientists understand how this unit 
+formed! 
+Nle – Lower etched unit 
+Volcanic ash (maybe)! This unit has a rough surface, is light 
+in color, and does not have many impact craters on its 
+surface. The unit contains very long ridges that extend from 
+the northeast to the southwest. This unit shows evidence of 
+carbonate minerals in data collected from spacecraft 
+orbiting the planet. Carbonate minerals are interesting to 
+scientists because they tend to form in water and can 
+preserve evidence about the climate and whether life existed 
+in that water. 
+Nue – Upper etched unit 
+Volcanic ash (maybe)! This unit sits above and is therefore 
+younger than the “Lower etched unit”. It has a rough 
+surface, light color, and contains many impact craters. It is 
+located around the edges of the Jezero crater floor, on the 
+walls of the crater, and in the cratered plains that surround 
+Jezero crater (in Nili Planum). This unit is interpreted by 
+scientists to be an ancient layer of volcanic ash that has 
+been cemented together to form a rock. This unit also 
+contains evidence of carbonate minerals, especially in the 
+area between the crater rim and the fan. 
+su – Smooth unit (undivided) 
+Sediments! This is a smooth, mostly featureless unit that is 
+dark in color and located on the steep inside slopes of 
+Jezero crater and in local depression across Nili Planum. 
+The smooth unit is interpreted by scientists to be sediments 
+that came from small landsides (called “mass wasting”), 
+volcanic ash, and dust deposited by the wind. It is probably 
+a unit that is made up of lots of different kinds of sediments, 
+like a geologic brag bag! 
+         pink 
+      light green 
+         red 
+orange 
+1 
+2 
+8 
+3 
+7 
+5 
+6 
+4 

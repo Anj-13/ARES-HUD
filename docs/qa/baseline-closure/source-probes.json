@@ -1,0 +1,29 @@
+{
+  "at": "2026-11-14T21:37:28.185011+00:00",
+  "results": [
+    {
+      "url": "https://trek.nasa.gov/tiles/Mars/EQ/Jezero_CTX_BlockAdj_dd/1.0.0/default/default028mm/11/814/2929.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 58137,
+      "sha256": "38bd3135c2ddc9b0e79b0a4217c3609b55fb7e18cb6b68f4c5bc083592e6295a",
+      "signature": "89504e470d0a1a0a"
+    },
+    {
+      "url": "https://trek.nasa.gov/tiles/Mars/EQ/Jezero_CTX_BlockAdj_dd/1.0.0/default/default028mm/12/1628/5858.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 55135,
+      "sha256": "5c2040a462feb6d96b40d381e94769d9d3c4c5c5bf12d0d9a6d228f0689bb596",
+      "signature": "89504e470d0a1a0a"
+    },
+    {
+      "url": "https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/atoms/files/Jezero%20Crater%20Color%20by%20Number%20-%20Final%20Version.pdf",
+      "status": 200,
+      "contentType": "application/pdf",
+      "bytes": 8623899,
+      "sha256": "d4d52e2bde4ec36cfc3a64091c5c7c4bd49b3e3f84add6db942cfac299bf3646",
+      "signature": "255044462d312e37"
+    }
+  ]
+}

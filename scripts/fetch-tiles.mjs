@@ -7,8 +7,8 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
-import { SECTOR, TILE_BOUNDS, MIN_ZOOM, MAX_NATIVE_ZOOM } from '../sector.js';
-import { tileRange } from '../geo.js';
+import { SECTOR, TILE_BOUNDS, MIN_ZOOM, MAX_NATIVE_ZOOM } from '../src/domain/sector.js';
+import { tileRange } from '../src/domain/geo.js';
 
 const TEMPLATE =
   'https://trek.nasa.gov/tiles/Mars/EQ/Jezero_CTX_BlockAdj_dd/1.0.0/default/default028mm/{z}/{row}/{col}.png';
@@ -23,7 +23,7 @@ for (let level = MIN_ZOOM; level <= MAX_NATIVE_ZOOM; level++) {
   for (let row = range.rowMin; row <= range.rowMax; row++) {
     for (let col = range.colMin; col <= range.colMax; col++) {
       const rel = `assets/trek/${level}/${row}-${col}.png`;
-      const abs = path.join(ROOT, rel);
+      const abs = path.join(ROOT, 'public', rel);
       let buf;
       if (fs.existsSync(abs)) {
         buf = fs.readFileSync(abs);
@@ -58,7 +58,7 @@ for (let level = MIN_ZOOM; level <= MAX_NATIVE_ZOOM; level++) {
 }
 
 entries.sort((a, b) => a.level - b.level || a.row - b.row || a.col - b.col);
-fs.writeFileSync(path.join(ROOT, 'assets/trek/manifest.json'), JSON.stringify(entries, null, 2) + '\n');
+fs.writeFileSync(path.join(ROOT, 'public/assets/trek/manifest.json'), JSON.stringify(entries, null, 2) + '\n');
 
 const total = entries.reduce((sum, e) => sum + e.bytes, 0);
 console.log(`sector ${SECTOR.id}: ${entries.length} tiles in manifest (${(total / 1024).toFixed(1)} KiB)`);

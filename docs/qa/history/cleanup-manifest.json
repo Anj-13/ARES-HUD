@@ -1,0 +1,298 @@
+{
+  "at": "2026-11-14T21:58:56.697907+00:00",
+  "baselineHead": "f707f92c334145a199500608fe8e9403416244fb",
+  "authority": "Owner requested current documentation update and removal of historical documents; originals preserved in this evidence bundle.",
+  "archive": "docs/qa/history/markdown-before-cleanup.zip",
+  "archiveSha256": "4845680ff15d53ec79de9678b5685a8bd23e8c241636cb8b2b58c3a7cb4787df",
+  "remove": [
+    "docs/ARCHITECTURE_PRE_REACT.md",
+    "docs/ARES_HUD_ONE_DAY_AUDIT.md",
+    "docs/AUDIT_CURRENT.md",
+    "docs/BUILD_TONIGHT.md",
+    "docs/CODEX_OPTION_2_HANDOFF.md",
+    "docs/DOCS_CHANGE_REPORT_V03.md",
+    "docs/FEATURE_IMPLEMENTATION_REPORT.md",
+    "docs/FIX_REPORT.md",
+    "docs/INTEGRATION_REPORT.md",
+    "docs/MAP_ARCHITECTURE.md",
+    "docs/MAP_RECOVERY_REPORT.md",
+    "docs/QA_REPORT.md",
+    "docs/RESOURCE_GAP_AUDIT.md",
+    "docs/TASK_0D_REPORT.md",
+    "docs/TASK_0_REPORT.md",
+    "docs/TASK_1_REPORT.md",
+    "docs/TEST_REPORT.md",
+    "docs/toolgiven.md",
+    "docs/status-from-otheragent/Opencode-DeepSeek-V4.1-flash-free-work.md",
+    "docs/status-from-otheragent/README.md",
+    "docs/status-from-otheragent/STATUS.md"
+  ],
+  "files": [
+    {
+      "file": "AGENTS.md",
+      "modifiedLocal": "2026-11-14T21:21:51.903326",
+      "bytes": 1625,
+      "sha256": "a04c24186909203384bab1662cf88d81685a18565e5916358fa02c466bf1fb01",
+      "action": "retain/update active document"
+    },
+    {
+      "file": "README.md",
+      "modifiedLocal": "2026-11-14T21:50:39.576906",
+      "bytes": 5266,
+      "sha256": "cdf79c8f874c2f39e3af1e125ca84746789864be94b2c0c7c2b7a7b0a1ba8fad",
+      "action": "retain/update active document"
+    },
+    {
+      "file": "STATUS.md",
+      "modifiedLocal": "2026-11-14T21:50:39.574904",
+      "bytes": 9934,
+      "sha256": "a11df16eded25b7be075d82622ccc066953ace90854e1443b429417a9baeb9f6",
+      "action": "retain/update active document"
+    },
+    {
+      "file": "docs/AGENTS.md",
+      "modifiedLocal": "2026-11-14T21:21:51.890253",
+      "bytes": 12543,
+      "sha256": "c4391f6f639d88b0d9cebe4ed58bd68290991848eff1ef3ee2530cfa48e4e94d",
+      "action": "retain/update active document"
+    },
+    {
+      "file": "docs/AGENT_RULES_ADDENDUM.md",
+      "modifiedLocal": "2026-11-14T21:21:51.901277",
+      "bytes": 14106,
+      "sha256": "8f6120c5ba15993148903705dc90736b86e44a989219364db5e2bb8fa53b5fb4",
+      "action": "retain/update active document"
+    },
+    {
+      "file": "docs/AGENT_TASKS.md",
+      "modifiedLocal": "2026-11-14T21:21:51.896253",
+      "bytes": 37257,
+      "sha256": "bbf2b04adac43607e78f33c8849504c90ed27b4bd79467f6c3a9e9c29dcb3606",
+      "action": "retain/update active document"
+    },
+    {
+      "file": "docs/ARCHITECTURE.md",
+      "modifiedLocal": "2026-11-14T21:21:51.882289",
+      "bytes": 4319,
+      "sha256": "846740ef0f0312af4b961429f60a5a3cd5909784addf75ed8a37c329256a671f",
+      "action": "retain/update active document"
+    },
+    {
+      "file": "docs/ARCHITECTURE_PRE_REACT.md",
+      "modifiedLocal": "2026-11-14T21:42:43.479708",
+      "bytes": 14220,
+      "sha256": "98a18167ac02089d2c9fcd4047c128f890e4b483ab35d08655aaf4a6d6c0805e",
+      "action": "remove standalone superseded record"
+    },
+    {
+      "file": "docs/ARES_HUD_ONE_DAY_AUDIT.md",
+      "modifiedLocal": "2026-11-14T21:42:43.467369",
+      "bytes": 21309,
+      "sha256": "3ce8b193ee7dfb9cd3aeaeb90d16c485738fa695e59ff2379f3a81c9ddaa1cbd",
+      "action": "remove standalone superseded record"
+    },
+    {
+      "file": "docs/AUDIT_CURRENT.md",
+      "modifiedLocal": "2026-11-14T21:42:43.474112",
+      "bytes": 5803,
+      "sha256": "1fde934674e2f15e828d2ee06452197eaa0167ab4dab7d882b5727a6eab6e437",
+      "action": "remove standalone superseded record"
+    },
+    {
+      "file": "docs/BASELINE_CLOSURE_REPORT.md",
+      "modifiedLocal": "2026-11-14T21:50:39.571904",
+      "bytes": 31956,
+      "sha256": "bbe79cc0170eb46629751204b7df6ed55604ed8d8fb53190bf41fc17e8b3e5ef",
+      "action": "retain/update active document"
+    },
+    {
+      "file": "docs/BUILD_TONIGHT.md",
+      "modifiedLocal": "2026-11-14T21:42:43.469113",
+      "bytes": 10138,
+      "sha256": "1bd68cda5efcb2b6f4a34c8517487a8c23eebc1272f6ebf5298ba9b27c90a97b",
+      "action": "remove standalone superseded record"
+    },
+    {
+      "file": "docs/CHANGELOG.md",
+      "modifiedLocal": "2026-11-14T21:42:43.465822",
+      "bytes": 5718,
+      "sha256": "846115b4c8ea663c58f50f2ca8f60f3ac9231fc810bea7a7aed5426e045de08a",
+      "action": "retain/update active document"
+    },
+    {
+      "file": "docs/CODEX_OPTION_2_HANDOFF.md",
+      "modifiedLocal": "2026-11-14T15:06:32.623529",
+      "bytes": 3210,
+      "sha256": "8e0da0b3fa134d9ea22fc3644beef3f22b3d8825d8a65f26ba305b79155fc90d",
+      "action": "remove standalone superseded record"
+    },
+    {
+      "file": "docs/DATA_SOURCES.md",
+      "modifiedLocal": "2026-11-14T21:42:43.494330",
+      "bytes": 27095,
+      "sha256": "486ceb8048d3c5163c223e303a0e5273bcbd2085b67629ef560ee7b58b534baa",
+      "action": "retain/update active document"
+    },
+    {
+      "file": "docs/DOCS_CHANGE_REPORT_V03.md",
+      "modifiedLocal": "2026-11-14T21:42:43.483196",
+      "bytes": 9266,
+      "sha256": "4d2825609f74d07b5fda8a3fdbf8b01ab7c67063f3bbde2a66fb8fedc20ffcb3",
+      "action": "remove standalone superseded record"
+    },
+    {
+      "file": "docs/FEATURE_IMPLEMENTATION_REPORT.md",
+      "modifiedLocal": "2026-11-14T21:42:43.481183",
+      "bytes": 5961,
+      "sha256": "0d1372efe404feb37ee98205dd7cf81ca3315286ebb25a3eed6917aac036ac96",
+      "action": "remove standalone superseded record"
+    },
+    {
+      "file": "docs/FEATURE_PLAN.md",
+      "modifiedLocal": "2026-11-14T21:21:51.892252",
+      "bytes": 18097,
+      "sha256": "d6225b20cf5f473ef8ef0d34e468b232fb4ad937cef1478dc0ffe260e7fd3e69",
+      "action": "retain/update active document"
+    },
+    {
+      "file": "docs/FIX_REPORT.md",
+      "modifiedLocal": "2026-11-14T21:42:43.377325",
+      "bytes": 7821,
+      "sha256": "27e34336778fa9b7f01c2f1e9566e9c8cefa2150b00bc4adba2de2732107bfaf",
+      "action": "remove standalone superseded record"
+    },
+    {
+      "file": "docs/GATED_FEATURE_SPIKES.md",
+      "modifiedLocal": "2026-11-14T19:29:58.605979",
+      "bytes": 8736,
+      "sha256": "651586322cdef4efd508636e282a47893488bab5b2709edaa67e4895e1bba26f",
+      "action": "retain/update active document"
+    },
+    {
+      "file": "docs/INTEGRATION_REPORT.md",
+      "modifiedLocal": "2026-11-14T21:42:43.471113",
+      "bytes": 7362,
+      "sha256": "94e527ddb1d1335bc3af857d706aeae377d77e1dff5833c84022eb4488c1477b",
+      "action": "remove standalone superseded record"
+    },
+    {
+      "file": "docs/JUDGING_CHECKLIST.md",
+      "modifiedLocal": "2026-11-14T14:46:34.281013",
+      "bytes": 6194,
+      "sha256": "452eef888e9faed43a208c4570a0d305cb7d2cc9e73f9e77ce680c4f9186848c",
+      "action": "retain/update active document"
+    },
+    {
+      "file": "docs/MAP_ARCHITECTURE.md",
+      "modifiedLocal": "2026-11-14T21:42:43.490856",
+      "bytes": 3109,
+      "sha256": "4170901836312e25e81c277df045811bf1d7c447dcda3df80e18809f04a86f13",
+      "action": "remove standalone superseded record"
+    },
+    {
+      "file": "docs/MAP_RECOVERY_REPORT.md",
+      "modifiedLocal": "2026-11-14T21:42:43.482110",
+      "bytes": 2975,
+      "sha256": "6213141763dc1d706c933ffa936c3d3e56d4f37fc3d64345edc3cdf0a0be376b",
+      "action": "remove standalone superseded record"
+    },
+    {
+      "file": "docs/QA_REPORT.md",
+      "modifiedLocal": "2026-11-14T21:42:43.376323",
+      "bytes": 15469,
+      "sha256": "aff9dc08b7fdaf5446e4f92b7d5de6ad347c3966591e8e0505542734b6b2b1da",
+      "action": "remove standalone superseded record"
+    },
+    {
+      "file": "docs/REACT_MIGRATION_REPORT.md",
+      "modifiedLocal": "2026-11-14T21:28:45.637279",
+      "bytes": 17734,
+      "sha256": "e510bfbf8fccdd2c43884e2d91c49347c3c05766c9bdcdca764868f07589ba0b",
+      "action": "retain/update active document"
+    },
+    {
+      "file": "docs/README.md",
+      "modifiedLocal": "2026-11-14T21:50:39.568905",
+      "bytes": 5970,
+      "sha256": "d2362bb626d07b530fdae737d07802c298f3995d34128bf783093f2cc5038e7a",
+      "action": "retain/update active document"
+    },
+    {
+      "file": "docs/RESOURCE_GAP_AUDIT.md",
+      "modifiedLocal": "2026-11-14T21:42:43.472823",
+      "bytes": 5141,
+      "sha256": "54fc48b54c8ac7bd9d2d7fb71b8ecd3b819a3b93f0739b12434520c412bac9f2",
+      "action": "remove standalone superseded record"
+    },
+    {
+      "file": "docs/TASK_0D_REPORT.md",
+      "modifiedLocal": "2026-11-14T21:42:43.476110",
+      "bytes": 11055,
+      "sha256": "1061e12222a7628acf41bd9f48990558b7df80eec2ca9d7f9b2618317f4c08e5",
+      "action": "remove standalone superseded record"
+    },
+    {
+      "file": "docs/TASK_0_REPORT.md",
+      "modifiedLocal": "2026-11-14T21:42:43.475115",
+      "bytes": 9381,
+      "sha256": "a5bb76eccb543b63f58353e2b2f1474867cd638fafd2f0789032ca29145a6ace",
+      "action": "remove standalone superseded record"
+    },
+    {
+      "file": "docs/TASK_1_REPORT.md",
+      "modifiedLocal": "2026-11-14T21:42:43.478128",
+      "bytes": 11463,
+      "sha256": "7e1f55a3de72c2d0d4018afcd778bfc464d3c0890554c4029f022e64e3bb5959",
+      "action": "remove standalone superseded record"
+    },
+    {
+      "file": "docs/TEST_REPORT.md",
+      "modifiedLocal": "2026-11-14T21:42:43.379324",
+      "bytes": 5899,
+      "sha256": "05fade3e9fb72c246f3cbe068fee226d1773e9efec3bbe4bfe5d38e68bb910b4",
+      "action": "remove standalone superseded record"
+    },
+    {
+      "file": "docs/THIRD_PARTY.md",
+      "modifiedLocal": "2026-11-14T21:18:11.009394",
+      "bytes": 1587,
+      "sha256": "74fe1ee8577374d14df7406a9110b6e9c2f840784ca5dcc57b8c9915ede67a11",
+      "action": "retain/update active document"
+    },
+    {
+      "file": "docs/toolgiven.md",
+      "modifiedLocal": "2026-11-14T14:46:34.309006",
+      "bytes": 19760,
+      "sha256": "8f5220b6aa642485a180bcca3ae5079ae7123c80954e91a71b97d7d34eb9f649",
+      "action": "remove standalone superseded record"
+    },
+    {
+      "file": "docs/assets/README.md",
+      "modifiedLocal": "2026-11-14T21:42:43.492898",
+      "bytes": 1160,
+      "sha256": "b5f0fcaffb8ad8480ef09e269f9fb1b59d91f2fa3878a24f6e0cbd2ff6257a8a",
+      "action": "retain/update active document"
+    },
+    {
+      "file": "docs/status-from-otheragent/Opencode-DeepSeek-V4.1-flash-free-work.md",
+      "modifiedLocal": "2026-11-14T21:42:43.489109",
+      "bytes": 9348,
+      "sha256": "e5aa586b3eb5afaa16aeeb2b8a53b978df5055568a9ac7d389d1270a812a24ed",
+      "action": "remove standalone superseded record"
+    },
+    {
+      "file": "docs/status-from-otheragent/README.md",
+      "modifiedLocal": "2026-11-14T21:42:43.492110",
+      "bytes": 12669,
+      "sha256": "8c83fb1253ed40689d122dcef5208d1d85bf6c4a73e6598a33d7309893a137da",
+      "action": "remove standalone superseded record"
+    },
+    {
+      "file": "docs/status-from-otheragent/STATUS.md",
+      "modifiedLocal": "2026-11-14T21:42:43.487111",
+      "bytes": 8749,
+      "sha256": "e6074c6a277755677308c59a590d704ce66815e77e660097c4f09d1108764443",
+      "action": "remove standalone superseded record"
+    }
+  ]
+}

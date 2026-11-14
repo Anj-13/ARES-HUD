@@ -1,4 +1,4 @@
-"""Local development server: stable workspace root, no stale JS/CSS cache."""
+"""Serve the static production build (or --directory legacy for recovery)."""
 from functools import partial
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
@@ -20,8 +20,12 @@ class DevelopmentHandler(SimpleHTTPRequestHandler):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--port", type=int, default=8012)
+    parser.add_argument("--directory", default="dist")
     args = parser.parse_args()
-    handler = partial(DevelopmentHandler, directory=str(Path(__file__).resolve().parent))
+    directory = (Path(__file__).resolve().parent / args.directory).resolve()
+    if not directory.is_dir():
+        parser.error("Build first with npm run build, or choose --directory legacy")
+    handler = partial(DevelopmentHandler, directory=str(directory))
     server = ThreadingHTTPServer(("127.0.0.1", args.port), handler)
     print(f"ARES-HUD: http://localhost:{args.port}/", flush=True)
     server.serve_forever()

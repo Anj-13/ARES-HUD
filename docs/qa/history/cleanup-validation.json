@@ -1,0 +1,26 @@
+{
+  "at": "2026-11-14T22:02:08.015926+00:00",
+  "tests": {
+    "command": "npm.cmd test",
+    "passed": 39,
+    "failed": 0,
+    "skipped": 0,
+    "cancelled": 0,
+    "duration_ms": 2271.3069
+  },
+  "markdown": {
+    "at": "2026-11-14T22:02:24.266481+00:00",
+    "documents": 19,
+    "localLinks": 111,
+    "externalLinks": 45,
+    "broken": [],
+    "encodingIssues": []
+  },
+  "productionFilesCompared": 174,
+  "productionFilesChanged": [],
+  "snapshotFilesVerified": 38,
+  "removedStandaloneMarkdown": 21,
+  "retainedSupportingMarkdown": 14,
+  "browserAndBuildRerun": false,
+  "notes": "Initial audit ran before its output file existed and flagged that self-reference; rerun after writing the output resolves all paths."
+}

@@ -1,0 +1,477 @@
+[
+  {
+    "file": "src/App.jsx",
+    "bytes": 3369,
+    "sha256": "5a045b41b4a267c24476821edb120e8b98669586a401da380a182b720e1ba29b"
+  },
+  {
+    "file": "src/main.jsx",
+    "bytes": 293,
+    "sha256": "a36f6d110811e7cf1bdb8ec89062cfa2c1a8314391f3bbecab412d761b705d7b"
+  },
+  {
+    "file": "src/tablet-main.jsx",
+    "bytes": 635,
+    "sha256": "1765c6dd8eba59cab7fca46a5ad238f84931eb780756ac29ae848e7b82ca616b"
+  },
+  {
+    "file": "src/components/MapPanel.jsx",
+    "bytes": 5294,
+    "sha256": "42c4b4c1fea66ced94237f0a08b8febcdc02b84290a59ce88d0c95f3de571b2a"
+  },
+  {
+    "file": "src/components/MissionPanel.jsx",
+    "bytes": 1851,
+    "sha256": "da595ecce3066d9740c632643b598f1a7691ceaf936be196b3aab77eb7314ffa"
+  },
+  {
+    "file": "src/components/Modal.jsx",
+    "bytes": 1518,
+    "sha256": "8482d4745d12a7556afd88a6da09fb7e65daaf31ea5d528265370a817d2c4795"
+  },
+  {
+    "file": "src/components/SourcesView.jsx",
+    "bytes": 4300,
+    "sha256": "57707ccac215bf5bcb26f2322c9c74b1a2873a862361af9363de3bb4456598ee"
+  },
+  {
+    "file": "src/components/TabletView.jsx",
+    "bytes": 3074,
+    "sha256": "d219677ee07dd72648869d9f9c5dfa5cf86ecfdadad039f661766fc1a8b5e9d0"
+  },
+  {
+    "file": "src/components/TelemetryPanel.jsx",
+    "bytes": 1878,
+    "sha256": "255d3899b981ae1d893aea7084d2d784845bb277aa9be493aaa59030e432c1b7"
+  },
+  {
+    "file": "src/components/Timeline.jsx",
+    "bytes": 2625,
+    "sha256": "68a881c532bc39e075e128f2ff7d56b50d9b17cfe2fbd74919a956eb555c0b0b"
+  },
+  {
+    "file": "src/domain/datasets.js",
+    "bytes": 2217,
+    "sha256": "f50c5bc9fa505e380d2ace07febcedf1ca5635a8eb5295a6e41a82dbabcbd3b0"
+  },
+  {
+    "file": "src/domain/fog.js",
+    "bytes": 650,
+    "sha256": "37d0fe5f7398c11de06e259b24604443685a54bb7b0ebd95f5c98aef5fbf8e9d"
+  },
+  {
+    "file": "src/domain/geo.js",
+    "bytes": 3493,
+    "sha256": "c925a129884b22b2a129da3a208329a38753117cc47550b3c7e5c4b55ee956bc"
+  },
+  {
+    "file": "src/domain/map-crs.js",
+    "bytes": 1593,
+    "sha256": "99ca7c24e077f6d8719d97e21bf6a68d21b0deba56f284ede2075b19c7e0079a"
+  },
+  {
+    "file": "src/domain/mission.js",
+    "bytes": 637,
+    "sha256": "910f7df16c95704f6f7df76b4563cca19da1a02141fee16d9582c7d4b54f5dac"
+  },
+  {
+    "file": "src/domain/pathfinding.js",
+    "bytes": 1935,
+    "sha256": "a7efd2d491fc05a200e4e3e3113912984c7314330c43921f3110eede2af09753"
+  },
+  {
+    "file": "src/domain/plan.js",
+    "bytes": 3224,
+    "sha256": "290a55f14fc2c0f9fe88cf00d67925860e0f0bc08854dea1c95fb478afaf4be5"
+  },
+  {
+    "file": "src/domain/sector.js",
+    "bytes": 2675,
+    "sha256": "c2cf9a86963fd31b839aa7272d59483b7871df75ef2cd991f16a48b1c6e91d8f"
+  },
+  {
+    "file": "src/domain/sols.js",
+    "bytes": 1419,
+    "sha256": "1cffbc84824daa853bd641711ff7c059cb2606fd83186859265221f510567c56"
+  },
+  {
+    "file": "src/integrations/map.js",
+    "bytes": 3473,
+    "sha256": "7f5c5563729f968bb14fd6a51210b9dbf23ef4eef2778856ce1d5fdcb5c02a1b"
+  },
+  {
+    "file": "src/integrations/sector-layers.js",
+    "bytes": 3954,
+    "sha256": "75d281173a0a752050639e98b463cc7802051f16c712a4b038909ec8232d1b62"
+  },
+  {
+    "file": "src/integrations/tablet-bridge.js",
+    "bytes": 346,
+    "sha256": "935eca10693a7b2b41ec55ee6544dfbed7153027d1d242d5b849dc85db3046d0"
+  },
+  {
+    "file": "src/integrations/use-mission.js",
+    "bytes": 343,
+    "sha256": "78710622a16a5d8987dc477d9ec2e9707d1080a06d470cdf82a4f30b1f2f6892"
+  },
+  {
+    "file": "src/state/mission-store.js",
+    "bytes": 7145,
+    "sha256": "e5373a7ac4223eb9dc4dae09082db261c1ffbfd75dd2690f507e009c017222d3"
+  },
+  {
+    "file": "src/styles/main.css",
+    "bytes": 11626,
+    "sha256": "b97010e3c8e8fed0fa4b257c3a697eb149034adbb2d430fe3f841700961a43d4"
+  },
+  {
+    "file": "public/LICENSE",
+    "bytes": 1091,
+    "sha256": "479d3610adcbedf00e7668fe245512ff3d1608d108970ab7165aae375e899907"
+  },
+  {
+    "file": "public/assets/geology-service.json",
+    "bytes": 11840,
+    "sha256": "dab5d4b53ead3106d50f4d24bf2d878d63c86c63d4375d72c3389cf67de5fc75"
+  },
+  {
+    "file": "public/assets/jezero-geology.pdf",
+    "bytes": 8623899,
+    "sha256": "d4d52e2bde4ec36cfc3a64091c5c7c4bd49b3e3f84add6db942cfac299bf3646"
+  },
+  {
+    "file": "public/assets/jezero-themis.jpg",
+    "bytes": 86106,
+    "sha256": "9d5c31ef7f77d2543d8bacbeae713d7afbf71211f29953404eaf9aa5ff9a9998"
+  },
+  {
+    "file": "public/assets/perseverance-delta.jpg",
+    "bytes": 239471,
+    "sha256": "be26297f637ed2bcb06d2f2a70cf1baa6e383ea94d1cf82dbff51a4e64d79696"
+  },
+  {
+    "file": "public/assets/trek-capabilities.xml",
+    "bytes": 8343,
+    "sha256": "aeb623627236fc77bbe62c45a8db6e8c148cba7f70c02006eeb30c4fa377598c"
+  },
+  {
+    "file": "public/assets/trek-catalog.json",
+    "bytes": 311418,
+    "sha256": "5f6d60b0c3a8afd468bbb01773d472ba77cc50b2c7022c15de470ebd315f0cda"
+  },
+  {
+    "file": "public/assets/trek-source.json",
+    "bytes": 1898,
+    "sha256": "0c1875969be3bbb59d5d52f21ab733b619d6b40e8c3a0f4c4214cb4c1405bc2d"
+  },
+  {
+    "file": "public/docs/DATA_SOURCES.md",
+    "bytes": 25257,
+    "sha256": "2295b58a68f5a2734722e2585c04970021e7d19712b723d7170094da0cf71ffc"
+  },
+  {
+    "file": "public/docs/THIRD_PARTY.md",
+    "bytes": 1587,
+    "sha256": "74fe1ee8577374d14df7406a9110b6e9c2f840784ca5dcc57b8c9915ede67a11"
+  },
+  {
+    "file": "public/vendor/leaflet/leaflet.css",
+    "bytes": 14806,
+    "sha256": "a7837102824184820dfa198d1ebcd109ff6d0ff9a2672a074b9a1b4d147d04c6"
+  },
+  {
+    "file": "public/vendor/leaflet/leaflet.js",
+    "bytes": 147552,
+    "sha256": "db49d009c841f5ca34a888c96511ae936fd9f5533e90d8b2c4d57596f4e5641a"
+  },
+  {
+    "file": "public/vendor/leaflet/LICENSE",
+    "bytes": 1395,
+    "sha256": "53e8dc25862014e4324741ca18fbe3611e11d42ef69f59f86ea8c5389647d4cb"
+  },
+  {
+    "file": "public/vendor/leaflet/images/layers-2x.png",
+    "bytes": 1259,
+    "sha256": "066daca850d8ffbef007af00b06eac0015728dee279c51f3cb6c716df7c42edf"
+  },
+  {
+    "file": "public/vendor/leaflet/images/layers.png",
+    "bytes": 696,
+    "sha256": "1dbbe9d028e292f36fcba8f8b3a28d5e8932754fc2215b9ac69e4cdecf5107c6"
+  },
+  {
+    "file": "public/vendor/leaflet/images/marker-icon-2x.png",
+    "bytes": 2464,
+    "sha256": "00179c4c1ee830d3a108412ae0d294f55776cfeb085c60129a39aa6fc4ae2528"
+  },
+  {
+    "file": "public/vendor/leaflet/images/marker-icon.png",
+    "bytes": 1466,
+    "sha256": "574c3a5cca85f4114085b6841596d62f00d7c892c7b03f28cbfa301deb1dc437"
+  },
+  {
+    "file": "public/vendor/leaflet/images/marker-shadow.png",
+    "bytes": 618,
+    "sha256": "264f5c640339f042dd729062cfc04c17f8ea0f29882b538e3848ed8f10edb4da"
+  },
+  {
+    "file": "public/licenses/lucide-react/LICENSE",
+    "bytes": 880,
+    "sha256": "1e7290b35280a048667bbf0ebabac1c7fd52a75300e8b2946ac165715997f2bc"
+  },
+  {
+    "file": "public/licenses/react/LICENSE",
+    "bytes": 1086,
+    "sha256": "52412d7bc7ce4157ea628bbaacb8829e0a9cb3c58f57f99176126bc8cf2bfc85"
+  },
+  {
+    "file": "public/licenses/react-dom/LICENSE",
+    "bytes": 1086,
+    "sha256": "52412d7bc7ce4157ea628bbaacb8829e0a9cb3c58f57f99176126bc8cf2bfc85"
+  },
+  {
+    "file": "public/licenses/scheduler/LICENSE",
+    "bytes": 1086,
+    "sha256": "52412d7bc7ce4157ea628bbaacb8829e0a9cb3c58f57f99176126bc8cf2bfc85"
+  },
+  {
+    "file": "public/docs/assets/README.md",
+    "bytes": 896,
+    "sha256": "3d3b0e191e4c8a651b0f9971a167a4744e4043098a6971ebdc766c08de62fb6d"
+  },
+  {
+    "file": "public/assets/trek/manifest.json",
+    "bytes": 7707,
+    "sha256": "9a36924f1a2f76121160654d0294303c0abda140499ae150facad2508e5630c9"
+  },
+  {
+    "file": "public/assets/trek/10/406-1464.png",
+    "bytes": 63600,
+    "sha256": "6dbd5d2f00f0676f8f821c3830cf2b8c321a68b16e4ef2b96050103feaf90895"
+  },
+  {
+    "file": "public/assets/trek/10/407-1464.png",
+    "bytes": 60276,
+    "sha256": "82491f0b929a2df137fe1faab5911b8b0074765cef406eace9d167266f12b0ee"
+  },
+  {
+    "file": "public/assets/trek/11/812-2928.png",
+    "bytes": 63018,
+    "sha256": "94bcebfcd2f64cbaeb4dc3af6fc0f1c04eb0acdc4aa51106a75c0e71c9954478"
+  },
+  {
+    "file": "public/assets/trek/11/812-2929.png",
+    "bytes": 63018,
+    "sha256": "341bca64cf42981a15cc71f9a48ea94cff443fd1f3f24230d92b0ee53dd8fac6"
+  },
+  {
+    "file": "public/assets/trek/11/813-2928.png",
+    "bytes": 60176,
+    "sha256": "a24124de716a4681f5c0a3e12fec5ce47686eb1e9be502012f1cf0d7852d0316"
+  },
+  {
+    "file": "public/assets/trek/11/813-2929.png",
+    "bytes": 56893,
+    "sha256": "7e0ad5c3a2b34b432a325848dd1728cbb9de22050258ffe823419cee06a21311"
+  },
+  {
+    "file": "public/assets/trek/11/814-2928.png",
+    "bytes": 57508,
+    "sha256": "2ca588f62568cc4fdd20c15c3ef26e50742b75dccf820bd88333b4df77dd329e"
+  },
+  {
+    "file": "public/assets/trek/11/814-2929.png",
+    "bytes": 58137,
+    "sha256": "38bd3135c2ddc9b0e79b0a4217c3609b55fb7e18cb6b68f4c5bc083592e6295a"
+  },
+  {
+    "file": "public/assets/trek/12/1625-5856.png",
+    "bytes": 54556,
+    "sha256": "480c4b74507af0b796f10a6cedf10439820e7d779bcb97e3aa6ebfcb71eb96f7"
+  },
+  {
+    "file": "public/assets/trek/12/1625-5857.png",
+    "bytes": 58040,
+    "sha256": "61ee56770dbdcf5314e926baa17985b5447a8446adb04d14c27f9b49eff35df6"
+  },
+  {
+    "file": "public/assets/trek/12/1625-5858.png",
+    "bytes": 56701,
+    "sha256": "a032b6aaf8fe107cba516eba96dd207d0d5523c3cf548bbb672e91c16bc7b819"
+  },
+  {
+    "file": "public/assets/trek/12/1625-5859.png",
+    "bytes": 57340,
+    "sha256": "9ad4af0233fef44f07fdabdc3d0586e538d30c82645decb31bc708224e9558aa"
+  },
+  {
+    "file": "public/assets/trek/12/1626-5856.png",
+    "bytes": 54442,
+    "sha256": "c3a2406434289bb698c899120f4689f3e59ef453f647192ccb980ee5a17859ff"
+  },
+  {
+    "file": "public/assets/trek/12/1626-5857.png",
+    "bytes": 53780,
+    "sha256": "82ab84688ea059df0837631526576519d58e4c3fbf633c6d6dcd71294fe8f579"
+  },
+  {
+    "file": "public/assets/trek/12/1626-5858.png",
+    "bytes": 53378,
+    "sha256": "053822d023f3ba2a45d307f744ba5f285ca17897fcb161cdbf5b1534f00b3859"
+  },
+  {
+    "file": "public/assets/trek/12/1626-5859.png",
+    "bytes": 57430,
+    "sha256": "92ea9b17d4097a4e029b57d63e8fd02cb0c30ae8ab563f600277497d4b7a7cb7"
+  },
+  {
+    "file": "public/assets/trek/12/1627-5856.png",
+    "bytes": 54284,
+    "sha256": "8c8a3916870c668f2c792c06edb8e91d3633cc7788f962329c2d3ebbefb546aa"
+  },
+  {
+    "file": "public/assets/trek/12/1627-5857.png",
+    "bytes": 53732,
+    "sha256": "33392b61ae9ee1fd7cacf06efe6e1ca3188a24faa24d91487c2dd6d82a7a55dc"
+  },
+  {
+    "file": "public/assets/trek/12/1627-5858.png",
+    "bytes": 49399,
+    "sha256": "2bf771f5af6a6af560f9940cef1e372004020cf71ec6ebfe70d49c543df98a7f"
+  },
+  {
+    "file": "public/assets/trek/12/1627-5859.png",
+    "bytes": 52760,
+    "sha256": "df21b0dbb1e0fc5b5dfee23c6732a97a3f9c32569b21271925216473c9459baa"
+  },
+  {
+    "file": "public/assets/trek/12/1628-5856.png",
+    "bytes": 55982,
+    "sha256": "a1b8cab872bbb471e917fb191be347032a5c1d66338f4b486182409fb982b0a8"
+  },
+  {
+    "file": "public/assets/trek/12/1628-5857.png",
+    "bytes": 52243,
+    "sha256": "60141a07442794af224b3e77b847a524e7294ee77ff14812f0503aec14ebb221"
+  },
+  {
+    "file": "public/assets/trek/12/1628-5858.png",
+    "bytes": 55135,
+    "sha256": "5c2040a462feb6d96b40d381e94769d9d3c4c5c5bf12d0d9a6d228f0689bb596"
+  },
+  {
+    "file": "public/assets/trek/12/1628-5859.png",
+    "bytes": 54862,
+    "sha256": "cedcb5b6530dafc1fdb876e99d70a6c1dd4e950e03c7840e9ef8a100b4138273"
+  },
+  {
+    "file": "tests/fog.test.js",
+    "bytes": 1228,
+    "sha256": "48721acad7e14bc55aa805df2308a0bcb20067c689ff1b723207737be55cf577"
+  },
+  {
+    "file": "tests/geo.test.js",
+    "bytes": 4116,
+    "sha256": "26779faeba8d5539c9ce8c5084de9038379f2de9e753f3fb9560bcdbce629b84"
+  },
+  {
+    "file": "tests/mission-store.test.js",
+    "bytes": 4290,
+    "sha256": "629b8b3c4548b7b15cbf396d2abf86e0a3b9fd4dce3347565b9916069b16720b"
+  },
+  {
+    "file": "tests/mission.test.js",
+    "bytes": 1741,
+    "sha256": "bcad1e89f7dc01b419f71f75057371d36b2c88311e10991b7ded4d016bf58e57"
+  },
+  {
+    "file": "tests/pathfinding.test.js",
+    "bytes": 2133,
+    "sha256": "7f5633e8ca7187c2258d128ffd05b3f65bca9d1a7dc780105131db8d85aabf72"
+  },
+  {
+    "file": "tests/plan.test.js",
+    "bytes": 1351,
+    "sha256": "9a6f1d11759db93006fe9d97baa5302128545be8503844e4fe504cf81dd36c0e"
+  },
+  {
+    "file": "tests/sols.test.js",
+    "bytes": 1329,
+    "sha256": "7f2deb411a1eb529a810c544aaf1101581e14d006aedbaca8d58e9c07cbfb6e5"
+  },
+  {
+    "file": "scripts/browser-qa.mjs",
+    "bytes": 12245,
+    "sha256": "6760091de4bc14a41dd4b0ebad24074f65a6b66be68a2a0a82fb31b10a1cc865"
+  },
+  {
+    "file": "scripts/fetch-tiles.mjs",
+    "bytes": 2599,
+    "sha256": "d9a07fcff541b96cc729cd7819f854194caf443fefec70667106c908974a1c8a"
+  },
+  {
+    "file": "scripts/legacy-qa.mjs",
+    "bytes": 1266,
+    "sha256": "c32a3c9b5688f58ba13c42db5c822fba1ff1eed9f2facbfbe906e67220a54256"
+  },
+  {
+    "file": "scripts/prepare-public.mjs",
+    "bytes": 591,
+    "sha256": "522cfdca1de1028685c69306e7d14383896ed9b9ea9de7bb12650500ec2f972f"
+  },
+  {
+    "file": "scripts/static-server.mjs",
+    "bytes": 1645,
+    "sha256": "3e2205449615d67bb02b6e5e70922a2953140af7ad76eebba873de502a3fcdc5"
+  },
+  {
+    "file": "scripts/vendor-leaflet.mjs",
+    "bytes": 1257,
+    "sha256": "da40c2dd4ea4cdf020fb9642cd4302de8317da6bc55ef632ddb441d783f9c5cd"
+  },
+  {
+    "file": "docs/qa/legacy-migration-report.json",
+    "bytes": 14683,
+    "sha256": "6e0311f270a63ed6c4a2f4cd792d18a41e1a054b6e0976a68d5e684af74c7889"
+  },
+  {
+    "file": "docs/qa/qa-regression.png",
+    "bytes": 291358,
+    "sha256": "ea86ffce6a65710d1619b8166b8c4a8429630232ecebedaa54c710582c68a6aa"
+  },
+  {
+    "file": "docs/qa/qa-screen.png",
+    "bytes": 306044,
+    "sha256": "e11988d8680fda560b2042dda2aee150eb6bd5f53f76e0ce1a7a1037f47a5927"
+  },
+  {
+    "file": "docs/qa/react-dev-report.json",
+    "bytes": 3961,
+    "sha256": "0985ab77f4e9407467b22028385f0475c156b70c2fec80b060126617f558a440"
+  },
+  {
+    "file": "docs/qa/react-production-1440.png",
+    "bytes": 749727,
+    "sha256": "f62b747af67e98251bd95de8306cdf5f620a970cab3c0ecd90f833d19d73b187"
+  },
+  {
+    "file": "docs/qa/react-production-360-reduced.png",
+    "bytes": 285906,
+    "sha256": "9426aeb77eb453367d568ed10264418df6f1414351267fa254e120167ffaf407"
+  },
+  {
+    "file": "docs/qa/react-production-360.png",
+    "bytes": 285906,
+    "sha256": "9426aeb77eb453367d568ed10264418df6f1414351267fa254e120167ffaf407"
+  },
+  {
+    "file": "docs/qa/react-production-768.png",
+    "bytes": 539340,
+    "sha256": "884a8e19ee5a57196b077ba65fd789ded8757f017b3d79f8915491e472a5cbb1"
+  },
+  {
+    "file": "docs/qa/react-production-report.json",
+    "bytes": 3702,
+    "sha256": "e628b87af147e757564a505686d1533d983fbe8472201efb40094bb0eb95654a"
+  }
+]

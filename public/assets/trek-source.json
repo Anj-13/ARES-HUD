@@ -1,0 +1,29 @@
+{
+  "item_DBID": "293763",
+  "item_UUID": "afdc6b89-fc6a-4809-ab53-bf8d8251ade6",
+  "productLabel": "Jezero_CTX_BlockAdj_dd",
+  "title": "MRO CTX, Jezero Mosaic, Preliminary",
+  "fileSize": [
+    1614751404
+  ],
+  "productCat1": "Imagery",
+  "productCat2": "Mosaic",
+  "mission": "Mars Reconnaissance Orbiter",
+  "trekProjection": "urn:ogc:def:crs:EPSG::104905",
+  "projection": "urn:ogc:def:crs:EPSG::104905",
+  "data_created_date": "2020-08-03T18:28:05Z",
+  "description": "This data was acquired using the Context Camera aboard NASA's Mars Reconnaissance Orbiter spacecraft (MRO). MRO was launched on August 12, 2005 and arrived at Mars on March 10, 2006. It maintains a nearly circular orbit, completing an orbital revolution about every 112 minutes at an altitude of approximately 250 to 316 km or 155 to 196 miles. MRO carries a sophisticated suite of instruments used to analyze and map the landforms, stratigraphy, minerals, and ice of Mars.\n\nThe Context Camera (CTX) provides black-and-white images with resolutions up to 6 meters/pixel. It provides broader context maps for the higher resolution but narrower fields of view of the HiRISE camera, as well as for other instruments aboard MRO, and is useful for producing mosaicked images of larger areas on Mars' surface.",
+  "itemType": "product",
+  "thumbnailURLDir": "https://trek.nasa.gov/tiles/Mars/EQ/Jezero_CTX_BlockAdj_dd/thumbnail/Jezero_CTX_BlockAdj_dd-",
+  "isContainer": false,
+  "searchable": true,
+  "coverage": "Global",
+  "serviceTypes": [
+    "Mosaic"
+  ],
+  "shape": "POLYGON ((75.1537692298128 19.4453002570673,75.1537692298128 15.9058483770673,78.8717120578128 15.9058483770673,78.8717120578128 19.4453002570673,75.1537692298128 19.4453002570673))",
+  "bbox": "75.1537692,15.9058484,78.8717121,19.4453003",
+  "resolution": 0.0001,
+  "instrument": "CTX",
+  "_version_": 1675655342820687872
+}

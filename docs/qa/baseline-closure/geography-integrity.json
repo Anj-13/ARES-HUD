@@ -1,0 +1,293 @@
+{
+  "matrices": [
+    {
+      "level": 0,
+      "width": 2,
+      "height": 1,
+      "tileWidth": 256,
+      "tileHeight": 256
+    },
+    {
+      "level": 1,
+      "width": 4,
+      "height": 2,
+      "tileWidth": 256,
+      "tileHeight": 256
+    },
+    {
+      "level": 2,
+      "width": 8,
+      "height": 4,
+      "tileWidth": 256,
+      "tileHeight": 256
+    },
+    {
+      "level": 3,
+      "width": 16,
+      "height": 8,
+      "tileWidth": 256,
+      "tileHeight": 256
+    },
+    {
+      "level": 4,
+      "width": 32,
+      "height": 16,
+      "tileWidth": 256,
+      "tileHeight": 256
+    },
+    {
+      "level": 5,
+      "width": 64,
+      "height": 32,
+      "tileWidth": 256,
+      "tileHeight": 256
+    },
+    {
+      "level": 6,
+      "width": 128,
+      "height": 64,
+      "tileWidth": 256,
+      "tileHeight": 256
+    },
+    {
+      "level": 7,
+      "width": 256,
+      "height": 128,
+      "tileWidth": 256,
+      "tileHeight": 256
+    },
+    {
+      "level": 8,
+      "width": 512,
+      "height": 256,
+      "tileWidth": 256,
+      "tileHeight": 256
+    },
+    {
+      "level": 9,
+      "width": 1024,
+      "height": 512,
+      "tileWidth": 256,
+      "tileHeight": 256
+    },
+    {
+      "level": 10,
+      "width": 2048,
+      "height": 1024,
+      "tileWidth": 256,
+      "tileHeight": 256
+    },
+    {
+      "level": 11,
+      "width": 4096,
+      "height": 2048,
+      "tileWidth": 256,
+      "tileHeight": 256
+    },
+    {
+      "level": 12,
+      "width": 8192,
+      "height": 4096,
+      "tileWidth": 256,
+      "tileHeight": 256
+    }
+  ],
+  "geometry": [
+    {
+      "level": 10,
+      "degreesPerTile": 0.17578125,
+      "degreesPerPixel": 0.0006866455078125,
+      "metresPerPixelNS": 40.70070478132293,
+      "metresPerPixelEW18_51N": 38.59518653032915
+    },
+    {
+      "level": 11,
+      "degreesPerTile": 0.087890625,
+      "degreesPerPixel": 0.00034332275390625,
+      "metresPerPixelNS": 20.350352390661467,
+      "metresPerPixelEW18_51N": 19.297593265164576
+    },
+    {
+      "level": 12,
+      "degreesPerTile": 0.0439453125,
+      "degreesPerPixel": 0.000171661376953125,
+      "metresPerPixelNS": 10.175176195330733,
+      "metresPerPixelEW18_51N": 9.648796632582288
+    }
+  ],
+  "historicalLevel10Bounds": {
+    "north": 19.16015625,
+    "south": 18.45703125,
+    "west": 77.16796875,
+    "east": 77.87109375
+  },
+  "overlap": {
+    "longitudeDegrees": 0.6320312499999972,
+    "latitudeDegrees": 0.2429687499999993,
+    "shareOfUSGSExtent": 0.15356384277343635
+  },
+  "tiles": [
+    {
+      "file": "assets/trek/10/406-1464.png",
+      "bytes": 63600,
+      "sha256": "6dbd5d2f00f0676f8f821c3830cf2b8c321a68b16e4ef2b96050103feaf90895",
+      "matches": true
+    },
+    {
+      "file": "assets/trek/10/407-1464.png",
+      "bytes": 60276,
+      "sha256": "82491f0b929a2df137fe1faab5911b8b0074765cef406eace9d167266f12b0ee",
+      "matches": true
+    },
+    {
+      "file": "assets/trek/11/812-2928.png",
+      "bytes": 63018,
+      "sha256": "94bcebfcd2f64cbaeb4dc3af6fc0f1c04eb0acdc4aa51106a75c0e71c9954478",
+      "matches": true
+    },
+    {
+      "file": "assets/trek/11/812-2929.png",
+      "bytes": 63018,
+      "sha256": "341bca64cf42981a15cc71f9a48ea94cff443fd1f3f24230d92b0ee53dd8fac6",
+      "matches": true
+    },
+    {
+      "file": "assets/trek/11/813-2928.png",
+      "bytes": 60176,
+      "sha256": "a24124de716a4681f5c0a3e12fec5ce47686eb1e9be502012f1cf0d7852d0316",
+      "matches": true
+    },
+    {
+      "file": "assets/trek/11/813-2929.png",
+      "bytes": 56893,
+      "sha256": "7e0ad5c3a2b34b432a325848dd1728cbb9de22050258ffe823419cee06a21311",
+      "matches": true
+    },
+    {
+      "file": "assets/trek/11/814-2928.png",
+      "bytes": 57508,
+      "sha256": "2ca588f62568cc4fdd20c15c3ef26e50742b75dccf820bd88333b4df77dd329e",
+      "matches": true
+    },
+    {
+      "file": "assets/trek/11/814-2929.png",
+      "bytes": 58137,
+      "sha256": "38bd3135c2ddc9b0e79b0a4217c3609b55fb7e18cb6b68f4c5bc083592e6295a",
+      "matches": true
+    },
+    {
+      "file": "assets/trek/12/1625-5856.png",
+      "bytes": 54556,
+      "sha256": "480c4b74507af0b796f10a6cedf10439820e7d779bcb97e3aa6ebfcb71eb96f7",
+      "matches": true
+    },
+    {
+      "file": "assets/trek/12/1625-5857.png",
+      "bytes": 58040,
+      "sha256": "61ee56770dbdcf5314e926baa17985b5447a8446adb04d14c27f9b49eff35df6",
+      "matches": true
+    },
+    {
+      "file": "assets/trek/12/1625-5858.png",
+      "bytes": 56701,
+      "sha256": "a032b6aaf8fe107cba516eba96dd207d0d5523c3cf548bbb672e91c16bc7b819",
+      "matches": true
+    },
+    {
+      "file": "assets/trek/12/1625-5859.png",
+      "bytes": 57340,
+      "sha256": "9ad4af0233fef44f07fdabdc3d0586e538d30c82645decb31bc708224e9558aa",
+      "matches": true
+    },
+    {
+      "file": "assets/trek/12/1626-5856.png",
+      "bytes": 54442,
+      "sha256": "c3a2406434289bb698c899120f4689f3e59ef453f647192ccb980ee5a17859ff",
+      "matches": true
+    },
+    {
+      "file": "assets/trek/12/1626-5857.png",
+      "bytes": 53780,
+      "sha256": "82ab84688ea059df0837631526576519d58e4c3fbf633c6d6dcd71294fe8f579",
+      "matches": true
+    },
+    {
+      "file": "assets/trek/12/1626-5858.png",
+      "bytes": 53378,
+      "sha256": "053822d023f3ba2a45d307f744ba5f285ca17897fcb161cdbf5b1534f00b3859",
+      "matches": true
+    },
+    {
+      "file": "assets/trek/12/1626-5859.png",
+      "bytes": 57430,
+      "sha256": "92ea9b17d4097a4e029b57d63e8fd02cb0c30ae8ab563f600277497d4b7a7cb7",
+      "matches": true
+    },
+    {
+      "file": "assets/trek/12/1627-5856.png",
+      "bytes": 54284,
+      "sha256": "8c8a3916870c668f2c792c06edb8e91d3633cc7788f962329c2d3ebbefb546aa",
+      "matches": true
+    },
+    {
+      "file": "assets/trek/12/1627-5857.png",
+      "bytes": 53732,
+      "sha256": "33392b61ae9ee1fd7cacf06efe6e1ca3188a24faa24d91487c2dd6d82a7a55dc",
+      "matches": true
+    },
+    {
+      "file": "assets/trek/12/1627-5858.png",
+      "bytes": 49399,
+      "sha256": "2bf771f5af6a6af560f9940cef1e372004020cf71ec6ebfe70d49c543df98a7f",
+      "matches": true
+    },
+    {
+      "file": "assets/trek/12/1627-5859.png",
+      "bytes": 52760,
+      "sha256": "df21b0dbb1e0fc5b5dfee23c6732a97a3f9c32569b21271925216473c9459baa",
+      "matches": true
+    },
+    {
+      "file": "assets/trek/12/1628-5856.png",
+      "bytes": 55982,
+      "sha256": "a1b8cab872bbb471e917fb191be347032a5c1d66338f4b486182409fb982b0a8",
+      "matches": true
+    },
+    {
+      "file": "assets/trek/12/1628-5857.png",
+      "bytes": 52243,
+      "sha256": "60141a07442794af224b3e77b847a524e7294ee77ff14812f0503aec14ebb221",
+      "matches": true
+    },
+    {
+      "file": "assets/trek/12/1628-5858.png",
+      "bytes": 55135,
+      "sha256": "5c2040a462feb6d96b40d381e94769d9d3c4c5c5bf12d0d9a6d228f0689bb596",
+      "matches": true
+    },
+    {
+      "file": "assets/trek/12/1628-5859.png",
+      "bytes": 54862,
+      "sha256": "cedcb5b6530dafc1fdb876e99d70a6c1dd4e950e03c7840e9ef8a100b4138273",
+      "matches": true
+    }
+  ],
+  "totalTileBytes": 1356690,
+  "referenceAssets": [
+    {
+      "file": "jezero-geology.pdf",
+      "bytes": 8623899,
+      "sha256": "d4d52e2bde4ec36cfc3a64091c5c7c4bd49b3e3f84add6db942cfac299bf3646"
+    },
+    {
+      "file": "jezero-themis.jpg",
+      "bytes": 86106,
+      "sha256": "9d5c31ef7f77d2543d8bacbeae713d7afbf71211f29953404eaf9aa5ff9a9998"
+    },
+    {
+      "file": "perseverance-delta.jpg",
+      "bytes": 239471,
+      "sha256": "be26297f637ed2bcb06d2f2a70cf1baa6e383ea94d1cf82dbff51a4e64d79696"
+    }
+  ]
+}

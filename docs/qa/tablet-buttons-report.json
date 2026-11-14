@@ -1,0 +1,41 @@
+{
+  "browser": "157.0.4341.57",
+  "runs": [
+    {
+      "width": 1440,
+      "styles": {
+        "background": "rgb(64, 94, 108)",
+        "color": "rgb(224, 230, 233)",
+        "decoration": "none",
+        "height": 44
+      },
+      "backStyle": {
+        "background": "rgb(64, 94, 108)",
+        "decoration": "none",
+        "height": 44
+      },
+      "copy": true,
+      "navigation": true,
+      "noUrlInput": true,
+      "errors": []
+    },
+    {
+      "width": 360,
+      "styles": {
+        "background": "rgb(64, 94, 108)",
+        "color": "rgb(224, 230, 233)",
+        "decoration": "none",
+        "height": 58
+      },
+      "backStyle": {
+        "background": "rgb(64, 94, 108)",
+        "decoration": "none",
+        "height": 44
+      },
+      "copy": true,
+      "navigation": true,
+      "noUrlInput": true,
+      "errors": []
+    }
+  ]
+}
