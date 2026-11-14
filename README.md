@@ -55,3 +55,9 @@ Application software is MIT licensed. React/React DOM are MIT; Lucide icons ISC;
 [Clean documentation index](docs/README.md) · [Status](STATUS.md) · [Architecture](docs/ARCHITECTURE.md) · [Migration report](docs/REACT_MIGRATION_REPORT.md) · [Owner rules](docs/AGENT_RULES_ADDENDUM.md).
 
 Superseded standalone reports and other-agent snapshots have been removed from the active docs tree. Original text, timestamps and hashes are retained in the [evidence bundle](docs/qa/history/markdown-before-cleanup.zip) and [cleanup manifest](docs/qa/history/cleanup-manifest.json).
+
+## GitHub Pages
+
+Publish the Vite output with `.github/workflows/pages.yml`, not the repository root. In GitHub Settings -> Pages -> Build and deployment, select **GitHub Actions**. The workflow tests and builds on pushes to `main`, uploads `dist/`, and deploys that artifact. The relative Vite base (`./`) supports the `/ARES-HUD/` project path and standalone tablet page.
+
+Before pushing, include the build's source disclosures: `docs/DATA_SOURCES.md`, `docs/assets/README.md`, and `docs/THIRD_PARTY.md`. They were untracked during diagnosis; `scripts/prepare-public.mjs` copies them into the built site. Do not commit generated `dist/`, node_modules or browser QA caches. See [deployment diagnosis](docs/GITHUB_PAGES_DIAGNOSIS.md) for verified failures and local checks. Publishing requires the owner's push/settings action; no live repair is claimed by the local workflow alone.
