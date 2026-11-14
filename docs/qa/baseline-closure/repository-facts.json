@@ -1,0 +1,1229 @@
+{
+  "head": "f707f92c334145a199500608fe8e9403416244fb Nov-14: the legacy with old html, css, js files 2026-11-14 21:41:45 +0000",
+  "gitStatus": "?? docs/\n?? react-ui-handoff/README.md\n",
+  "trackedFiles": [
+    ".gitignore",
+    "AGENTS.md",
+    "LICENSE",
+    "README.md",
+    "STATUS.md",
+    "index.html",
+    "legacy/README.md",
+    "legacy/UI/index.html",
+    "legacy/UI/package-lock.json",
+    "legacy/UI/package.json",
+    "legacy/UI/src/App.jsx",
+    "legacy/UI/src/main.jsx",
+    "legacy/UI/src/styles.css",
+    "legacy/app.js",
+    "legacy/assets/geology-service.json",
+    "legacy/assets/jezero-geology.pdf",
+    "legacy/assets/jezero-themis.jpg",
+    "legacy/assets/perseverance-delta.jpg",
+    "legacy/assets/trek-capabilities.xml",
+    "legacy/assets/trek-catalog.json",
+    "legacy/assets/trek-source.json",
+    "legacy/assets/trek/10/406-1464.png",
+    "legacy/assets/trek/10/407-1464.png",
+    "legacy/assets/trek/11/812-2928.png",
+    "legacy/assets/trek/11/812-2929.png",
+    "legacy/assets/trek/11/813-2928.png",
+    "legacy/assets/trek/11/813-2929.png",
+    "legacy/assets/trek/11/814-2928.png",
+    "legacy/assets/trek/11/814-2929.png",
+    "legacy/assets/trek/12/1625-5856.png",
+    "legacy/assets/trek/12/1625-5857.png",
+    "legacy/assets/trek/12/1625-5858.png",
+    "legacy/assets/trek/12/1625-5859.png",
+    "legacy/assets/trek/12/1626-5856.png",
+    "legacy/assets/trek/12/1626-5857.png",
+    "legacy/assets/trek/12/1626-5858.png",
+    "legacy/assets/trek/12/1626-5859.png",
+    "legacy/assets/trek/12/1627-5856.png",
+    "legacy/assets/trek/12/1627-5857.png",
+    "legacy/assets/trek/12/1627-5858.png",
+    "legacy/assets/trek/12/1627-5859.png",
+    "legacy/assets/trek/12/1628-5856.png",
+    "legacy/assets/trek/12/1628-5857.png",
+    "legacy/assets/trek/12/1628-5858.png",
+    "legacy/assets/trek/12/1628-5859.png",
+    "legacy/assets/trek/manifest.json",
+    "legacy/datasets.js",
+    "legacy/exploration.js",
+    "legacy/fog.js",
+    "legacy/fog.test.js",
+    "legacy/geo.js",
+    "legacy/geo.test.js",
+    "legacy/index.html",
+    "legacy/initial-files/LICENSE",
+    "legacy/initial-files/app.js",
+    "legacy/initial-files/index.html",
+    "legacy/initial-files/package.json",
+    "legacy/initial-files/pathfinding.js",
+    "legacy/initial-files/pathfinding.test.js",
+    "legacy/initial-files/styles.css",
+    "legacy/map-crs.js",
+    "legacy/map.js",
+    "legacy/migration-scripts/finalize-layout.py",
+    "legacy/migration-scripts/finish-layout.py",
+    "legacy/migration-scripts/migrate-layout.py",
+    "legacy/migration-scripts/record-migration.py",
+    "legacy/migration-scripts/write-migration-docs.py",
+    "legacy/mission-controls.js",
+    "legacy/mission.js",
+    "legacy/mission.test.js",
+    "legacy/package.json",
+    "legacy/pathfinding.js",
+    "legacy/pathfinding.test.js",
+    "legacy/plan.js",
+    "legacy/plan.test.js",
+    "legacy/sector-layers.js",
+    "legacy/sector.js",
+    "legacy/serve.py",
+    "legacy/sols.js",
+    "legacy/sols.test.js",
+    "legacy/styles.css",
+    "legacy/tablet.html",
+    "legacy/tablet.js",
+    "legacy/vendor/leaflet/LICENSE",
+    "legacy/vendor/leaflet/images/layers-2x.png",
+    "legacy/vendor/leaflet/images/layers.png",
+    "legacy/vendor/leaflet/images/marker-icon-2x.png",
+    "legacy/vendor/leaflet/images/marker-icon.png",
+    "legacy/vendor/leaflet/images/marker-shadow.png",
+    "legacy/vendor/leaflet/leaflet.css",
+    "legacy/vendor/leaflet/leaflet.js",
+    "package-lock.json",
+    "package.json",
+    "public/assets/geology-service.json",
+    "public/assets/jezero-geology.pdf",
+    "public/assets/jezero-themis.jpg",
+    "public/assets/perseverance-delta.jpg",
+    "public/assets/trek-capabilities.xml",
+    "public/assets/trek-catalog.json",
+    "public/assets/trek-source.json",
+    "public/assets/trek/10/406-1464.png",
+    "public/assets/trek/10/407-1464.png",
+    "public/assets/trek/11/812-2928.png",
+    "public/assets/trek/11/812-2929.png",
+    "public/assets/trek/11/813-2928.png",
+    "public/assets/trek/11/813-2929.png",
+    "public/assets/trek/11/814-2928.png",
+    "public/assets/trek/11/814-2929.png",
+    "public/assets/trek/12/1625-5856.png",
+    "public/assets/trek/12/1625-5857.png",
+    "public/assets/trek/12/1625-5858.png",
+    "public/assets/trek/12/1625-5859.png",
+    "public/assets/trek/12/1626-5856.png",
+    "public/assets/trek/12/1626-5857.png",
+    "public/assets/trek/12/1626-5858.png",
+    "public/assets/trek/12/1626-5859.png",
+    "public/assets/trek/12/1627-5856.png",
+    "public/assets/trek/12/1627-5857.png",
+    "public/assets/trek/12/1627-5858.png",
+    "public/assets/trek/12/1627-5859.png",
+    "public/assets/trek/12/1628-5856.png",
+    "public/assets/trek/12/1628-5857.png",
+    "public/assets/trek/12/1628-5858.png",
+    "public/assets/trek/12/1628-5859.png",
+    "public/assets/trek/manifest.json",
+    "public/vendor/leaflet/LICENSE",
+    "public/vendor/leaflet/images/layers-2x.png",
+    "public/vendor/leaflet/images/layers.png",
+    "public/vendor/leaflet/images/marker-icon-2x.png",
+    "public/vendor/leaflet/images/marker-icon.png",
+    "public/vendor/leaflet/images/marker-shadow.png",
+    "public/vendor/leaflet/leaflet.css",
+    "public/vendor/leaflet/leaflet.js",
+    "react-ui-handoff/index.html",
+    "react-ui-handoff/package.json",
+    "react-ui-handoff/src/App.jsx",
+    "react-ui-handoff/src/components/MapPanel.jsx",
+    "react-ui-handoff/src/components/MissionPanel.jsx",
+    "react-ui-handoff/src/components/Modal.jsx",
+    "react-ui-handoff/src/components/SourcesView.jsx",
+    "react-ui-handoff/src/components/TabletView.jsx",
+    "react-ui-handoff/src/components/TelemetryPanel.jsx",
+    "react-ui-handoff/src/components/Timeline.jsx",
+    "react-ui-handoff/src/data/demo.js",
+    "react-ui-handoff/src/main.jsx",
+    "react-ui-handoff/src/styles/main.css",
+    "scripts/browser-qa.mjs",
+    "scripts/fetch-tiles.mjs",
+    "scripts/legacy-qa.mjs",
+    "scripts/prepare-public.mjs",
+    "scripts/static-server.mjs",
+    "scripts/vendor-leaflet.mjs",
+    "serve.py",
+    "src/App.jsx",
+    "src/components/MapPanel.jsx",
+    "src/components/MissionPanel.jsx",
+    "src/components/Modal.jsx",
+    "src/components/SourcesView.jsx",
+    "src/components/TabletView.jsx",
+    "src/components/TelemetryPanel.jsx",
+    "src/components/Timeline.jsx",
+    "src/domain/datasets.js",
+    "src/domain/fog.js",
+    "src/domain/geo.js",
+    "src/domain/map-crs.js",
+    "src/domain/mission.js",
+    "src/domain/pathfinding.js",
+    "src/domain/plan.js",
+    "src/domain/sector.js",
+    "src/domain/sols.js",
+    "src/integrations/map.js",
+    "src/integrations/sector-layers.js",
+    "src/integrations/tablet-bridge.js",
+    "src/integrations/use-mission.js",
+    "src/main.jsx",
+    "src/state/mission-store.js",
+    "src/styles/main.css",
+    "src/tablet-main.jsx",
+    "tablet.html",
+    "tests/fog.test.js",
+    "tests/geo.test.js",
+    "tests/mission-store.test.js",
+    "tests/mission.test.js",
+    "tests/pathfinding.test.js",
+    "tests/plan.test.js",
+    "tests/sols.test.js",
+    "vite.config.js"
+  ],
+  "historicalCommitClaims": [
+    {
+      "id": "0036eac",
+      "type": "commit",
+      "verifiedLocalObject": true
+    },
+    {
+      "id": "0662159",
+      "type": "commit",
+      "verifiedLocalObject": true
+    },
+    {
+      "id": "0806320",
+      "type": "commit",
+      "verifiedLocalObject": true
+    },
+    {
+      "id": "155dd57",
+      "type": "commit",
+      "verifiedLocalObject": true
+    },
+    {
+      "id": "4443777",
+      "type": "commit",
+      "verifiedLocalObject": true
+    },
+    {
+      "id": "500c115",
+      "type": "commit",
+      "verifiedLocalObject": true
+    },
+    {
+      "id": "5d79741",
+      "type": "commit",
+      "verifiedLocalObject": true
+    },
+    {
+      "id": "802e097",
+      "type": "commit",
+      "verifiedLocalObject": true
+    },
+    {
+      "id": "8393743",
+      "type": "commit",
+      "verifiedLocalObject": true
+    },
+    {
+      "id": "900198f",
+      "type": "commit",
+      "verifiedLocalObject": true
+    },
+    {
+      "id": "a2c4abd",
+      "type": "commit",
+      "verifiedLocalObject": true
+    },
+    {
+      "id": "ae0cc4a",
+      "type": "commit",
+      "verifiedLocalObject": true
+    },
+    {
+      "id": "af9ac9e",
+      "type": "commit",
+      "verifiedLocalObject": true
+    },
+    {
+      "id": "e1c6638",
+      "type": "commit",
+      "verifiedLocalObject": true
+    },
+    {
+      "id": "e7f5c4d",
+      "type": "commit",
+      "verifiedLocalObject": true
+    },
+    {
+      "id": "f707f92",
+      "type": "commit",
+      "verifiedLocalObject": true
+    }
+  ],
+  "modules": [
+    {
+      "file": "src/App.jsx",
+      "exports": [
+        "DISCLAIMER",
+        "default"
+      ],
+      "imports": [
+        "react",
+        "lucide-react",
+        "./components/MissionPanel.jsx",
+        "./components/MapPanel.jsx",
+        "./components/TelemetryPanel.jsx",
+        "./components/Timeline.jsx",
+        "./components/Modal.jsx",
+        "./components/TabletView.jsx",
+        "./components/SourcesView.jsx",
+        "./state/mission-store.js",
+        "./integrations/use-mission.js"
+      ],
+      "htmlScripts": []
+    },
+    {
+      "file": "src/main.jsx",
+      "exports": [],
+      "imports": [
+        "react",
+        "react-dom/client",
+        "./App.jsx",
+        "./styles/main.css"
+      ],
+      "htmlScripts": []
+    },
+    {
+      "file": "src/tablet-main.jsx",
+      "exports": [],
+      "imports": [
+        "react",
+        "react-dom/client",
+        "./components/TabletView.jsx",
+        "./styles/main.css"
+      ],
+      "htmlScripts": []
+    },
+    {
+      "file": "src/components/MapPanel.jsx",
+      "exports": [
+        "default"
+      ],
+      "imports": [
+        "react",
+        "lucide-react",
+        "../integrations/map.js",
+        "../integrations/sector-layers.js",
+        "../domain/geo.js",
+        "../domain/sector.js"
+      ],
+      "htmlScripts": []
+    },
+    {
+      "file": "src/components/MissionPanel.jsx",
+      "exports": [
+        "default"
+      ],
+      "imports": [
+        "lucide-react"
+      ],
+      "htmlScripts": []
+    },
+    {
+      "file": "src/components/Modal.jsx",
+      "exports": [
+        "default"
+      ],
+      "imports": [
+        "react",
+        "lucide-react"
+      ],
+      "htmlScripts": []
+    },
+    {
+      "file": "src/components/SourcesView.jsx",
+      "exports": [
+        "default"
+      ],
+      "imports": [
+        "react",
+        "lucide-react",
+        "../domain/datasets.js"
+      ],
+      "htmlScripts": []
+    },
+    {
+      "file": "src/components/TabletView.jsx",
+      "exports": [
+        "default"
+      ],
+      "imports": [
+        "react",
+        "lucide-react",
+        "../integrations/tablet-bridge.js",
+        "../integrations/use-mission.js",
+        "./MapPanel.jsx"
+      ],
+      "htmlScripts": []
+    },
+    {
+      "file": "src/components/TelemetryPanel.jsx",
+      "exports": [
+        "default"
+      ],
+      "imports": [
+        "lucide-react"
+      ],
+      "htmlScripts": []
+    },
+    {
+      "file": "src/components/Timeline.jsx",
+      "exports": [
+        "default"
+      ],
+      "imports": [
+        "lucide-react",
+        "../state/mission-store.js"
+      ],
+      "htmlScripts": []
+    },
+    {
+      "file": "src/domain/datasets.js",
+      "exports": [
+        "datasets"
+      ],
+      "imports": [],
+      "htmlScripts": []
+    },
+    {
+      "file": "src/domain/fog.js",
+      "exports": [
+        "revealTrail",
+        "applyRecon"
+      ],
+      "imports": [],
+      "htmlScripts": []
+    },
+    {
+      "file": "src/domain/geo.js",
+      "exports": [
+        "cellLat",
+        "cellLng",
+        "gridToLatLng",
+        "gridCornerToLatLng",
+        "latLngToGrid",
+        "metersBetween",
+        "bearing",
+        "tileIndex",
+        "sectorSpanMeters",
+        "tileRange"
+      ],
+      "imports": [
+        "./map-crs.js"
+      ],
+      "htmlScripts": []
+    },
+    {
+      "file": "src/domain/map-crs.js",
+      "exports": [
+        "MARS_RADIUS",
+        "METRES_PER_DEGREE",
+        "createMarsEq",
+        "MARS_EQ",
+        "marsDistance"
+      ],
+      "imports": [],
+      "htmlScripts": []
+    },
+    {
+      "file": "src/domain/mission.js",
+      "exports": [
+        "planMission",
+        "moveStop",
+        "layerState"
+      ],
+      "imports": [
+        "./pathfinding.js"
+      ],
+      "htmlScripts": []
+    },
+    {
+      "file": "src/domain/pathfinding.js",
+      "exports": [
+        "SIZE",
+        "HAB",
+        "SCIENCE",
+        "createGrid",
+        "findPath"
+      ],
+      "imports": [],
+      "htmlScripts": []
+    },
+    {
+      "file": "src/domain/plan.js",
+      "exports": [
+        "checksum",
+        "validatePlan",
+        "makePlan",
+        "serializePlan",
+        "parsePlan"
+      ],
+      "imports": [
+        "./sector.js"
+      ],
+      "htmlScripts": []
+    },
+    {
+      "file": "src/domain/sector.js",
+      "exports": [
+        "SECTOR",
+        "TILE_BOUNDS",
+        "MAX_NATIVE_ZOOM",
+        "MIN_ZOOM",
+        "MAX_ZOOM"
+      ],
+      "imports": [
+        "./map-crs.js"
+      ],
+      "htmlScripts": []
+    },
+    {
+      "file": "src/domain/sols.js",
+      "exports": [
+        "createSols",
+        "buildSol",
+        "positionAt"
+      ],
+      "imports": [
+        "./mission.js",
+        "./pathfinding.js",
+        "./sector.js"
+      ],
+      "htmlScripts": []
+    },
+    {
+      "file": "src/integrations/map.js",
+      "exports": [
+        "PANE_Z",
+        "createSectorMap"
+      ],
+      "imports": [
+        "../domain/map-crs.js",
+        "../domain/sector.js"
+      ],
+      "htmlScripts": []
+    },
+    {
+      "file": "src/integrations/sector-layers.js",
+      "exports": [
+        "drawGrid",
+        "drawHazards",
+        "drawRoute",
+        "drawMarkers"
+      ],
+      "imports": [
+        "../domain/sector.js",
+        "../domain/geo.js"
+      ],
+      "htmlScripts": []
+    },
+    {
+      "file": "src/integrations/tablet-bridge.js",
+      "exports": [
+        "receiveTabletPlan"
+      ],
+      "imports": [
+        "../domain/plan.js",
+        "../state/mission-store.js"
+      ],
+      "htmlScripts": []
+    },
+    {
+      "file": "src/integrations/use-mission.js",
+      "exports": [
+        "useMission"
+      ],
+      "imports": [
+        "react"
+      ],
+      "htmlScripts": []
+    },
+    {
+      "file": "src/state/mission-store.js",
+      "exports": [
+        "days",
+        "trailMetres",
+        "createMissionStore"
+      ],
+      "imports": [
+        "../domain/pathfinding.js",
+        "../domain/mission.js",
+        "../domain/sector.js",
+        "../domain/geo.js",
+        "../domain/sols.js",
+        "../domain/fog.js",
+        "../domain/plan.js"
+      ],
+      "htmlScripts": []
+    },
+    {
+      "file": "scripts/browser-qa.mjs",
+      "exports": [],
+      "imports": [
+        "playwright-core",
+        "node:assert/strict",
+        "node:fs",
+        "../src/state/mission-store.js",
+        "../src/domain/plan.js",
+        "../src/domain/sector.js",
+        "./static-server.mjs"
+      ],
+      "htmlScripts": []
+    },
+    {
+      "file": "scripts/fetch-tiles.mjs",
+      "exports": [],
+      "imports": [
+        "node:fs",
+        "node:path",
+        "node:crypto",
+        "../src/domain/sector.js",
+        "../src/domain/geo.js"
+      ],
+      "htmlScripts": []
+    },
+    {
+      "file": "scripts/legacy-qa.mjs",
+      "exports": [],
+      "imports": [
+        "playwright-core",
+        "./static-server.mjs",
+        "node:fs"
+      ],
+      "htmlScripts": []
+    },
+    {
+      "file": "scripts/prepare-public.mjs",
+      "exports": [],
+      "imports": [
+        "node:fs",
+        "node:path"
+      ],
+      "htmlScripts": []
+    },
+    {
+      "file": "scripts/static-server.mjs",
+      "exports": [
+        "staticServer"
+      ],
+      "imports": [
+        "node:http",
+        "node:fs/promises",
+        "node:path",
+        "node:url"
+      ],
+      "htmlScripts": []
+    },
+    {
+      "file": "scripts/vendor-leaflet.mjs",
+      "exports": [],
+      "imports": [
+        "node:fs",
+        "node:crypto"
+      ],
+      "htmlScripts": []
+    },
+    {
+      "file": "tests/fog.test.js",
+      "exports": [],
+      "imports": [
+        "node:test",
+        "node:assert/strict",
+        "../src/domain/fog.js",
+        "../src/domain/pathfinding.js",
+        "../src/domain/sector.js"
+      ],
+      "htmlScripts": []
+    },
+    {
+      "file": "tests/geo.test.js",
+      "exports": [],
+      "imports": [
+        "node:test",
+        "node:assert/strict",
+        "../src/domain/sector.js",
+        "../src/domain/geo.js",
+        "../src/domain/map-crs.js"
+      ],
+      "htmlScripts": []
+    },
+    {
+      "file": "tests/mission-store.test.js",
+      "exports": [],
+      "imports": [
+        "node:test",
+        "node:assert/strict",
+        "node:fs",
+        "node:crypto",
+        "../src/state/mission-store.js",
+        "../src/integrations/tablet-bridge.js",
+        "../src/domain/pathfinding.js",
+        "../src/domain/mission.js",
+        "../src/domain/sector.js",
+        "../src/domain/plan.js"
+      ],
+      "htmlScripts": []
+    },
+    {
+      "file": "tests/mission.test.js",
+      "exports": [],
+      "imports": [
+        "node:test",
+        "node:assert/strict",
+        "node:fs",
+        "../src/domain/mission.js",
+        "../src/domain/pathfinding.js",
+        "../src/domain/datasets.js"
+      ],
+      "htmlScripts": []
+    },
+    {
+      "file": "tests/pathfinding.test.js",
+      "exports": [],
+      "imports": [
+        "node:test",
+        "node:assert/strict",
+        "../src/domain/pathfinding.js"
+      ],
+      "htmlScripts": []
+    },
+    {
+      "file": "tests/plan.test.js",
+      "exports": [],
+      "imports": [
+        "node:test",
+        "node:assert/strict",
+        "../src/domain/plan.js",
+        "../src/domain/sector.js"
+      ],
+      "htmlScripts": []
+    },
+    {
+      "file": "tests/sols.test.js",
+      "exports": [],
+      "imports": [
+        "node:test",
+        "node:assert/strict",
+        "../src/domain/sols.js",
+        "../src/domain/sector.js",
+        "../src/domain/pathfinding.js"
+      ],
+      "htmlScripts": []
+    },
+    {
+      "file": "legacy/app.js",
+      "exports": [],
+      "imports": [
+        "./mission-controls.js",
+        "./mission.js",
+        "./pathfinding.js",
+        "./sector.js",
+        "./map.js",
+        "./sector-layers.js",
+        "./geo.js"
+      ],
+      "htmlScripts": []
+    },
+    {
+      "file": "legacy/browser-test.html",
+      "exports": [],
+      "imports": [
+        "./map-crs.js",
+        "./sector.js",
+        "./geo.js",
+        "./plan.js",
+        "./pathfinding.js",
+        "./mission.js",
+        "./fog.js"
+      ],
+      "htmlScripts": [
+        "vendor/leaflet/leaflet.js"
+      ]
+    },
+    {
+      "file": "legacy/datasets.js",
+      "exports": [
+        "datasets"
+      ],
+      "imports": [],
+      "htmlScripts": []
+    },
+    {
+      "file": "legacy/exploration.js",
+      "exports": [],
+      "imports": [
+        "./datasets.js"
+      ],
+      "htmlScripts": []
+    },
+    {
+      "file": "legacy/fog.js",
+      "exports": [
+        "revealTrail",
+        "applyRecon"
+      ],
+      "imports": [],
+      "htmlScripts": []
+    },
+    {
+      "file": "legacy/fog.test.js",
+      "exports": [],
+      "imports": [
+        "node:test",
+        "node:assert/strict",
+        "./fog.js",
+        "./pathfinding.js",
+        "./sector.js"
+      ],
+      "htmlScripts": []
+    },
+    {
+      "file": "legacy/geo.js",
+      "exports": [
+        "cellLat",
+        "cellLng",
+        "gridToLatLng",
+        "gridCornerToLatLng",
+        "latLngToGrid",
+        "metersBetween",
+        "bearing",
+        "tileIndex",
+        "sectorSpanMeters",
+        "tileRange"
+      ],
+      "imports": [
+        "./map-crs.js"
+      ],
+      "htmlScripts": []
+    },
+    {
+      "file": "legacy/geo.test.js",
+      "exports": [],
+      "imports": [
+        "node:test",
+        "node:assert/strict",
+        "./sector.js",
+        "./geo.js",
+        "./map-crs.js"
+      ],
+      "htmlScripts": []
+    },
+    {
+      "file": "legacy/index.html",
+      "exports": [],
+      "imports": [],
+      "htmlScripts": [
+        "vendor/leaflet/leaflet.js",
+        "app.js",
+        "exploration.js"
+      ]
+    },
+    {
+      "file": "legacy/map-crs.js",
+      "exports": [
+        "MARS_RADIUS",
+        "METRES_PER_DEGREE",
+        "createMarsEq",
+        "MARS_EQ",
+        "marsDistance"
+      ],
+      "imports": [],
+      "htmlScripts": []
+    },
+    {
+      "file": "legacy/map.js",
+      "exports": [
+        "PANE_Z",
+        "createSectorMap"
+      ],
+      "imports": [
+        "./map-crs.js",
+        "./sector.js"
+      ],
+      "htmlScripts": []
+    },
+    {
+      "file": "legacy/mission-controls.js",
+      "exports": [
+        "mountMissionControls"
+      ],
+      "imports": [
+        "./plan.js",
+        "./sols.js",
+        "./fog.js",
+        "./pathfinding.js",
+        "./mission.js",
+        "./sector.js",
+        "./geo.js",
+        "./sector-layers.js"
+      ],
+      "htmlScripts": []
+    },
+    {
+      "file": "legacy/mission.js",
+      "exports": [
+        "planMission",
+        "moveStop",
+        "layerState"
+      ],
+      "imports": [
+        "./pathfinding.js"
+      ],
+      "htmlScripts": []
+    },
+    {
+      "file": "legacy/mission.test.js",
+      "exports": [],
+      "imports": [
+        "node:test",
+        "node:assert/strict",
+        "node:fs",
+        "./mission.js",
+        "./pathfinding.js",
+        "./datasets.js"
+      ],
+      "htmlScripts": []
+    },
+    {
+      "file": "legacy/pathfinding.js",
+      "exports": [
+        "SIZE",
+        "HAB",
+        "SCIENCE",
+        "createGrid",
+        "findPath"
+      ],
+      "imports": [],
+      "htmlScripts": []
+    },
+    {
+      "file": "legacy/pathfinding.test.js",
+      "exports": [],
+      "imports": [
+        "node:test",
+        "node:assert/strict",
+        "./pathfinding.js"
+      ],
+      "htmlScripts": []
+    },
+    {
+      "file": "legacy/plan.js",
+      "exports": [
+        "checksum",
+        "validatePlan",
+        "makePlan",
+        "serializePlan",
+        "parsePlan"
+      ],
+      "imports": [
+        "./sector.js"
+      ],
+      "htmlScripts": []
+    },
+    {
+      "file": "legacy/plan.test.js",
+      "exports": [],
+      "imports": [
+        "node:test",
+        "node:assert/strict",
+        "./plan.js",
+        "./sector.js"
+      ],
+      "htmlScripts": []
+    },
+    {
+      "file": "legacy/sector-layers.js",
+      "exports": [
+        "drawGrid",
+        "drawHazards",
+        "drawRoute",
+        "drawMarkers"
+      ],
+      "imports": [
+        "./sector.js",
+        "./geo.js"
+      ],
+      "htmlScripts": []
+    },
+    {
+      "file": "legacy/sector.js",
+      "exports": [
+        "SECTOR",
+        "TILE_BOUNDS",
+        "MAX_NATIVE_ZOOM",
+        "MIN_ZOOM",
+        "MAX_ZOOM"
+      ],
+      "imports": [
+        "./map-crs.js"
+      ],
+      "htmlScripts": []
+    },
+    {
+      "file": "legacy/sols.js",
+      "exports": [
+        "createSols",
+        "buildSol",
+        "positionAt"
+      ],
+      "imports": [
+        "./mission.js",
+        "./pathfinding.js",
+        "./sector.js"
+      ],
+      "htmlScripts": []
+    },
+    {
+      "file": "legacy/sols.test.js",
+      "exports": [],
+      "imports": [
+        "node:test",
+        "node:assert/strict",
+        "./sols.js",
+        "./sector.js",
+        "./pathfinding.js"
+      ],
+      "htmlScripts": []
+    },
+    {
+      "file": "legacy/tablet.html",
+      "exports": [],
+      "imports": [],
+      "htmlScripts": [
+        "vendor/leaflet/leaflet.js",
+        "tablet.js"
+      ]
+    },
+    {
+      "file": "legacy/tablet.js",
+      "exports": [],
+      "imports": [
+        "./plan.js",
+        "./map.js",
+        "./sector-layers.js",
+        "./pathfinding.js",
+        "./mission.js",
+        "./geo.js",
+        "./sector.js",
+        "./fog.js"
+      ],
+      "htmlScripts": []
+    },
+    {
+      "file": "legacy/initial-files/app.js",
+      "exports": [],
+      "imports": [
+        "./pathfinding.js"
+      ],
+      "htmlScripts": []
+    },
+    {
+      "file": "legacy/initial-files/index.html",
+      "exports": [],
+      "imports": [],
+      "htmlScripts": [
+        "app.js"
+      ]
+    },
+    {
+      "file": "legacy/initial-files/pathfinding.js",
+      "exports": [
+        "SIZE",
+        "HAB",
+        "SCIENCE",
+        "createGrid",
+        "findPath"
+      ],
+      "imports": [],
+      "htmlScripts": []
+    },
+    {
+      "file": "legacy/initial-files/pathfinding.test.js",
+      "exports": [],
+      "imports": [
+        "node:test",
+        "node:assert/strict",
+        "./pathfinding.js"
+      ],
+      "htmlScripts": []
+    },
+    {
+      "file": "legacy/UI/index.html",
+      "exports": [],
+      "imports": [],
+      "htmlScripts": [
+        "/src/main.jsx"
+      ]
+    },
+    {
+      "file": "legacy/vendor/leaflet/leaflet.js",
+      "exports": [],
+      "imports": [],
+      "htmlScripts": []
+    },
+    {
+      "file": "legacy/UI/src/App.jsx",
+      "exports": [
+        "default"
+      ],
+      "imports": [
+        "react",
+        "./styles.css"
+      ],
+      "htmlScripts": []
+    },
+    {
+      "file": "legacy/UI/src/main.jsx",
+      "exports": [],
+      "imports": [
+        "react",
+        "react-dom/client",
+        "./App.jsx"
+      ],
+      "htmlScripts": []
+    },
+    {
+      "file": "react-ui-handoff/index.html",
+      "exports": [],
+      "imports": [],
+      "htmlScripts": [
+        "/src/main.jsx"
+      ]
+    },
+    {
+      "file": "react-ui-handoff/src/App.jsx",
+      "exports": [
+        "default"
+      ],
+      "imports": [
+        "react",
+        "lucide-react",
+        "./components/MissionPanel.jsx",
+        "./components/MapPanel.jsx",
+        "./components/TelemetryPanel.jsx",
+        "./components/Timeline.jsx",
+        "./components/Modal.jsx",
+        "./components/TabletView.jsx",
+        "./components/SourcesView.jsx",
+        "./data/demo.js"
+      ],
+      "htmlScripts": []
+    },
+    {
+      "file": "react-ui-handoff/src/main.jsx",
+      "exports": [],
+      "imports": [
+        "react",
+        "react-dom/client",
+        "./App.jsx",
+        "./styles/main.css"
+      ],
+      "htmlScripts": []
+    },
+    {
+      "file": "react-ui-handoff/src/components/MapPanel.jsx",
+      "exports": [
+        "default"
+      ],
+      "imports": [
+        "react",
+        "lucide-react"
+      ],
+      "htmlScripts": []
+    },
+    {
+      "file": "react-ui-handoff/src/components/MissionPanel.jsx",
+      "exports": [
+        "default"
+      ],
+      "imports": [
+        "lucide-react"
+      ],
+      "htmlScripts": []
+    },
+    {
+      "file": "react-ui-handoff/src/components/Modal.jsx",
+      "exports": [
+        "default"
+      ],
+      "imports": [
+        "react",
+        "lucide-react"
+      ],
+      "htmlScripts": []
+    },
+    {
+      "file": "react-ui-handoff/src/components/SourcesView.jsx",
+      "exports": [
+        "default"
+      ],
+      "imports": [
+        "lucide-react",
+        "../data/demo.js"
+      ],
+      "htmlScripts": []
+    },
+    {
+      "file": "react-ui-handoff/src/components/TabletView.jsx",
+      "exports": [
+        "default"
+      ],
+      "imports": [
+        "lucide-react"
+      ],
+      "htmlScripts": []
+    },
+    {
+      "file": "react-ui-handoff/src/components/TelemetryPanel.jsx",
+      "exports": [
+        "default"
+      ],
+      "imports": [
+        "lucide-react"
+      ],
+      "htmlScripts": []
+    },
+    {
+      "file": "react-ui-handoff/src/components/Timeline.jsx",
+      "exports": [
+        "default"
+      ],
+      "imports": [
+        "lucide-react"
+      ],
+      "htmlScripts": []
+    },
+    {
+      "file": "react-ui-handoff/src/data/demo.js",
+      "exports": [
+        "INITIAL_STOPS",
+        "SOURCES",
+        "SOLS"
+      ],
+      "imports": [],
+      "htmlScripts": []
+    }
+  ]
+}

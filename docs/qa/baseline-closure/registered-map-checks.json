@@ -1,0 +1,281 @@
+{
+  "browser": "157.0.4341.57",
+  "at": "2026-11-14T21:40:24.223Z",
+  "runs": [
+    {
+      "width": 1440,
+      "initial": {
+        "zoom": 12,
+        "containsSector": true
+      },
+      "measurements": [
+        {
+          "zoom": 11,
+          "markers": [
+            {
+              "label": "Hab, simulated position. Plan a route to the Hab",
+              "width": 44,
+              "height": 44,
+              "error": 0
+            },
+            {
+              "label": "Delta front concept, simulated science stop 1. Select as destination",
+              "width": 44,
+              "height": 44,
+              "error": 0
+            },
+            {
+              "label": "Channel mouth concept, simulated science stop 2. Select as destination",
+              "width": 44,
+              "height": 44,
+              "error": 0
+            },
+            {
+              "label": "Distal lobe concept, simulated science stop 3. Select as destination",
+              "width": 44,
+              "height": 44,
+              "error": 0
+            }
+          ],
+          "routeVertices": 20,
+          "maxRouteError": 0
+        },
+        {
+          "zoom": 12,
+          "markers": [
+            {
+              "label": "Hab, simulated position. Plan a route to the Hab",
+              "width": 44,
+              "height": 44,
+              "error": 0
+            },
+            {
+              "label": "Delta front concept, simulated science stop 1. Select as destination",
+              "width": 44,
+              "height": 44,
+              "error": 0
+            },
+            {
+              "label": "Channel mouth concept, simulated science stop 2. Select as destination",
+              "width": 44,
+              "height": 44,
+              "error": 0
+            },
+            {
+              "label": "Distal lobe concept, simulated science stop 3. Select as destination",
+              "width": 44,
+              "height": 44,
+              "error": 0
+            }
+          ],
+          "routeVertices": 20,
+          "maxRouteError": 0
+        },
+        {
+          "zoom": 13,
+          "markers": [
+            {
+              "label": "Hab, simulated position. Plan a route to the Hab",
+              "width": 44,
+              "height": 44,
+              "error": 0
+            },
+            {
+              "label": "Delta front concept, simulated science stop 1. Select as destination",
+              "width": 44,
+              "height": 44,
+              "error": 0
+            },
+            {
+              "label": "Channel mouth concept, simulated science stop 2. Select as destination",
+              "width": 44,
+              "height": 44,
+              "error": 0
+            },
+            {
+              "label": "Distal lobe concept, simulated science stop 3. Select as destination",
+              "width": 44,
+              "height": 44,
+              "error": 0
+            }
+          ],
+          "routeVertices": 20,
+          "maxRouteError": 0
+        }
+      ],
+      "extent": {
+        "northSouth": 3999.9999999998645,
+        "eastWest": 3999.9999740861863,
+        "cellWidthPixels": 10
+      },
+      "spike": {
+        "world": {
+          "x": 512,
+          "y": 256
+        },
+        "northwest": {
+          "x": 0,
+          "y": 0
+        },
+        "southeast": {
+          "x": 512,
+          "y": 256
+        },
+        "degree": 59274.69752330622,
+        "tile10": {
+          "x": 374528,
+          "y": 103168
+        },
+        "tile12": {
+          "x": 1499648,
+          "y": 416768
+        }
+      },
+      "expectedReadoutCell": {
+        "x": 20,
+        "y": 20
+      },
+      "leaflet": "1.9.4",
+      "readout": "DERIVED: 18.50916 N, 77.42589 E · grid cell 20, 20 (row 0 = north)",
+      "errors": []
+    },
+    {
+      "width": 360,
+      "initial": {
+        "zoom": 11,
+        "containsSector": true
+      },
+      "measurements": [
+        {
+          "zoom": 11,
+          "markers": [
+            {
+              "label": "Hab, simulated position. Plan a route to the Hab",
+              "width": 44,
+              "height": 44,
+              "error": 0
+            },
+            {
+              "label": "Delta front concept, simulated science stop 1. Select as destination",
+              "width": 44,
+              "height": 44,
+              "error": 0
+            },
+            {
+              "label": "Channel mouth concept, simulated science stop 2. Select as destination",
+              "width": 44,
+              "height": 44,
+              "error": 0
+            },
+            {
+              "label": "Distal lobe concept, simulated science stop 3. Select as destination",
+              "width": 44,
+              "height": 44,
+              "error": 0
+            }
+          ],
+          "routeVertices": 20,
+          "maxRouteError": 0
+        },
+        {
+          "zoom": 12,
+          "markers": [
+            {
+              "label": "Hab, simulated position. Plan a route to the Hab",
+              "width": 44,
+              "height": 44,
+              "error": 0
+            },
+            {
+              "label": "Delta front concept, simulated science stop 1. Select as destination",
+              "width": 44,
+              "height": 44,
+              "error": 0
+            },
+            {
+              "label": "Channel mouth concept, simulated science stop 2. Select as destination",
+              "width": 44,
+              "height": 44,
+              "error": 0
+            },
+            {
+              "label": "Distal lobe concept, simulated science stop 3. Select as destination",
+              "width": 44,
+              "height": 44,
+              "error": 0
+            }
+          ],
+          "routeVertices": 20,
+          "maxRouteError": 0
+        },
+        {
+          "zoom": 13,
+          "markers": [
+            {
+              "label": "Hab, simulated position. Plan a route to the Hab",
+              "width": 44,
+              "height": 44,
+              "error": 0
+            },
+            {
+              "label": "Delta front concept, simulated science stop 1. Select as destination",
+              "width": 44,
+              "height": 44,
+              "error": 0
+            },
+            {
+              "label": "Channel mouth concept, simulated science stop 2. Select as destination",
+              "width": 44,
+              "height": 44,
+              "error": 0
+            },
+            {
+              "label": "Distal lobe concept, simulated science stop 3. Select as destination",
+              "width": 44,
+              "height": 44,
+              "error": 0
+            }
+          ],
+          "routeVertices": 20,
+          "maxRouteError": 0
+        }
+      ],
+      "extent": {
+        "northSouth": 3999.9999999998645,
+        "eastWest": 3999.9999740861863,
+        "cellWidthPixels": 10
+      },
+      "spike": {
+        "world": {
+          "x": 512,
+          "y": 256
+        },
+        "northwest": {
+          "x": 0,
+          "y": 0
+        },
+        "southeast": {
+          "x": 512,
+          "y": 256
+        },
+        "degree": 59274.69752330622,
+        "tile10": {
+          "x": 374528,
+          "y": 103168
+        },
+        "tile12": {
+          "x": 1499648,
+          "y": 416768
+        }
+      },
+      "expectedReadoutCell": {
+        "x": 20,
+        "y": 20
+      },
+      "leaflet": "1.9.4",
+      "readout": "DERIVED: 18.50916 N, 77.42589 E · grid cell 20, 20 (row 0 = north)",
+      "errors": []
+    }
+  ],
+  "errors": []
+}
