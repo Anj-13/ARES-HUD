@@ -8,6 +8,10 @@ The supplied layout, components, icons, typography and responsive breakpoints no
 
 Eight simulated Sol excursions use the original cost interpolation, playback and mission logs. Optional reconnaissance outlines unknown planning cells and penalizes uncertainty without masking observed imagery. The tablet validates input-only plan snapshots and independently recomputes routes; dust, return and reset are local to the tablet. Sources retains NASA/USGS credits, source notes, reference imagery, geology units and scientific limitations. Globe remains an explicitly unimplemented placeholder.
 
+## Planned / gated work
+
+Globe remains a placeholder; numerical elevation/slope, QR and synchronization retain their separate gates. Public deployment, physical touch devices and assistive technology remain unverified. Preflight, historical/local-link reconciliation, qualitative CTX/PDF comparison and registered-map revalidation evidence is in the [baseline closure report](docs/BASELINE_CLOSURE_REPORT.md); task acceptance is recorded only in STATUS.md.
+
 ## Run and test
 
 Node 24.22.1 and npm were used for verification. From the repository root:
@@ -30,7 +34,7 @@ For an ordinary static server after building: `python serve.py` serves `dist/` a
 
 `src/components/` holds the supplied UI; `src/domain/` holds scientific and mission logic; `src/integrations/` adapts Leaflet/tablet; `src/state/` owns mission inputs and derived results. `public/` contains original assets, vendor files and generated source/license disclosures. Tests are in `tests/`; acquisition and QA tools are in `scripts/`; supporting documentation and QA evidence are in `docs/`.
 
-`legacy/` preserves the original app, original tests, assets, vendor licenses, earlier UI and initial-files snapshots. Run `python serve.py --directory legacy --port 8013` for the old application. No dependency installation or build is needed for that recovery path. The supplied `react-ui-handoff/` and its pre-existing staged changes remain untouched. No commit or deployment was made during migration.
+`legacy/` preserves the original app, original tests, assets, vendor licenses, earlier UI and initial-files snapshots. Run `python serve.py --directory legacy --port 8013` for the old application. No dependency installation or build is needed for that recovery path. The original `react-ui-handoff/` scaffold is optional and may be deleted; its [integration notes and removal boundaries](docs/REACT_MIGRATION_REPORT.md#handoff-folder-removal) are preserved independently of that folder. Historical reports record their original Git state; see STATUS.md for the current baseline. No public deployment is verified.
 
 ## Deployment
 
@@ -48,4 +52,6 @@ Application software is MIT licensed. React/React DOM are MIT; Lucide icons ISC;
 
 ## Documentation
 
-[Navigation](docs/README.md) · [Status](STATUS.md) · [Architecture](docs/ARCHITECTURE.md) · [Migration report](docs/REACT_MIGRATION_REPORT.md) · [Owner rules](docs/AGENT_RULES_ADDENDUM.md).
+[Clean documentation index](docs/README.md) · [Status](STATUS.md) · [Architecture](docs/ARCHITECTURE.md) · [Migration report](docs/REACT_MIGRATION_REPORT.md) · [Owner rules](docs/AGENT_RULES_ADDENDUM.md).
+
+Superseded standalone reports and other-agent snapshots have been removed from the active docs tree. Original text, timestamps and hashes are retained in the [evidence bundle](docs/qa/history/markdown-before-cleanup.zip) and [cleanup manifest](docs/qa/history/cleanup-manifest.json).

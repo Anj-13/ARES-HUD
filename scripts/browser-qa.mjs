@@ -87,7 +87,7 @@ async function run(width,reduced=false){
    await button('Plan selected traverse').click();const desktopMetrics=await metrics();
    await button('SEND TO TABLET').click();const dialog=page.getByRole('dialog');
    await dialog.locator('#tablet-map .leaflet-tile-loaded').first().waitFor();
-   const encoded=await dialog.locator('.plan-url').inputValue();
+   const encoded=await dialog.getByRole('link',{name:'Open independent tablet in another window'}).getAttribute('href');
    assert.match(await dialog.innerText(),new RegExp(desktopMetrics.match(/([\d.]+) cost units/)[1].replace('.','\\.')));
    await dialog.getByRole('button',{name:'Simulate dust hazard',exact:true}).click();
    assert.equal(await metrics(),desktopMetrics);

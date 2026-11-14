@@ -10,6 +10,7 @@
 
 
 /* Integration additions; supplied panel layout and visual tokens retained. */
+.tablet-actions{display:flex;flex-wrap:wrap;gap:10px}.tablet-actions a.button{color:#e0e6e9;text-decoration:none;text-align:center;overflow-wrap:normal}
 .position-control{display:flex;flex-direction:column;gap:6px;margin-bottom:16px}.position-control select{background:#405e6c;color:#e0e6e9;border:0;border-radius:8px;min-height:40px;padding:8px}
 .tablet-warning{position:sticky;top:0;z-index:1001;background:#172b36;border-bottom:1px solid #668391;padding:8px;margin:0 0 8px;font-size:12px;line-height:1.4}.footer{position:sticky;bottom:0;z-index:1001;background:#14232c;padding:8px 0}
 [hidden]{display:none!important}.leaflet-container{background:#17252b;font-family:inherit}.map-host{z-index:0}.leaflet-control-attribution{font-size:10px}.leaflet-control-scale-line{color:#152a36}.map-host .leaflet-bar a{color:#182e39}.leaflet-container button{font-family:inherit}
