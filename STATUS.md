@@ -41,3 +41,9 @@ Previously executed browser/build evidence retained in the closure/migration rep
 Option 2: Sunday 15 November 2026, GMT (Europe/London): feature cutoff 13:30, dependency/data freeze 14:30, public deployment verification 15:15, final Git commit 15:45, code freeze 16:00. Submission is 23:59 in the verified event-local timezone, not automatically GMT. Video follows freeze. React + Vite is explicitly approved by addendum section 7; runtime remains static with no backend/external service. Globe/terrain gates are unaffected.
 
 Hackathon planning demonstrator. Routes and hazards are simulated; not flight-qualified navigation.
+
+## GitHub Pages diagnosis - 14 November 2026
+
+PUBLIC DEPLOYMENT FAILED: live index.html is raw Vite source; actual Edge navigation observed empty #root, 400 placeholder Leaflet requests and 404 /src/main.jsx. Remote main 96f0dcf has no Pages build workflow. Prepared .github/workflows/pages.yml to test/build and deploy dist/; no commit/push/deployment/settings change performed. Three source disclosure files needed by the build are untracked and absent from main; owner must include them. See docs/GITHUB_PAGES_DIAGNOSIS.md.
+
+Local deployment candidate validation: npm.cmd test 39/39, npm.cmd run build passed, npm.cmd run test:production passed 36 grouped browser checks across 1440/768/360px and reduced-motion 360px, no runtime errors or failed local assets. Published repair and Actions execution remain NOT VERIFIED pending owner publication.
