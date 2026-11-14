@@ -11,7 +11,7 @@ function draw() {
     if(text) node.textContent=text;
     svg.append(node); return node;
   }
-  grid.forEach((row,y)=>row.forEach((cell,x)=>shape('rect',{x:x*10,y:y*10,width:10,height:10,fill:cell.hazard?'#a85132':cell.penalty?'#293638':'#15232b',stroke:'#34434b','stroke-width':.35})));
+  grid.forEach((row,y)=>row.forEach((cell,x)=>shape('rect',{x:x*10,y:y*10,width:10,height:10,fill:cell.hazard?'#a85132':cell.penalty?'#293638':'#15232b','fill-opacity':cell.hazard ? .85 : .25,stroke:'#34434b','stroke-width':.35})));
   const route=(r,color,dash)=>{if(r) shape('polyline',{points:r.path.map(p=>`${p.x*10+5},${p.y*10+5}`).join(' '),fill:'none',stroke:color,'stroke-width':2.5,'stroke-dasharray':dash});};
   route(before,'#bac4ca','4 4'); route(result,'#79e9cc','none');
   shape('rect',{x:HAB.x*10-2,y:HAB.y*10-2,width:14,height:14,fill:'#bce6f7'});
@@ -30,3 +30,12 @@ $('position').onchange=()=>{current=$('position').value==='hab'?HAB:SCIENCE;draw
 $('return').onclick=()=>{goal=HAB;draw();};
 $('reset').onclick=()=>{hazard=false;current=HAB;goal=SCIENCE;$('position').value='hab';draw();};
 draw();
+
+const basemap=$('basemap');
+function failed(image,message){image.hidden=true;$('image-status').textContent=message;}
+basemap.onerror=()=>failed(basemap,'Orbital image unavailable. Simulated routing remains usable.');
+if(basemap.complete && !basemap.naturalWidth) basemap.onerror();
+$('imagery').onchange=()=>{basemap.hidden=!$('imagery').checked;};
+const surface=$('surface');
+surface.onerror=()=>failed(surface,'Surface image unavailable; use the source link.');
+if(surface.complete && !surface.naturalWidth) surface.onerror();
