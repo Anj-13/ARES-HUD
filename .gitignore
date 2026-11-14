@@ -36,6 +36,12 @@ bin/
 
 ### Markdown files in every directory ###
 **/*.md
+!AGENTS.md
+!README.md
+!STATUS.md
+!docs/**/*.md
+!react-ui-handoff/README.md
+!legacy/README.md
 
 ### etc ###
 .browser-qa/
@@ -48,3 +54,8 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 .npm/
+
+### Generated production disclosures (prepared on every build) ###
+public/docs/
+public/licenses/
+public/LICENSE
