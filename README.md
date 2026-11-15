@@ -60,3 +60,8 @@ Superseded standalone reports and other-agent snapshots have been removed from t
 
 ## Illustrative planetary overview
 The Globe view now opens a lazy interactive stylized Mars sphere with original procedural artwork. Drag/touch or use arrow keys; +/? zoom and Home resets. Explore Jezero preserves the existing surface mission. This SIMULATED artwork has no geographic registration or real rover markers. Three.js r160 (MIT) is vendored and its licence ships with the application. See [report](docs/SIMPLIFIED_GLOBE_REPORT.md).
+## GitHub Pages
+
+Publish the Vite output with `.github/workflows/pages.yml`, not the repository root. In GitHub Settings -> Pages -> Build and deployment, select **GitHub Actions**. The workflow tests and builds on pushes to `main`, uploads `dist/`, and deploys that artifact. The relative Vite base (`./`) supports the `/ARES-HUD/` project path and standalone tablet page.
+
+Before pushing, include the build's source disclosures: `docs/DATA_SOURCES.md`, `docs/assets/README.md`, and `docs/THIRD_PARTY.md`. They were untracked during diagnosis; `scripts/prepare-public.mjs` copies them into the built site. Do not commit generated `dist/`, node_modules or browser QA caches. See [deployment diagnosis](docs/GITHUB_PAGES_DIAGNOSIS.md) for verified failures and local checks. Publishing requires the owner's push/settings action; no live repair is claimed by the local workflow alone.
