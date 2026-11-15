@@ -46,3 +46,13 @@ Previously executed browser/build evidence retained in the closure/migration rep
 Option 2: Sunday 15 November 2026, GMT (Europe/London): feature cutoff 13:30, dependency/data freeze 14:30, public deployment verification 15:15, final Git commit 15:45, code freeze 16:00. Submission is 23:59 in the verified event-local timezone, not automatically GMT. Video follows freeze. React + Vite is explicitly approved by addendum section 7; runtime remains static with no backend/external service. Globe/terrain gates are unaffected.
 
 Hackathon planning demonstrator. Routes and hazards are simulated; not flight-qualified navigation.
+
+## Task 7 continuation - 15 November 2026
+
+NO-GO for globe merge. Branch 3D-globe; no implementation or deployment. MSSS original mosaic is areographic/west-positive; Trek transformation and marker compatibility remain unresolved. See docs/GLOBE_IMPLEMENTATION_REPORT.md. Restored three missing build disclosures from matching public/docs and dist/docs copies. npm run build now passes (1600 modules). Previous Node run: 39 passed. Production browser recheck completed: 36 grouped checks passed, zero failures. It began while the build was completing, so this is not an isolated clean-build certification. Earlier browser pass after failed build used stale dist and is not fresh-build evidence.
+
+## Simplified illustrative globe - owner-authorized scope, 15 November 2026
+
+DONE: illustrative planetary overview on 3D-globe, uncommitted. Original procedural artwork; no NASA globe texture, registration, precise coordinates or rover markers. Original accurate Task 7 remains blocked and is not superseded scientifically. Explore Jezero preserves the existing store and Leaflet instance.
+
+Verification: 39 Node tests; production build passed; 40 grouped development browser checks and 36 production checks passed. Dedicated globe tests passed desktop and 360px touch/reduced-motion, three lifecycle cycles each, rotation/zoom/reset/keyboard, Explore Jezero/state preservation, nested path and forced WebGL failure. Resource disposal implemented and source-inspected; long-duration GPU/heap leak profiling and physical devices remain unverified. See docs/SIMPLIFIED_GLOBE_REPORT.md. GO for owner review/merge of this reduced scope only. No merge/deployment/main change performed.

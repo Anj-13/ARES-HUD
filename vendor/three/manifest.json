@@ -1,0 +1,18 @@
+{
+  "version": "r160",
+  "license": "MIT",
+  "files": [
+    {
+      "path": "vendor/three/three.module.js",
+      "bytes": 1272972,
+      "sha256": "76dea8151bc9352aef3528b4262e249b2604f62543828328db978d060d61a495",
+      "source": "https://raw.githubusercontent.com/mrdoob/three.js/r160/build/three.module.js"
+    },
+    {
+      "path": "vendor/three/LICENSE",
+      "bytes": 1081,
+      "sha256": "852e0e8699169bf9f6fdc6bda3e682d078dcbc738b5d33e74df594721bff271d",
+      "source": "https://raw.githubusercontent.com/mrdoob/three.js/r160/LICENSE"
+    }
+  ]
+}

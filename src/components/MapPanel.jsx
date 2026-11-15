@@ -1,11 +1,14 @@
-import {useEffect,useRef,useState} from 'react';
+import {Component,lazy,Suspense,useEffect,useRef,useState} from 'react';
 import {RotateCcw,MapPinned} from 'lucide-react';
 import {createSectorMap} from '../integrations/map.js';
 import {drawGrid,drawHazards,drawRoute,drawMarkers} from '../integrations/sector-layers.js';
 import {gridCornerToLatLng,latLngToGrid} from '../domain/geo.js';
 import {SECTOR} from '../domain/sector.js';
 
-export default function MapPanel({state,actions,view='map',fullscreen=false,compact=false}){
+const PlanetaryGlobe=lazy(()=>import('./PlanetaryGlobe.jsx'));
+class GlobeBoundary extends Component {state={failed:false};static getDerivedStateFromError(){return {failed:true};}render(){return this.state.failed?<div className="planetary-overview"><h3>Illustrative Planetary Overview</h3><p>3D unavailable.</p><button className="button" onClick={this.props.onExplore}>Explore Jezero</button></div>:this.props.children;}}
+
+export default function MapPanel({state,actions,view='map',fullscreen=false,compact=false,onExplore}){
  const host=useRef(null),live=useRef(null),callbacks=useRef(actions);
  callbacks.current=actions;
  const [readout,setReadout]=useState('DERIVED coordinates: move over the map.'),[tileError,setTileError]=useState(''),[zoom,setZoom]=useState(12);
@@ -41,11 +44,11 @@ export default function MapPanel({state,actions,view='map',fullscreen=false,comp
  useEffect(()=>{const frame=requestAnimationFrame(()=>live.current?.invalidate());return()=>cancelAnimationFrame(frame);},[fullscreen,view]);
  const toggle=key=>setLayers(s=>({...s,[key]:!s[key]}));
  return <section className={'map-panel panel '+(compact?'compact-map':'')}>
- <div className="map-top"><div><h2 className="eyebrow">{view==='map'?'MARS MAP':'MARS GLOBE'}</h2><h3>{view==='map'?'Registered surface map · Jezero':'Planetary mode · Mars'}</h3><p className="muted small">SIMULATED SECTOR / OBSERVED IMAGERY</p></div><MapPinned size={24} className="muted-icon"/></div>
+ <div className="map-top"><div><h2 className="eyebrow">{view==='map'?'MARS MAP':'MARS GLOBE'}</h2><h3>{view==='map'?'Registered surface map · Jezero':'Planetary mode · Mars'}</h3><p className="muted small">{view==='map'?'SIMULATED SECTOR / OBSERVED IMAGERY':'SIMULATED PLANETARY ARTWORK'}</p></div><MapPinned size={24} className="muted-icon"/></div>
  <div className="map-surface"><div ref={host} className="map-host" id={compact?'tablet-map':'mars-map'} aria-label="Registered NASA Jezero Mars map" style={{visibility:view==='map'?'visible':'hidden'}}/>
- {view!=='map'&&<div className="globe-placeholder"><div className="globe-art" aria-hidden="true"/><h3>3D Mars globe</h3><p>Planned feature. No globe renderer is connected.</p></div>}</div>
- <div className="map-bottom"><span>H Hab · 1–3 Science stops · ● Position<br/>Solid: proposed / traveled · Dashed: before dust / future</span><button className="button" onClick={()=>live.current?.resetView()}><RotateCcw size={15}/> Reset view</button></div>
- <p className="tiny muted" role="status">{readout} {tileError} {zoom>12?'Overzoom: level 12 enlarged; no extra detail.':''}</p>
- {!compact&&<details className="layer-options"><summary>Layers & provenance</summary><div className="layer-controls">{[['tiles','OBSERVED orbital imagery'],['grid','SIMULATED sector grid'],['markers','SIMULATED mission markers'],['hazards','SIMULATED hazard shading']].map(([key,label])=><label key={key}><input type="checkbox" checked={layers[key]} onChange={()=>toggle(key)}/>{label}</label>)}<label>Orbital opacity <input aria-label="Orbital opacity" type="range" min="0" max="1" step=".05" value={opacity} onChange={e=>setOpacity(Number(e.target.value))}/></label></div><p className="tiny">40 × 40 nominal 100 m cells. DERIVED bounds: {SECTOR.bounds.west.toFixed(5)}–{SECTOR.bounds.east.toFixed(5)} E, {SECTOR.bounds.south.toFixed(5)}–{SECTOR.bounds.north.toFixed(5)} N. Sector placement and all stops are hypothetical; coordinate arithmetic uses the Mars 2000 sphere. Hazard blocking remains active when shading is hidden.</p></details>}
+ {view!=='map'&&<GlobeBoundary onExplore={onExplore}><Suspense fallback={<div className="planetary-overview"><p>Loading illustrative globe?</p><button className="button" onClick={onExplore}>Explore Jezero</button></div>}><PlanetaryGlobe onExplore={onExplore}/></Suspense></GlobeBoundary>}</div>
+ <div className="map-bottom" hidden={view!=='map'}><span>H Hab · 1–3 Science stops · ● Position<br/>Solid: proposed / traveled · Dashed: before dust / future</span><button className="button" onClick={()=>live.current?.resetView()}><RotateCcw size={15}/> Reset view</button></div>
+ <p hidden={view!=='map'} className="tiny muted" role="status">{readout} {tileError} {zoom>12?'Overzoom: level 12 enlarged; no extra detail.':''}</p>
+ {!compact&&view==='map'&&<details className="layer-options"><summary>Layers & provenance</summary><div className="layer-controls">{[['tiles','OBSERVED orbital imagery'],['grid','SIMULATED sector grid'],['markers','SIMULATED mission markers'],['hazards','SIMULATED hazard shading']].map(([key,label])=><label key={key}><input type="checkbox" checked={layers[key]} onChange={()=>toggle(key)}/>{label}</label>)}<label>Orbital opacity <input aria-label="Orbital opacity" type="range" min="0" max="1" step=".05" value={opacity} onChange={e=>setOpacity(Number(e.target.value))}/></label></div><p className="tiny">40 × 40 nominal 100 m cells. DERIVED bounds: {SECTOR.bounds.west.toFixed(5)}–{SECTOR.bounds.east.toFixed(5)} E, {SECTOR.bounds.south.toFixed(5)}–{SECTOR.bounds.north.toFixed(5)} N. Sector placement and all stops are hypothetical; coordinate arithmetic uses the Mars 2000 sphere. Hazard blocking remains active when shading is hidden.</p></details>}
  </section>;
 }

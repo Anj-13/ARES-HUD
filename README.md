@@ -57,3 +57,6 @@ Application software is MIT licensed. React/React DOM are MIT; Lucide icons ISC;
 [Clean documentation index](docs/README.md) · [Status](STATUS.md) · [Architecture](docs/ARCHITECTURE.md) · [Migration report](docs/REACT_MIGRATION_REPORT.md) · [Owner rules](docs/AGENT_RULES_ADDENDUM.md).
 
 Superseded standalone reports and other-agent snapshots have been removed from the active docs tree. Original text, timestamps and hashes are retained in the [evidence bundle](docs/qa/history/markdown-before-cleanup.zip) and [cleanup manifest](docs/qa/history/cleanup-manifest.json).
+
+## Illustrative planetary overview
+The Globe view now opens a lazy interactive stylized Mars sphere with original procedural artwork. Drag/touch or use arrow keys; +/? zoom and Home resets. Explore Jezero preserves the existing surface mission. This SIMULATED artwork has no geographic registration or real rover markers. Three.js r160 (MIT) is vendored and its licence ships with the application. See [report](docs/SIMPLIFIED_GLOBE_REPORT.md).
