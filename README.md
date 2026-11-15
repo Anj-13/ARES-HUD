@@ -10,7 +10,7 @@ Eight simulated Sol excursions use the original cost interpolation, playback and
 
 ## Planned / gated work
 
-Globe remains a placeholder; numerical elevation/slope, QR and synchronization retain their separate gates. The [public app](https://anj-13.github.io/ARES-HUD/) is deployed and HTTP-checked; full live-browser acceptance, physical touch devices and assistive technology remain unverified. Preflight, historical/local-link reconciliation, qualitative CTX/PDF comparison and registered-map revalidation evidence is in the [baseline closure report](docs/BASELINE_CLOSURE_REPORT.md); task acceptance is recorded only in STATUS.md.
+Illustrative Globe view is now available without geographic registration; numerical elevation/slope, QR and synchronization retain their separate gates. The [public app](https://anj-13.github.io/ARES-HUD/) is deployed and HTTP-checked; full live-browser acceptance, physical touch devices and assistive technology remain unverified. Preflight, historical/local-link reconciliation, qualitative CTX/PDF comparison and registered-map revalidation evidence is in the [baseline closure report](docs/BASELINE_CLOSURE_REPORT.md); task acceptance is recorded only in STATUS.md.
 
 ## Run and test
 
