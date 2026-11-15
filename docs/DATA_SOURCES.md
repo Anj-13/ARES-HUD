@@ -155,7 +155,7 @@ https://{WMTS endpoint}/1.0.0/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{Ti
 
 Some layers use JPG. Parse each actual layer's GetCapabilities XML for ResourceURL/extension, endpoint, layer ID, style, TileMatrixSet, SupportedCRS, levels/limits, coverage, origin and tile geometry. Missing tiles can indicate no coverage. The existing Jezero CTX cache is regional; it does not prove global coverage or compatibility with a globe. Mars Trek supplies imagery services, not the globe renderer, navigation engine, mission simulator or route algorithm.
 
-No global layer, downloadable globe texture, renderer, rover coordinate dataset, globe credit or new hash is verified/acquired by this update. Candidate availability, reuse/conversion permission, projection/UV orientation, seams/poles, size, browser CORS when applicable and offline behavior remain Task 7 spike work. Existing local cache hashes above are unchanged. Browser CORS is not inferred from server-side downloads or documentation access.
+No global data layer, downloadable globe texture, rover coordinate dataset or globe credit is verified/acquired by this update. The illustrative Three.js renderer is now vendored for the reduced-scope globe; candidate availability, reuse/conversion permission, projection/UV orientation, seams/poles, size, browser CORS when applicable and offline behavior remain Task 7 spike work. Existing local cache hashes above are unchanged. Browser CORS is not inferred from server-side downloads or documentation access.
 
 | Reference URL supplied by owner | Role / verification still required |
 | --- | --- |
