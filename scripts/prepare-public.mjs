@@ -7,3 +7,5 @@ for(const name of ['react','react-dom','scheduler','lucide-react']){
  const directory=path.join('public/licenses',name);fs.mkdirSync(directory,{recursive:true});fs.copyFileSync(path.join('node_modules',name,'LICENSE'),path.join(directory,'LICENSE'));
 }
 fs.copyFileSync('LICENSE','public/LICENSE');
+
+fs.mkdirSync('public/licenses/three',{recursive:true});fs.copyFileSync('vendor/three/LICENSE','public/licenses/three/LICENSE');

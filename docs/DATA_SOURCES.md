@@ -143,7 +143,7 @@ Related verified service metadata: https://tiles.arcgis.com/tiles/v01gqwM5QqNysA
 
 The exact requested portals were revisited. Worldview remains workflow inspiration only (layer discovery, opacity and source cards); no Earth imagery/API used. Curiosity's Mount Sharp page supplies the annotated traverse concept only; no Gale geometry is imported. Existing PIA24485 remains the sole rover observation: verified published product, not a raw-gallery frame. Raw gallery renders a JavaScript shell through available research tools; no extra images or unverified metadata were added. No surface image is matched to the hypothetical stops.
 
-No external JavaScript libraries or framework were introduced. New code and documentation assisted by OpenAI Codex. NASA/USGS assets have their own credits, separate from MIT application code.
+Three.js r160 is now vendored for the illustrative globe; no new imagery or scientific datasets were introduced. New code and documentation assisted by OpenAI Codex. NASA/USGS assets have their own credits, separate from MIT application code.
 
 ## v0.3 Mars Trek WMTS API reference - no globe asset acquired
 
@@ -155,7 +155,7 @@ https://{WMTS endpoint}/1.0.0/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{Ti
 
 Some layers use JPG. Parse each actual layer's GetCapabilities XML for ResourceURL/extension, endpoint, layer ID, style, TileMatrixSet, SupportedCRS, levels/limits, coverage, origin and tile geometry. Missing tiles can indicate no coverage. The existing Jezero CTX cache is regional; it does not prove global coverage or compatibility with a globe. Mars Trek supplies imagery services, not the globe renderer, navigation engine, mission simulator or route algorithm.
 
-No global layer, downloadable globe texture, renderer, rover coordinate dataset, globe credit or new hash is verified/acquired by this update. Candidate availability, reuse/conversion permission, projection/UV orientation, seams/poles, size, browser CORS when applicable and offline behavior remain Task 7 spike work. Existing local cache hashes above are unchanged. Browser CORS is not inferred from server-side downloads or documentation access.
+No global data layer, downloadable globe texture, rover coordinate dataset or globe credit is verified/acquired by this update. The illustrative Three.js renderer is now vendored for the reduced-scope globe; candidate availability, reuse/conversion permission, projection/UV orientation, seams/poles, size, browser CORS when applicable and offline behavior remain Task 7 spike work. Existing local cache hashes above are unchanged. Browser CORS is not inferred from server-side downloads or documentation access.
 
 | Reference URL supplied by owner | Role / verification still required |
 | --- | --- |
@@ -177,7 +177,7 @@ Classification: source imagery OBSERVED; verified coordinate/texture conversions
 
 Tablet, Sol and reconnaissance work reused the existing 24 local CTX tiles; all hashes and bytes were rechecked, with zero mismatches. No production NASA/USGS asset or dependency was added or changed. Reconnaissance, Sols and additional route penalties are SIMULATED, never new NASA data.
 
-A separate ignored `.browser-qa/globe-spike/` experiment downloaded two global MGS MOC PNG tiles and the MIT Three.js r160 module/licence. Exact sources, retrieval date, bytes and SHA-256 are in [GATED_FEATURE_SPIKES.md](GATED_FEATURE_SPIKES.md). These are QA-only, not production assets or approval to publish them. Numeric elevation acquisition stopped on HTTP 403; no DEM metadata or derived slope is claimed. References for the current release remain the sources above plus Codex implementation assistance; include new external assets only if later approved and actually shipped.
+A separate ignored `.browser-qa/globe-spike/` experiment downloaded two global MGS MOC PNG tiles; those tiles remain QA-only and are not production assets. The MIT Three.js r160 module/licence from that spike is reused by the production globe and is documented in [THIRD_PARTY.md](THIRD_PARTY.md). Numeric elevation acquisition stopped on HTTP 403; no DEM metadata or derived slope is claimed.
 
 
 ## React migration path mapping — 14 November 2026

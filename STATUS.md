@@ -4,6 +4,10 @@ Only this file records task acceptance. Latest implementation acceptance is from
 
 Latest UI verification: tablet navigation links use the shared button style; raw plan-URL field removed, with copy and direct navigation retained. Production Edge checks passed at 1440 and 360 px, including clipboard and nested-path navigation. `npm.cmd test`: 39 passed, 0 failed; production build: exit 0. Evidence: [tablet-buttons-report.json](docs/qa/tablet-buttons-report.json). This scoped UI check does not repeat the full browser suites or change existing release gates.
 
+## Public deployment - 14 November 2026
+
+Live application: [https://anj-13.github.io/ARES-HUD/](https://anj-13.github.io/ARES-HUD/), deployment confirmed by the owner. Fresh HTTP checks returned 200 for the entry page (ARES-HUD / Mission control), its referenced built JavaScript bundle, vendored Leaflet script and tablet.html. Entry response is text/html; JavaScript responses have script MIME types. See [request evidence](docs/qa/public-deployment-check.json). The entry references a built bundle rather than raw JSX. This verifies availability only: live route/tablet interactions, complete asset/network loading, deployed revision, private-window and physical-device acceptance remain unverified. The research browser could not open the site; direct Python HTTPS checks succeeded.
+
 ## Current baseline
 
 Current HEAD inspected: `f707f92c334145a199500608fe8e9403416244fb` (14 November 2026, 21:41:45 GMT). Current source is the React/Vite application with pure mission engines and Leaflet 1.9.4. Git status at cleanup start shows documentation changes/untracked docs, not production-code differences; older reports' uncommitted wording describes their original pass, not a present code delta.
@@ -25,13 +29,14 @@ Previously executed browser/build evidence retained in the closure/migration rep
 | 6 Simulated reconnaissance | DONE | Deterministic reveal/uncertainty tests and outline-only planning fog, reached-cell handoff; observed imagery remains visible |
 | 7 Planetary globe | IN PROGRESS - investigation only | GATED_FEATURE_SPIKES.md: disposable renderer/texture spike; no production renderer, verified mission markers or full acceptance/owner go |
 | 5 Terrain costs | IN PROGRESS - investigation only | Numeric DEM investigation blocked; no qualifying raster/slope/cost integration; separate owner gate remains |
-| Public deployment / submission | NOT VERIFIED | No public URL, owner private-window or portal confirmation |
+| Public deployment | DEPLOYED - HTTP VERIFIED | Owner supplied live GitHub Pages URL; entry, built bundle, Leaflet and tablet entry returned HTTP 200; browser acceptance still pending |
+| Official submission | NOT VERIFIED | No event portal/submission confirmation |
 
 ## Resolved local findings and remaining gaps
 
 - RESOLVED locally: absent NASA imagery, unregistered surface grid, no-route UI coverage, identical-endpoint dust copy, marker sizing, grid-cell/bounds readouts and old Markdown-link issues. Evidence is in the closure report; fixes are not attributed to this cleanup.
 - RESOLVED documentation drift: older 8/14/22/33-test, 16-tile, split-viewport and no-build summaries were superseded. Standalone historical docs are removed; originals remain in the [snapshot bundle](docs/qa/history/markdown-before-cleanup.zip), with [manifest](docs/qa/history/cleanup-manifest.json).
-- OPEN: physical phone/touch, screen-reader and cross-browser acceptance, public HTTP/MIME/network/owner-private-window checks, freeze revision/tag and official eligibility/submission/video.
+- OPEN: physical phone/touch, screen-reader and cross-browser acceptance, full live asset/network and owner-private-window checks, freeze revision/tag and official eligibility/submission/video.
 - OPEN: globe coordinate conventions, landmark mapping, lifecycle/performance budgets and separate owner go/no-go; no numerical terrain integration or geology-to-grid identify.
 - UNVERIFIED / intentionally not claimed: raw rover frame ID and photo at a hypothetical stop. USGS PDF page 2 is a unit key; drawings are pages 1/3. Neither PDF nor THEMIS is georegistered to the grid.
 - MODEL LIMITS: Sol replay is a fixed simulated reference, reconnaissance replans a candidate from the reached cell, and all astronaut locations/costs/hazards/schedules/sensor effects are simulated, not operational telemetry or safety evidence.
@@ -42,6 +47,15 @@ Option 2: Sunday 15 November 2026, GMT (Europe/London): feature cutoff 13:30, de
 
 Hackathon planning demonstrator. Routes and hazards are simulated; not flight-qualified navigation.
 
+## Task 7 continuation - 15 November 2026
+
+NO-GO for globe merge. Branch 3D-globe; no implementation or deployment. MSSS original mosaic is areographic/west-positive; Trek transformation and marker compatibility remain unresolved. See docs/GLOBE_IMPLEMENTATION_REPORT.md. Restored three missing build disclosures from matching public/docs and dist/docs copies. npm run build now passes (1600 modules). Previous Node run: 39 passed. Production browser recheck completed: 36 grouped checks passed, zero failures. It began while the build was completing, so this is not an isolated clean-build certification. Earlier browser pass after failed build used stale dist and is not fresh-build evidence.
+
+## Simplified illustrative globe - owner-authorized scope, 15 November 2026
+
+DONE: illustrative planetary overview on 3D-globe, uncommitted. Original procedural artwork; no NASA globe texture, registration, precise coordinates or rover markers. Original accurate Task 7 remains blocked and is not superseded scientifically. Explore Jezero preserves the existing store and Leaflet instance.
+
+Verification: 39 Node tests; production build passed; 40 grouped development browser checks and 36 production checks passed. Dedicated globe tests passed desktop and 360px touch/reduced-motion, three lifecycle cycles each, rotation/zoom/reset/keyboard, Explore Jezero/state preservation, nested path and forced WebGL failure. Resource disposal implemented and source-inspected; long-duration GPU/heap leak profiling and physical devices remain unverified. See docs/SIMPLIFIED_GLOBE_REPORT.md. GO for owner review/merge of this reduced scope only. No merge/deployment/main change performed.
 ## GitHub Pages diagnosis - 14 November 2026
 
 PUBLIC DEPLOYMENT FAILED: live index.html is raw Vite source; actual Edge navigation observed empty #root, 400 placeholder Leaflet requests and 404 /src/main.jsx. Remote main 96f0dcf has no Pages build workflow. Prepared .github/workflows/pages.yml to test/build and deploy dist/; no commit/push/deployment/settings change performed. Three source disclosure files needed by the build are untracked and absent from main; owner must include them. See docs/GITHUB_PAGES_DIAGNOSIS.md.

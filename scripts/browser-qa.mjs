@@ -65,7 +65,7 @@ async function run(width,reduced=false){
    if(dev)await page.evaluate(()=>{const e=document.querySelector('#mars-map');window.__qaMap=e.__map;window.__qaCenter=e.__map.getCenter();window.__qaZoom=e.__map.getZoom();});
    await button('MAP').click();await page.waitForTimeout(150);assert.equal(await page.locator('.mission-panel').count(),0);
    await button('EXIT FULLSCREEN').click();await page.waitForTimeout(150);
-   await button('GLOBE').click();assert.match(await page.locator('.globe-placeholder').innerText(),/No globe renderer/);
+   await button('GLOBE').click();await page.getByRole('heading',{name:'Illustrative Planetary Overview'}).waitFor();
    await button('MAP').click();
    if(dev)assert.ok(await page.evaluate(()=>{const m=document.querySelector('#mars-map').__map;return m===window.__qaMap&&Math.abs(m.getCenter().lng-window.__qaCenter.lng)<1e-6&&Math.abs(m.getCenter().lat-window.__qaCenter.lat)<1e-6&&m.getZoom()===window.__qaZoom;}));
  });
