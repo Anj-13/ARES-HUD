@@ -1,63 +1,73 @@
-# ARES-HUD status
+# ARES-HUD verification and release status
 
-Only this file records task acceptance. Latest implementation acceptance is from [baseline closure](docs/BASELINE_CLOSURE_REPORT.md) and [React migration evidence](docs/REACT_MIGRATION_REPORT.md), recorded 14 November 2026. This cleanup consolidates those accepted results; it does not rerun browser acceptance or promote a gated feature.
+Only this file records task acceptance. The owner designates current application code as the final hackathon submission version. Documentation/release audit: **15 November 2026**. Initial HEAD was **`3d20ff4`** (illustrative Globe merge, 00:52:32 GMT); another process subsequently committed the icon as **`de93039`** (01:26:46 GMT). Final verification covers that HEAD plus preserved uncommitted favicon references and documentation changes. The documentation agent changed no feature, algorithm, UI, dependency or deployment configuration and made no commit, push, publication, settings change or NASA submission.
 
-Latest UI verification: tablet navigation links use the shared button style; raw plan-URL field removed, with copy and direct navigation retained. Production Edge checks passed at 1440 and 360 px, including clipboard and nested-path navigation. `npm.cmd test`: 39 passed, 0 failed; production build: exit 0. Evidence: [tablet-buttons-report.json](docs/qa/tablet-buttons-report.json). This scoped UI check does not repeat the full browser suites or change existing release gates.
+[Final audit and exact command logs](docs/qa/final-release/audit.json) distinguish current execution from earlier reports. Current runtime is React/Vite with Leaflet Surface Mode and a separate Three.js illustrative Globe. Source disclosures and other current supporting documents must be included in the final documentation commit; several reports/policies remain untracked locally.
 
-## Public deployment - 14 November 2026
+## Implemented and accepted locally
 
-Live application: [https://anj-13.github.io/ARES-HUD/](https://anj-13.github.io/ARES-HUD/), deployment confirmed by the owner. Fresh HTTP checks returned 200 for the entry page (ARES-HUD / Mission control), its referenced built JavaScript bundle, vendored Leaflet script and tablet.html. Entry response is text/html; JavaScript responses have script MIME types. See [request evidence](docs/qa/public-deployment-check.json). The entry references a built bundle rather than raw JSX. This verifies availability only: live route/tablet interactions, complete asset/network loading, deployed revision, private-window and physical-device acceptance remain unverified. The research browser could not open the site; direct Python HTTPS checks succeeded.
+Existing acceptance is retained and supported by current Node/production regression checks; earlier specialized checks remain dated evidence.
 
-## Current baseline
-
-Current HEAD inspected: `f707f92c334145a199500608fe8e9403416244fb` (14 November 2026, 21:41:45 GMT). Current source is the React/Vite application with pure mission engines and Leaflet 1.9.4. Git status at cleanup start shows documentation changes/untracked docs, not production-code differences; older reports' uncommitted wording describes their original pass, not a present code delta.
-
-Fresh cleanup check: `npm.cmd test` passed **39 tests, 0 failed, 0 skipped/cancelled**, 2271.3069 ms. Counts: routing 8, mission 5, geography 9, plan 5, Sol 3, reconnaissance 3, mission-store/integrity 6. The suite checks all 24 current CTX tiles against manifest bytes/SHA-256. Cache: 1,356,690 bytes at levels 10/11/12 (2/6/16 tiles).
-
-Previously executed browser/build evidence retained in the closure/migration reports: Edge desktop/360 px/reduced motion, 243 original browser assertions, 40 React development groups, 36 nested static-production groups, strict <=1 px map alignment at zooms 11/12/13, 4 km extents, 44 px controls, grid readout/bounds and tile/no-route recovery. These runs are retained evidence, **not rerun in this documentation-only cleanup**. No public deployment is inferred.
-
-## Task acceptance
-
-| Task / capability | Status | Evidence / boundary |
+| Capability / task | Status | Supporting evidence and boundary |
 | --- | --- | --- |
-| 0 Preflight | DONE | Closure: source matrices, point-in-time PNG/PDF probes, hashes, extent arithmetic and qualitative CTX/PDF comparison |
-| 0D Documentation baseline | DONE | Closure: historical reconciliation, full inventory and path/anchor audit; later cleanup described in docs/README.md |
-| 1 Registered Leaflet map | DONE | Closure: original Mars CRS retained in React, strict alignment/extent/cell/control checks and pointer grid/sector readouts |
-| React/Vite integration | DONE | Migration: supplied components, original pure engines, independent tablet store, lifecycle and two-entry static build |
-| 3 Send to Tablet | DONE | Migration/browser evidence: input-only validated snapshots, independent A*, local dust/return/reset and invalid/blocked plan states; QR/sync deferred |
-| 2 Sol timeline | DONE | Eight simulated reference excursions; cost interpolation, scrub/play/pause/speed/log and marker checks; optional mid-Sol events deferred |
-| 6 Simulated reconnaissance | DONE | Deterministic reveal/uncertainty tests and outline-only planning fog, reached-cell handoff; observed imagery remains visible |
-| 7 Planetary globe | IN PROGRESS - investigation only | GATED_FEATURE_SPIKES.md: disposable renderer/texture spike; no production renderer, verified mission markers or full acceptance/owner go |
-| 5 Terrain costs | IN PROGRESS - investigation only | Numeric DEM investigation blocked; no qualifying raster/slope/cost integration; separate owner gate remains |
-| Public deployment | DEPLOYED - HTTP VERIFIED | Owner supplied live GitHub Pages URL; entry, built bundle, Leaflet and tablet entry returned HTTP 200; browser acceptance still pending |
-| Official submission | NOT VERIFIED | No event portal/submission confirmation |
+| Task 0 preflight and Task 0D baseline | DONE | [Baseline closure](docs/BASELINE_CLOSURE_REPORT.md): matrices, dated source probes, hashes, CTX/PDF comparison and original document audit; current asset/link checks re-executed |
+| Task 1 registered Leaflet surface map | DONE | Closure strict projection/extent/control tests; fresh production QA checks map loading, scale, attribution, keyboard and routing |
+| React/Vite integration | DONE | [Migration report](docs/REACT_MIGRATION_REPORT.md), fresh build and 36 production groups; two relative-path entries |
+| Multi-stop A*, simulated dust, arrival, Return to Hab | DONE | Current routing/mission/store tests and production interactions; explicit no-route state; costs remain simulated |
+| Task 3 validated independent tablet | DONE | Plan/store tests and production handoff, local dust/return/reset and invalid/blocked states; QR/sync absent |
+| Task 2 Sol timeline | DONE | Eight simulated reference excursions, interpolation tests and production scrub/play/log checks; optional mid-Sol events deferred |
+| Task 6 simulated reconnaissance | DONE | Deterministic reveal/uncertainty tests and production controls; observed imagery stays visible; no sensor claim |
+| Reduced illustrative Globe scope | DONE | Merge 3d20ff4, [dedicated earlier evidence](docs/SIMPLIFIED_GLOBE_REPORT.md), source/renderer hash inspection and current production view-switch regression; original procedural SIMULATED artwork only |
 
-## Resolved local findings and remaining gaps
+The illustrative feature does **not** fulfill the original scientifically registered NASA-textured Task 7. Three.js r160 provides rendering, not Mars observations. No real rover markers, geographic Globe registration or exact global texture is shipped.
 
-- RESOLVED locally: absent NASA imagery, unregistered surface grid, no-route UI coverage, identical-endpoint dust copy, marker sizing, grid-cell/bounds readouts and old Markdown-link issues. Evidence is in the closure report; fixes are not attributed to this cleanup.
-- RESOLVED documentation drift: older 8/14/22/33-test, 16-tile, split-viewport and no-build summaries were superseded. Standalone historical docs are removed; originals remain in the [snapshot bundle](docs/qa/history/markdown-before-cleanup.zip), with [manifest](docs/qa/history/cleanup-manifest.json).
-- OPEN: physical phone/touch, screen-reader and cross-browser acceptance, full live asset/network and owner-private-window checks, freeze revision/tag and official eligibility/submission/video.
-- OPEN: globe coordinate conventions, landmark mapping, lifecycle/performance budgets and separate owner go/no-go; no numerical terrain integration or geology-to-grid identify.
-- UNVERIFIED / intentionally not claimed: raw rover frame ID and photo at a hypothetical stop. USGS PDF page 2 is a unit key; drawings are pages 1/3. Neither PDF nor THEMIS is georegistered to the grid.
-- MODEL LIMITS: Sol replay is a fixed simulated reference, reconnaissance replans a candidate from the reached cell, and all astronaut locations/costs/hazards/schedules/sensor effects are simulated, not operational telemetry or safety evidence.
+## Implemented with outstanding release verification
 
-## Release schedule and policy
+During the audit, another process added an SVG app icon and favicon references to both HTML entries. These edits were preserved and build/production checks were repeated. The owner confirmed it is a generated website image; DATA_SOURCES.md records that provenance without inventing a generating tool or specific reuse terms. It is UI artwork, not a new NASA resource.
 
-Option 2: Sunday 15 November 2026, GMT (Europe/London): feature cutoff 13:30, dependency/data freeze 14:30, public deployment verification 15:15, final Git commit 15:45, code freeze 16:00. Submission is 23:59 in the verified event-local timezone, not automatically GMT. Video follows freeze. React + Vite is explicitly approved by addendum section 7; runtime remains static with no backend/external service. Globe/terrain gates are unaffected.
+| Area | Verified scope | Remaining limitation |
+| --- | --- | --- |
+| Desktop/tablet/mobile interface | Headless Edge viewport tests at 1440, 768 and 360 px; reduced-motion 360 px | Physical phone/touch, screen-reader and broad cross-browser certification not established |
+| Globe interaction and cleanup | Earlier dedicated keyboard/touch-emulation/WebGL-fallback/lifecycle checks; current production view transition | Dedicated suite not rerun in final audit; sustained GPU/heap profiling and real hardware remain unverified |
+| Static production site | Fresh build and local nested `/ares-hud/` browser run, no runtime errors/failed local assets in tested flows | Full public-site interaction/private-window acceptance and exact deployed-commit attribution remain separate |
+| Final submission package | Owner-final application; preserved NASA/USGS/software disclosures | Final documentation commit/tag, owner portal/eligibility, video and official submission confirmation pending or not verified |
 
-Hackathon planning demonstrator. Routes and hazards are simulated; not flight-qualified navigation.
+## Blocked and future capabilities
 
-## Task 7 continuation - 15 November 2026
+| Capability | Status / reason |
+| --- | --- |
+| Original Task 7 NASA-textured registered globe and real mission markers | BLOCKED: metadata/permission, projection/coordinate compatibility and landmark verification remain unresolved; [prerequisite evidence](docs/GLOBE_IMPLEMENTATION_REPORT.md) |
+| Task 5 numerical elevation/slope/terrain costs | BLOCKED: no qualifying numerical raster or slope integration; separate data/owner gate remains |
+| Geological spatial identify or operational EVA safety | NOT IMPLEMENTED: separate educational reference only; no safe-traversability inference |
+| QR, real-time device synchronization, backend/accounts | NOT IMPLEMENTED; separate future scope, not required for current snapshot handoff |
 
-NO-GO for globe merge. Branch 3D-globe; no implementation or deployment. MSSS original mosaic is areographic/west-positive; Trek transformation and marker compatibility remain unresolved. See docs/GLOBE_IMPLEMENTATION_REPORT.md. Restored three missing build disclosures from matching public/docs and dist/docs copies. npm run build now passes (1600 modules). Previous Node run: 39 passed. Production browser recheck completed: 36 grouped checks passed, zero failures. It began while the build was completing, so this is not an isolated clean-build certification. Earlier browser pass after failed build used stale dist and is not fresh-build evidence.
+## Current executed verification
 
-## Simplified illustrative globe - owner-authorized scope, 15 November 2026
+| Command/check | Result | Evidence |
+| --- | --- | --- |
+| `npm.cmd test` | PASS: 39 tests, 0 failures | [Exact output](docs/qa/final-release/npm-test.log) |
+| `npm.cmd run build` | PASS: 1603 modules; both entries, favicon and lazy Globe chunk | [Latest exact output/warnings](docs/qa/final-release/latest-build.log) |
+| `npm.cmd run test:production` | PASS: 36 grouped checks, 0 failures across four configurations; Edge 157.0.4341.60 | [Latest exact output](docs/qa/final-release/latest-production.log), [browser JSON](docs/qa/final-release/latest-production-browser.json) |
+| CTX/reference/renderer integrity | 24/24 tiles match manifest/table URLs, paths, sizes and SHA-256; PNGs 256 × 256; 1,356,690 bytes total; JPEG/PDF/Three.js hashes match | [Audit record](docs/qa/final-release/audit.json) |
+| Build disclosures and asset copies | Three source documents match public/docs/ and dist/docs/; all cache files, expected runtime licenses and application LICENSE retained | Audit record |
+| Markdown links/encoding and unchanged source | Final results recorded after all edits; no application change is authorized | Audit record |
 
-DONE: illustrative planetary overview on 3D-globe, uncommitted. Original procedural artwork; no NASA globe texture, registration, precise coordinates or rover markers. Original accurate Task 7 remains blocked and is not superseded scientifically. Explore Jezero preserves the existing store and Leaflet instance.
+Existing nonfatal Vite warnings concern the classic Leaflet script and runtime-resolved CSS. Both files remain local in dist/ and the fresh production browser checks passed. No source workaround was introduced. Historical NASA/USGS URLs were **not** freshly fetched in this audit; local integrity does not certify remote uptime or permissions.
 
-Verification: 39 Node tests; production build passed; 40 grouped development browser checks and 36 production checks passed. Dedicated globe tests passed desktop and 360px touch/reduced-motion, three lifecycle cycles each, rotation/zoom/reset/keyboard, Explore Jezero/state preservation, nested path and forced WebGL failure. Resource disposal implemented and source-inspected; long-duration GPU/heap leak profiling and physical devices remain unverified. See docs/SIMPLIFIED_GLOBE_REPORT.md. GO for owner review/merge of this reduced scope only. No merge/deployment/main change performed.
-## GitHub Pages diagnosis - 14 November 2026
+Current test coverage is 8 routing, 5 mission, 9 geographic, 5 plan, 3 Sol, 3 reconnaissance and 6 mission-store/integrity tests. Browser grouping is not a line/branch coverage percentage or physical-device/safety certification. Prior development/legacy/globe runs remain preserved evidence, not new final-audit passes.
 
-PUBLIC DEPLOYMENT FAILED: live index.html is raw Vite source; actual Edge navigation observed empty #root, 400 placeholder Leaflet requests and 404 /src/main.jsx. Remote main 96f0dcf has no Pages build workflow. Prepared .github/workflows/pages.yml to test/build and deploy dist/; no commit/push/deployment/settings change performed. Three source disclosure files needed by the build are untracked and absent from main; owner must include them. See docs/GITHUB_PAGES_DIAGNOSIS.md.
+## Public deployment evidence
 
-Local deployment candidate validation: npm.cmd test 39/39, npm.cmd run build passed, npm.cmd run test:production passed 36 grouped browser checks across 1440/768/360px and reduced-motion 360px, no runtime errors or failed local assets. Published repair and Actions execution remain NOT VERIFIED pending owner publication.
+**[https://anj-13.github.io/ARES-HUD/](https://anj-13.github.io/ARES-HUD/)** — owner-confirmed deployed. Fresh final-audit HTTPS checks returned **200** for the main entry, its referenced built bundle, Leaflet script and tablet entry, with appropriate HTML/JavaScript MIME types. Exact time/paths are recorded in the audit JSON.
+
+The actual `.github/workflows/pages.yml` exists and runs install → tests → build → uploads only dist/ → deploy-pages. Vite has relative base `./` and both entries; prepare-public.mjs copies all three required source documents and runtime license disclosures. Workflow inspection is not proof of a particular successful Actions run or an exact deployed commit. This audit does not change deployment strategy or GitHub settings.
+
+The production suite served local built output with external requests blocked, and tested flows passed without a NASA API, backend or credentials. This does not certify offline navigation to original-source links or every possible public-host request. Earlier raw-source Pages failure is a [historical diagnosis](docs/GITHUB_PAGES_DIAGNOSIS.md), superseded as current HTTP status, not erased.
+
+## Scientific and submission boundaries
+
+USGS PDF page 2 is a unit key; drawings are pages 1/3. No PDF/THEMIS transform, geology-at-waypoint claim, raw rover-frame ID or photo at a hypothetical stop is established. Sol replay is a fixed simulated reference; reconnaissance is planning uncertainty, not real sensing. See [DATA_SOURCES.md](docs/DATA_SOURCES.md).
+
+Option 2 internal schedule remains Sunday 15 November 2026 GMT: feature cutoff 13:30, dependency/data freeze 14:30, deployment check 15:15, final commit 15:45 and code freeze 16:00. Submission is 23:59 in the verified event-local timezone; video follows freeze. Official/account/submission requirements are owner release checks, not acceptance inferred from passing tests.
+
+**Hackathon planning demonstrator. Routes and hazards are simulated; not flight-qualified navigation.**

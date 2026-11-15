@@ -1,4 +1,4 @@
-> AUTHORITATIVE SOURCE REGISTER - local integrity rechecked 14 November 2026 after Task 1. Exact external URLs/credits below are preserved acquisition records, not a new remote verification. Preserved asset tables use deployed `assets/` and `vendor/` paths; repository files now have a `public/` prefix. [STATUS.md](../STATUS.md) records feature verification. Acquisition dates/metadata below are previously recorded unless explicitly described as checked here.
+> AUTHORITATIVE SOURCE REGISTER - local integrity rechecked 15 November 2026 for the final release audit. Exact NASA/USGS URLs, credits and acquisition notes below remain dated records, not newly fetched remote sources. Historical deployed assets/ and vendor/ paths map to repository public/, except root vendor/three/ renderer inputs. [STATUS.md](../STATUS.md) records acceptance.
 
 ## Current integrity check
 
@@ -194,3 +194,21 @@ Fresh source probes at 21:37 UTC returned 200 `image/png` for level 11 row 814 c
 All three local PDF pages were rendered and compared with the existing CTX contact tiles, current registered sector and THEMIS JPEG. Page 2 contains the unit key (NHjf1, NHjf2, Aeb), not a map sketch; drawings are on pages 1 and 3. Older claims of a page-2 sketch are corrected by the baseline closure report. Comparison confirms qualitative inlet/fan morphology only; no georeferencing transform for the educational PDF or THEMIS JPEG was derived, and no geological unit is assigned to a hypothetical waypoint.
 
 Evidence and source-linked figure lineage: [BASELINE_CLOSURE_REPORT.md](BASELINE_CLOSURE_REPORT.md), [source probe JSON](qa/baseline-closure/source-probes.json), [local integrity/geometry](qa/baseline-closure/geography-integrity.json). PDF renders and raw contact-sheet screenshots are documentation evidence under `docs/qa/`, excluded from production assets.
+
+## Current illustrative Globe source distinction - 15 November 2026
+
+Current PlanetaryGlobe.jsx generates original deterministic 512 x 256 Canvas artwork, classified SIMULATED and covered by the project MIT license. No global NASA mosaic is used in this production view; no new observations, source georegistration or rover positions are represented. Regional NASA CTX imagery continues in Surface Mode.
+
+Three.js r160 is production rendering software, not planetary data. Exact original source URLs, byte counts and SHA-256 values are in [vendor manifest](../vendor/three/manifest.json); source/license integrity was rechecked against that manifest in the final document review. [THIRD_PARTY.md](THIRD_PARTY.md) records MIT licensing and purpose. QA-only global mosaic investigations remain historical acquisition evidence, not a deployed NASA globe layer.
+
+## Final release audit - 15 November 2026
+
+Concurrent UI-asset update: `public/assets/icon/ARES-HUD-icon.svg` was added and referenced by both root HTML entries while this audit was running. Local file: **2,541,393 bytes**, SHA-256 **`9ab12202de87839d23464324185d42f0980351be11226fdff725d521b81dc61d`**. Deployed path is `assets/icon/ARES-HUD-icon.svg`. The SVG contains embedded raster artwork. On 15 November 2026 the owner confirmed: "This is a generated image for the website icon." Record it as owner-supplied generated UI artwork (SIMULATED), not NASA imagery. The generating tool, original generation record and specific reuse/license terms were not provided; do not infer an asset license from the application's MIT license. These concurrent changes were preserved rather than authored by the documentation agent.
+
+All 24 records in public/assets/trek/manifest.json were matched to actual files and this register's table: deployed file paths, source URLs, byte counts and SHA-256 values agree. Every PNG is 256 x 256; total cache size is 1,356,690 bytes (2/6/16 tiles at levels 10/11/12). THEMIS/Perseverance JPEGs and the USGS PDF also match their preserved hashes. No source asset or original provenance record was replaced.
+
+This is a local integrity check, not a new fetch of historical NASA/USGS URLs or a fresh permissions/metadata review. The final build audit separately checks that source disclosures, cache files and runtime licenses survive into dist/. See [final audit evidence](qa/final-release/audit.json).
+
+Repository public/assets/... becomes deployed assets/..., and source docs/... is copied to deployed docs/.... Leaflet ships under vendor/leaflet/; root vendor/three/ is bundled code with a separate licenses/three/LICENSE copy. Rendering software is not observed planetary data.
+
+OBSERVED: genuine CTX and published NASA reference imagery. DERIVED: WMTS registration arithmetic, coordinates, route lengths and bearings under the documented Mars sphere. INTERPRETED: sourced geological unit/regional delta explanations. SIMULATED: hypothetical sector/astronaut stops, costs, dust, Sol progress, reconnaissance and procedural Globe artwork. No numeric elevation, derived slope, registered geology geometry or operational safety inference is present. Registration does not establish safe placement or navigability.
