@@ -177,7 +177,7 @@ Classification: source imagery OBSERVED; verified coordinate/texture conversions
 
 Tablet, Sol and reconnaissance work reused the existing 24 local CTX tiles; all hashes and bytes were rechecked, with zero mismatches. No production NASA/USGS asset or dependency was added or changed. Reconnaissance, Sols and additional route penalties are SIMULATED, never new NASA data.
 
-A separate ignored `.browser-qa/globe-spike/` experiment downloaded two global MGS MOC PNG tiles and the MIT Three.js r160 module/licence. Exact sources, retrieval date, bytes and SHA-256 are in [GATED_FEATURE_SPIKES.md](GATED_FEATURE_SPIKES.md). These are QA-only, not production assets or approval to publish them. Numeric elevation acquisition stopped on HTTP 403; no DEM metadata or derived slope is claimed. References for the current release remain the sources above plus Codex implementation assistance; include new external assets only if later approved and actually shipped.
+A separate ignored `.browser-qa/globe-spike/` experiment downloaded two global MGS MOC PNG tiles; those tiles remain QA-only and are not production assets. The MIT Three.js r160 module/licence from that spike is reused by the production globe and is documented in [THIRD_PARTY.md](THIRD_PARTY.md). Numeric elevation acquisition stopped on HTTP 403; no DEM metadata or derived slope is claimed.
 
 
 ## React migration path mapping — 14 November 2026
