@@ -143,7 +143,7 @@ Related verified service metadata: https://tiles.arcgis.com/tiles/v01gqwM5QqNysA
 
 The exact requested portals were revisited. Worldview remains workflow inspiration only (layer discovery, opacity and source cards); no Earth imagery/API used. Curiosity's Mount Sharp page supplies the annotated traverse concept only; no Gale geometry is imported. Existing PIA24485 remains the sole rover observation: verified published product, not a raw-gallery frame. Raw gallery renders a JavaScript shell through available research tools; no extra images or unverified metadata were added. No surface image is matched to the hypothetical stops.
 
-No external JavaScript libraries or framework were introduced. New code and documentation assisted by OpenAI Codex. NASA/USGS assets have their own credits, separate from MIT application code.
+Three.js r160 is now vendored for the illustrative globe; no new imagery or scientific datasets were introduced. New code and documentation assisted by OpenAI Codex. NASA/USGS assets have their own credits, separate from MIT application code.
 
 ## v0.3 Mars Trek WMTS API reference - no globe asset acquired
 
