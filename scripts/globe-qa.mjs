@@ -19,5 +19,5 @@ try{
  assert.deepEqual(errors,[]);assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));results.push({mobile,cycles:3,rotation:true,zoom:true,keyboard:true,touch:mobile,missionPreserved:true,errors});await context.close();
  }
  const context=await browser.newContext();await context.addInitScript(()=>{const original=HTMLCanvasElement.prototype.getContext;HTMLCanvasElement.prototype.getContext=function(type,...args){return type.includes('webgl')?null:original.call(this,type,...args);};});const page=await context.newPage();await page.goto('http://127.0.0.1:5188/ARES-HUD/');await page.getByRole('button',{name:'GLOBE',exact:true}).click();await page.getByText('3D rendering unavailable.',{exact:false}).waitFor();await page.getByRole('button',{name:'Explore Jezero',exact:true}).click();assert.ok(await page.locator('#mars-map').isVisible());results.push({webglFallback:true});await context.close();console.log(JSON.stringify(results));
-}finally{fs.writeFileSync('.browser-qa/simplified-globe.json',JSON.stringify(results,null,2));await browser.close();await new Promise(r=>server.close(r));}
+}finally{fs.mkdirSync('.browser-qa',{recursive:true});fs.writeFileSync('.browser-qa/simplified-globe.json',JSON.stringify(results,null,2));await browser.close();await new Promise(r=>server.close(r));}
 
