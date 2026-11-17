@@ -1,0 +1,40 @@
+
+> ares-hud@0.3.0 test:production
+> node scripts/browser-qa.mjs --production
+
+PASS 1440: NASA tiles decoded; attribution, scale and genuine metrics
+PASS 1440: registered map keyboard zoom and pan
+PASS 1440: waypoint selection, ordering, inclusion and traverse metrics
+PASS 1440: dust reroutes; arrival and Return to Hab; reset restores
+PASS 1440: fullscreen and Globe preserve map identity, centre and zoom
+PASS 1440: eight Sol timeline, scrub, playback, reconnaissance and mission logs
+PASS 1440: tablet validates and independently calculates; local hazard, return, reset
+PASS 1440: Sources retains verified citations, science notes, accessible modal focus
+PASS 1440: responsive layout, no runtime errors or failed local assets, no external runtime requests
+PASS 768: NASA tiles decoded; attribution, scale and genuine metrics
+PASS 768: registered map keyboard zoom and pan
+PASS 768: waypoint selection, ordering, inclusion and traverse metrics
+PASS 768: dust reroutes; arrival and Return to Hab; reset restores
+PASS 768: fullscreen and Globe preserve map identity, centre and zoom
+PASS 768: eight Sol timeline, scrub, playback, reconnaissance and mission logs
+PASS 768: tablet validates and independently calculates; local hazard, return, reset
+PASS 768: Sources retains verified citations, science notes, accessible modal focus
+PASS 768: responsive layout, no runtime errors or failed local assets, no external runtime requests
+PASS 360: NASA tiles decoded; attribution, scale and genuine metrics
+PASS 360: registered map keyboard zoom and pan
+PASS 360: waypoint selection, ordering, inclusion and traverse metrics
+PASS 360: dust reroutes; arrival and Return to Hab; reset restores
+PASS 360: fullscreen and Globe preserve map identity, centre and zoom
+PASS 360: eight Sol timeline, scrub, playback, reconnaissance and mission logs
+PASS 360: tablet validates and independently calculates; local hazard, return, reset
+PASS 360: Sources retains verified citations, science notes, accessible modal focus
+PASS 360: responsive layout, no runtime errors or failed local assets, no external runtime requests
+PASS 360 reduced: NASA tiles decoded; attribution, scale and genuine metrics
+PASS 360 reduced: registered map keyboard zoom and pan
+PASS 360 reduced: waypoint selection, ordering, inclusion and traverse metrics
+PASS 360 reduced: dust reroutes; arrival and Return to Hab; reset restores
+PASS 360 reduced: fullscreen and Globe preserve map identity, centre and zoom
+PASS 360 reduced: eight Sol timeline, scrub, playback, reconnaissance and mission logs
+PASS 360 reduced: tablet validates and independently calculates; local hazard, return, reset
+PASS 360 reduced: Sources retains verified citations, science notes, accessible modal focus
+PASS 360 reduced: responsive layout, no runtime errors or failed local assets, no external runtime requests

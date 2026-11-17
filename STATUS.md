@@ -10,14 +10,14 @@ Existing acceptance is retained and supported by current Node/production regress
 
 | Capability / task | Status | Supporting evidence and boundary |
 | --- | --- | --- |
-| Task 0 preflight and Task 0D baseline | DONE | [Baseline closure](docs/BASELINE_CLOSURE_REPORT.md): matrices, dated source probes, hashes, CTX/PDF comparison and original document audit; current asset/link checks re-executed |
+| Task 0 preflight and Task 0D baseline | DONE | [Baseline closure](docs/HISTORY.md#baseline-closure-report): matrices, dated source probes, hashes, CTX/PDF comparison and original document audit; current asset/link checks re-executed |
 | Task 1 registered Leaflet surface map | DONE | Closure strict projection/extent/control tests; fresh production QA checks map loading, scale, attribution, keyboard and routing |
-| React/Vite integration | DONE | [Migration report](docs/REACT_MIGRATION_REPORT.md), fresh build and 36 production groups; two relative-path entries |
+| React/Vite integration | DONE | [Migration report](docs/HISTORY.md#react-migration-report), fresh build and 36 production groups; two relative-path entries |
 | Multi-stop A*, simulated dust, arrival, Return to Hab | DONE | Current routing/mission/store tests and production interactions; explicit no-route state; costs remain simulated |
 | Task 3 validated independent tablet | DONE | Plan/store tests and production handoff, local dust/return/reset and invalid/blocked states; QR/sync absent |
 | Task 2 Sol timeline | DONE | Eight simulated reference excursions, interpolation tests and production scrub/play/log checks; optional mid-Sol events deferred |
 | Task 6 simulated reconnaissance | DONE | Deterministic reveal/uncertainty tests and production controls; observed imagery stays visible; no sensor claim |
-| Reduced illustrative Globe scope | DONE | Merge 3d20ff4, [dedicated earlier evidence](docs/SIMPLIFIED_GLOBE_REPORT.md), source/renderer hash inspection and current production view-switch regression; original procedural SIMULATED artwork only |
+| Reduced illustrative Globe scope | DONE | Merge 3d20ff4, [dedicated earlier evidence](docs/HISTORY.md#simplified-globe-report), source/renderer hash inspection and current production view-switch regression; original procedural SIMULATED artwork only |
 
 The illustrative feature does **not** fulfill the original scientifically registered NASA-textured Task 7. Three.js r160 provides rendering, not Mars observations. No real rover markers, geographic Globe registration or exact global texture is shipped.
 
@@ -36,7 +36,7 @@ During the audit, another process added an SVG app icon and favicon references t
 
 | Capability | Status / reason |
 | --- | --- |
-| Original Task 7 NASA-textured registered globe and real mission markers | BLOCKED: metadata/permission, projection/coordinate compatibility and landmark verification remain unresolved; [prerequisite evidence](docs/GLOBE_IMPLEMENTATION_REPORT.md) |
+| Original Task 7 NASA-textured registered globe and real mission markers | BLOCKED: metadata/permission, projection/coordinate compatibility and landmark verification remain unresolved; [prerequisite evidence](docs/HISTORY.md#globe-implementation-report) |
 | Task 5 numerical elevation/slope/terrain costs | BLOCKED: no qualifying numerical raster or slope integration; separate data/owner gate remains |
 | Geological spatial identify or operational EVA safety | NOT IMPLEMENTED: separate educational reference only; no safe-traversability inference |
 | QR, real-time device synchronization, backend/accounts | NOT IMPLEMENTED; separate future scope, not required for current snapshot handoff |
@@ -62,7 +62,7 @@ Current test coverage is 8 routing, 5 mission, 9 geographic, 5 plan, 3 Sol, 3 re
 
 The actual `.github/workflows/pages.yml` exists and runs install → tests → build → uploads only dist/ → deploy-pages. Vite has relative base `./` and both entries; prepare-public.mjs copies all three required source documents and runtime license disclosures. Workflow inspection is not proof of a particular successful Actions run or an exact deployed commit. This audit does not change deployment strategy or GitHub settings.
 
-The production suite served local built output with external requests blocked, and tested flows passed without a NASA API, backend or credentials. This does not certify offline navigation to original-source links or every possible public-host request. Earlier raw-source Pages failure is a [historical diagnosis](docs/GITHUB_PAGES_DIAGNOSIS.md), superseded as current HTTP status, not erased.
+The production suite served local built output with external requests blocked, and tested flows passed without a NASA API, backend or credentials. This does not certify offline navigation to original-source links or every possible public-host request. Earlier raw-source Pages failure is a [historical diagnosis](docs/HISTORY.md#github-pages-diagnosis), superseded as current HTTP status, not erased.
 
 ## Scientific and submission boundaries
 

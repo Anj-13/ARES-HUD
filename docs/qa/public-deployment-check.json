@@ -1,0 +1,27 @@
+{
+  "checkedAt": "2026-11-15T01:00:09.182078+00:00",
+  "url": "https://anj-13.github.io/ARES-HUD/",
+  "index": {
+    "path": "",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8"
+  },
+  "requests": [
+    {
+      "path": "./assets/main-Ci0K3zvo.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "path": "./vendor/leaflet/leaflet.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "path": "tablet.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8"
+    }
+  ],
+  "scope": "HTTP only; JavaScript not executed; deployed revision and full public-browser/private-window acceptance not certified."
+}

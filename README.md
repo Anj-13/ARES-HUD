@@ -167,7 +167,7 @@ Separate future capabilities include geographically verified global Mars imagery
 
 ## Documentation
 
-Start with the [documentation index](docs/README.md) for [architecture](docs/ARCHITECTURE.md), [source provenance](docs/DATA_SOURCES.md), [software licenses](docs/THIRD_PARTY.md), [verification status](STATUS.md) and technical evidence. [NASA judging/submission references](docs/JUDGING_CHECKLIST.md) remain available for the owner's final portal checks.
+Start with the [documentation index](docs/README.md) for current architecture, source provenance, licenses and technical evidence. Completed reports, original plans and submission references are collected in [project history](docs/HISTORY.md). [STATUS.md](STATUS.md) remains the acceptance register.
 
 ## License
 
