@@ -1,0 +1,620 @@
+{
+  "at": "2026-11-15T01:19:09.048720+00:00",
+  "head": "3d20ff4acddd6827637159c138b5d400c68e24ca",
+  "node": "v24.22.1",
+  "npm": "11.19.1",
+  "templatesRead": [
+    "README_BASIC_TEMPLATE.md",
+    "README_PORTFOLIO_TEMPLATE.md"
+  ],
+  "tiles": {
+    "records": 24,
+    "matches": 24,
+    "bytes": 1356690,
+    "levels": {
+      "10": 2,
+      "11": 6,
+      "12": 16
+    },
+    "allDimensions": "256x256",
+    "docRecordsMatch": true
+  },
+  "referenceFiles": [
+    {
+      "file": "public/assets/jezero-themis.jpg",
+      "bytes": 86106,
+      "sha256": "9d5c31ef7f77d2543d8bacbeae713d7afbf71211f29953404eaf9aa5ff9a9998"
+    },
+    {
+      "file": "public/assets/perseverance-delta.jpg",
+      "bytes": 239471,
+      "sha256": "be26297f637ed2bcb06d2f2a70cf1baa6e383ea94d1cf82dbff51a4e64d79696"
+    },
+    {
+      "file": "public/assets/jezero-geology.pdf",
+      "bytes": 8623899,
+      "sha256": "d4d52e2bde4ec36cfc3a64091c5c7c4bd49b3e3f84add6db942cfac299bf3646"
+    }
+  ],
+  "threeManifest": {
+    "version": "r160",
+    "license": "MIT",
+    "files": [
+      {
+        "path": "vendor/three/three.module.js",
+        "bytes": 1272972,
+        "sha256": "76dea8151bc9352aef3528b4262e249b2604f62543828328db978d060d61a495",
+        "source": "https://raw.githubusercontent.com/mrdoob/three.js/r160/build/three.module.js"
+      },
+      {
+        "path": "vendor/three/LICENSE",
+        "bytes": 1081,
+        "sha256": "852e0e8699169bf9f6fdc6bda3e682d078dcbc738b5d33e74df594721bff271d",
+        "source": "https://raw.githubusercontent.com/mrdoob/three.js/r160/LICENSE"
+      }
+    ]
+  },
+  "dependencies": [
+    {
+      "name": "react",
+      "version": "18.3.1",
+      "license": "MIT",
+      "lockLicense": "MIT",
+      "dev": false,
+      "licenseFiles": [
+        "node_modules/react/LICENSE"
+      ]
+    },
+    {
+      "name": "react-dom",
+      "version": "18.3.1",
+      "license": "MIT",
+      "lockLicense": "MIT",
+      "dev": false,
+      "licenseFiles": [
+        "node_modules/react-dom/LICENSE"
+      ]
+    },
+    {
+      "name": "scheduler",
+      "version": "0.23.2",
+      "license": "MIT",
+      "lockLicense": "MIT",
+      "dev": false,
+      "licenseFiles": [
+        "node_modules/scheduler/LICENSE"
+      ]
+    },
+    {
+      "name": "loose-envify",
+      "version": "1.4.0",
+      "license": "MIT",
+      "lockLicense": "MIT",
+      "dev": false,
+      "licenseFiles": [
+        "node_modules/loose-envify/LICENSE"
+      ]
+    },
+    {
+      "name": "js-tokens",
+      "version": "4.0.0",
+      "license": "MIT",
+      "lockLicense": "MIT",
+      "dev": false,
+      "licenseFiles": [
+        "node_modules/js-tokens/LICENSE"
+      ]
+    },
+    {
+      "name": "lucide-react",
+      "version": "0.468.0",
+      "license": "ISC",
+      "lockLicense": "ISC",
+      "dev": false,
+      "licenseFiles": [
+        "node_modules/lucide-react/LICENSE"
+      ]
+    },
+    {
+      "name": "vite",
+      "version": "6.0.0",
+      "license": "MIT",
+      "lockLicense": "MIT",
+      "dev": true,
+      "licenseFiles": [
+        "node_modules/vite/LICENSE.md"
+      ]
+    },
+    {
+      "name": "playwright-core",
+      "version": "1.51.1",
+      "license": "Apache-2.0",
+      "lockLicense": "Apache-2.0",
+      "dev": true,
+      "licenseFiles": [
+        "node_modules/playwright-core/LICENSE"
+      ]
+    },
+    {
+      "name": "esbuild",
+      "version": "0.24.2",
+      "license": "MIT",
+      "lockLicense": "MIT",
+      "dev": true,
+      "licenseFiles": [
+        "node_modules/esbuild/LICENSE.md"
+      ]
+    },
+    {
+      "name": "rollup",
+      "version": "4.68.3",
+      "license": "MIT",
+      "lockLicense": "MIT",
+      "dev": true,
+      "licenseFiles": [
+        "node_modules/rollup/LICENSE.md"
+      ]
+    },
+    {
+      "name": "postcss",
+      "version": "8.5.33",
+      "license": "MIT",
+      "lockLicense": "MIT",
+      "dev": true,
+      "licenseFiles": [
+        "node_modules/postcss/LICENSE"
+      ]
+    }
+  ],
+  "commands": [
+    {
+      "command": "npm.cmd test",
+      "exit": 0,
+      "log": "npm-test.log"
+    },
+    {
+      "command": "npm.cmd run build",
+      "exit": 0,
+      "log": "npm-build.log"
+    },
+    {
+      "command": "npm.cmd run test:production",
+      "exit": 0,
+      "log": "npm-test-production.log"
+    },
+    {
+      "command": "npm.cmd run build",
+      "exit": 0,
+      "log": "npm-build.log",
+      "snapshot": "after concurrent favicon changes"
+    },
+    {
+      "command": "npm.cmd run test:production",
+      "exit": 0,
+      "log": "npm-test-production.log",
+      "snapshot": "after concurrent favicon changes"
+    },
+    {
+      "command": "npm.cmd run build",
+      "exit": 0,
+      "log": "npm-build.log",
+      "snapshot": "final disclosures after owner icon confirmation"
+    },
+    {
+      "command": "npm.cmd run test:production",
+      "exit": 0,
+      "log": "npm-test-production.log",
+      "snapshot": "final disclosures after owner icon confirmation"
+    },
+    {
+      "command": "npm.cmd run build",
+      "exit": 0,
+      "log": "latest-build.log",
+      "snapshot": "latest concurrent main favicon public/ path edit"
+    },
+    {
+      "command": "npm.cmd run test:production",
+      "exit": 0,
+      "log": "latest-production.log",
+      "snapshot": "latest concurrent main favicon public/ path edit"
+    }
+  ],
+  "buildIntegrity": {
+    "tilesMatched": 24,
+    "copiedDocumentsAndLicensesMatched": [
+      "docs/DATA_SOURCES.md",
+      "docs/THIRD_PARTY.md",
+      "docs/assets/README.md",
+      "licenses/react/LICENSE",
+      "licenses/react-dom/LICENSE",
+      "licenses/scheduler/LICENSE",
+      "licenses/lucide-react/LICENSE",
+      "licenses/three/LICENSE",
+      "vendor/leaflet/LICENSE",
+      "LICENSE"
+    ],
+    "bothEntriesBuiltWithRelativeLocalReferences": true,
+    "lazyGlobeChunkPresent": true,
+    "workflowExists": true,
+    "workflowOrder": "npm ci -> npm test -> npm run build -> upload dist -> deploy-pages",
+    "behaviorChanged": false,
+    "warnings": [
+      "Classic Leaflet script is not bundled; retained as local vendor script",
+      "Leaflet CSS resolves at runtime from public/vendor; retained in dist"
+    ],
+    "finalOwnerIconDisclosureCopiesMatch": true,
+    "finalEntries": [
+      {
+        "entry": "index.html",
+        "favicon": [
+          "<link rel=\"icon\" type=\"image/svg+xml\" href=\"./assets/icon/ARES-HUD-icon.svg\">"
+        ],
+        "sourceSha256": "a36529817e28a7fd19d678f346acbf3c1d97ca19d0ef3067fc2496e60d5eddb6"
+      },
+      {
+        "entry": "tablet.html",
+        "favicon": [
+          "<link rel=\"icon\" type=\"image/svg+xml\" href=\"./assets/icon/ARES-HUD-icon.svg\">"
+        ],
+        "sourceSha256": "7a632e46b12744e8629464ca8cdfcfcbd72045d9b28c746a91fa945bcf0c28f8"
+      }
+    ],
+    "latestBuiltReferenceFailures": []
+  },
+  "dependencyLicenseFiles": [
+    {
+      "path": "node_modules/react/LICENSE",
+      "bytes": 1086,
+      "sha256": "52412d7bc7ce4157ea628bbaacb8829e0a9cb3c58f57f99176126bc8cf2bfc85"
+    },
+    {
+      "path": "node_modules/react-dom/LICENSE",
+      "bytes": 1086,
+      "sha256": "52412d7bc7ce4157ea628bbaacb8829e0a9cb3c58f57f99176126bc8cf2bfc85"
+    },
+    {
+      "path": "node_modules/scheduler/LICENSE",
+      "bytes": 1086,
+      "sha256": "52412d7bc7ce4157ea628bbaacb8829e0a9cb3c58f57f99176126bc8cf2bfc85"
+    },
+    {
+      "path": "node_modules/loose-envify/LICENSE",
+      "bytes": 1100,
+      "sha256": "4eb7543b08d955a6d23fcc224601d43ff566e775be918805e26210d7f6eb4893"
+    },
+    {
+      "path": "node_modules/js-tokens/LICENSE",
+      "bytes": 1103,
+      "sha256": "2213d91c606205c71eb051a199478cdc2adde945893404d7f1421436dd6d5cc1"
+    },
+    {
+      "path": "node_modules/lucide-react/LICENSE",
+      "bytes": 880,
+      "sha256": "1e7290b35280a048667bbf0ebabac1c7fd52a75300e8b2946ac165715997f2bc"
+    },
+    {
+      "path": "node_modules/vite/LICENSE.md",
+      "bytes": 119348,
+      "sha256": "2984eed0902a018759bb561aa343634de90494d442d6d216c5c2e48abb02ef20"
+    },
+    {
+      "path": "node_modules/playwright-core/LICENSE",
+      "bytes": 11601,
+      "sha256": "45873d00a0dd243596deb4aa23b2493b3d1f0671921bf2538ea431d7380220eb"
+    },
+    {
+      "path": "node_modules/esbuild/LICENSE.md",
+      "bytes": 1069,
+      "sha256": "b40ec5baec7bb34fa5b1c09521fa3cd52d5fad7adafed74932a2010d3612a681"
+    },
+    {
+      "path": "node_modules/rollup/LICENSE.md",
+      "bytes": 35231,
+      "sha256": "fa1bd040c5bdeefe65b3821cebf474f2733ce65df13089bd151dda1778e62fe8"
+    },
+    {
+      "path": "node_modules/postcss/LICENSE",
+      "bytes": 1095,
+      "sha256": "5be1f3465bba68a626777f984878814aaf35e7ef8e9fd314d469bcf887050fb8"
+    }
+  ],
+  "productionBrowser": {
+    "browser": "157.0.4341.60",
+    "runs": 4,
+    "groups": 36,
+    "failures": [],
+    "report": "latest-production-browser.json",
+    "nestedPath": "/ares-hud/",
+    "externalRequestsBlocked": true
+  },
+  "publicHttp": {
+    "at": "2026-11-15T01:26:51.572536+00:00",
+    "url": "https://anj-13.github.io/ARES-HUD/",
+    "checks": [
+      {
+        "path": "",
+        "status": 200,
+        "contentType": "text/html; charset=utf-8"
+      },
+      {
+        "path": "./assets/main-Ci0K3zvo.js",
+        "status": 200,
+        "contentType": "application/javascript; charset=utf-8"
+      },
+      {
+        "path": "./vendor/leaflet/leaflet.js",
+        "status": 200,
+        "contentType": "application/javascript; charset=utf-8"
+      },
+      {
+        "path": "tablet.html",
+        "status": 200,
+        "contentType": "text/html; charset=utf-8"
+      }
+    ],
+    "scope": "HTTP only, not full hosted browser/private-window acceptance or exact commit attribution"
+  },
+  "concurrentSourceChanges": [
+    {
+      "path": "index.html",
+      "initialSha256": "62dbff8cf7cf1729eb2045f6ff1e6a28eb58ecc6132f68ee500a4106485da14c",
+      "preservedSha256": "a36529817e28a7fd19d678f346acbf3c1d97ca19d0ef3067fc2496e60d5eddb6",
+      "attribution": "Observed external change during audit; not edited by documentation agent"
+    },
+    {
+      "path": "tablet.html",
+      "initialSha256": "dc05e9f41f7f80361c7253c08f449cf1d3cc030b86af95508138d56ca86caa52",
+      "preservedSha256": "7a632e46b12744e8629464ca8cdfcfcbd72045d9b28c746a91fa945bcf0c28f8",
+      "attribution": "Observed external change during audit; not edited by documentation agent"
+    },
+    {
+      "path": "public/assets/icon/ARES-HUD-icon.svg",
+      "initialSha256": null,
+      "preservedSha256": "9ab12202de87839d23464324185d42f0980351be11226fdff725d521b81dc61d",
+      "attribution": "Observed external change during audit; not edited by documentation agent"
+    }
+  ],
+  "iconProvenance": {
+    "file": "public/assets/icon/ARES-HUD-icon.svg",
+    "bytes": 2541393,
+    "sha256": "9ab12202de87839d23464324185d42f0980351be11226fdff725d521b81dc61d",
+    "creatorSourceAndReuseTerms": "NOT ESTABLISHED; owner confirmation required",
+    "ownerStatement": "This is a generated image for the website icon",
+    "classification": "Owner-supplied generated UI artwork; SIMULATED, not NASA imagery",
+    "generatorAndSpecificLicense": "Not specified by owner; no permission invented"
+  },
+  "lateEntrySnapshot": "a36529817e28a7fd19d678f346acbf3c1d97ca19d0ef3067fc2496e60d5eddb6",
+  "latestBuiltReferenceFailures": [],
+  "latestSourceSnapshot": {
+    "src/App.jsx": "5f6f6eafbcd01d5941872c6019fcbaa86120916e849c748f9d8c191ec49c25e2",
+    "src/main.jsx": "a36f6d110811e7cf1bdb8ec89062cfa2c1a8314391f3bbecab412d761b705d7b",
+    "src/tablet-main.jsx": "1765c6dd8eba59cab7fca46a5ad238f84931eb780756ac29ae848e7b82ca616b",
+    "src/components/MapPanel.jsx": "cda1bc09e1fdb9d1c06cfd4a7b2041b7234bbf092a766d9e57152e20759a1ec7",
+    "src/components/MissionPanel.jsx": "da595ecce3066d9740c632643b598f1a7691ceaf936be196b3aab77eb7314ffa",
+    "src/components/Modal.jsx": "8482d4745d12a7556afd88a6da09fb7e65daaf31ea5d528265370a817d2c4795",
+    "src/components/PlanetaryGlobe.jsx": "21d8abee19fe2b7c6813646218cdebf55cde4cab9dcb8ccee7ab05f74e742a1c",
+    "src/components/SourcesView.jsx": "57707ccac215bf5bcb26f2322c9c74b1a2873a862361af9363de3bb4456598ee",
+    "src/components/TabletView.jsx": "8e9a151be42b3902d312c702da460a82e64a0c342b9c7d12812334b025d6d8b8",
+    "src/components/TelemetryPanel.jsx": "255d3899b981ae1d893aea7084d2d784845bb277aa9be493aaa59030e432c1b7",
+    "src/components/Timeline.jsx": "68a881c532bc39e075e128f2ff7d56b50d9b17cfe2fbd74919a956eb555c0b0b",
+    "src/domain/datasets.js": "f50c5bc9fa505e380d2ace07febcedf1ca5635a8eb5295a6e41a82dbabcbd3b0",
+    "src/domain/fog.js": "37d0fe5f7398c11de06e259b24604443685a54bb7b0ebd95f5c98aef5fbf8e9d",
+    "src/domain/geo.js": "c925a129884b22b2a129da3a208329a38753117cc47550b3c7e5c4b55ee956bc",
+    "src/domain/map-crs.js": "99ca7c24e077f6d8719d97e21bf6a68d21b0deba56f284ede2075b19c7e0079a",
+    "src/domain/mission.js": "910f7df16c95704f6f7df76b4563cca19da1a02141fee16d9582c7d4b54f5dac",
+    "src/domain/pathfinding.js": "a7efd2d491fc05a200e4e3e3113912984c7314330c43921f3110eede2af09753",
+    "src/domain/plan.js": "290a55f14fc2c0f9fe88cf00d67925860e0f0bc08854dea1c95fb478afaf4be5",
+    "src/domain/sector.js": "c2cf9a86963fd31b839aa7272d59483b7871df75ef2cd991f16a48b1c6e91d8f",
+    "src/domain/sols.js": "1cffbc84824daa853bd641711ff7c059cb2606fd83186859265221f510567c56",
+    "src/integrations/map.js": "7f5c5563729f968bb14fd6a51210b9dbf23ef4eef2778856ce1d5fdcb5c02a1b",
+    "src/integrations/sector-layers.js": "75d281173a0a752050639e98b463cc7802051f16c712a4b038909ec8232d1b62",
+    "src/integrations/tablet-bridge.js": "935eca10693a7b2b41ec55ee6544dfbed7153027d1d242d5b849dc85db3046d0",
+    "src/integrations/use-mission.js": "78710622a16a5d8987dc477d9ec2e9707d1080a06d470cdf82a4f30b1f2f6892",
+    "src/state/mission-store.js": "e5373a7ac4223eb9dc4dae09082db261c1ffbfd75dd2690f507e009c017222d3",
+    "src/styles/main.css": "8d09474ff8d2f95037107264c954a0741ac63768b2dfabda7c31217d10a12242",
+    "scripts/browser-qa.mjs": "f9ffdbfce7be071204068f4db554d55a8b4faa6a8efb768b47508e8577098f00",
+    "scripts/fetch-tiles.mjs": "d9a07fcff541b96cc729cd7819f854194caf443fefec70667106c908974a1c8a",
+    "scripts/globe-qa.mjs": "25dfd8f64ca15540881f69ec338c2dee224e9ace772f7155764b7497d806f592",
+    "scripts/legacy-qa.mjs": "c32a3c9b5688f58ba13c42db5c822fba1ff1eed9f2facbfbe906e67220a54256",
+    "scripts/prepare-public.mjs": "51b61b67f4982048e9b92fbcf39632b8638d8492a67c14c2ada339e2191a819e",
+    "scripts/static-server.mjs": "3e2205449615d67bb02b6e5e70922a2953140af7ad76eebba873de502a3fcdc5",
+    "scripts/vendor-leaflet.mjs": "da40c2dd4ea4cdf020fb9642cd4302de8317da6bc55ef632ddb441d783f9c5cd",
+    "tests/fog.test.js": "48721acad7e14bc55aa805df2308a0bcb20067c689ff1b723207737be55cf577",
+    "tests/geo.test.js": "26779faeba8d5539c9ce8c5084de9038379f2de9e753f3fb9560bcdbce629b84",
+    "tests/mission-store.test.js": "629b8b3c4548b7b15cbf396d2abf86e0a3b9fd4dce3347565b9916069b16720b",
+    "tests/mission.test.js": "bcad1e89f7dc01b419f71f75057371d36b2c88311e10991b7ded4d016bf58e57",
+    "tests/pathfinding.test.js": "7f5633e8ca7187c2258d128ffd05b3f65bca9d1a7dc780105131db8d85aabf72",
+    "tests/plan.test.js": "9a6f1d11759db93006fe9d97baa5302128545be8503844e4fe504cf81dd36c0e",
+    "tests/sols.test.js": "7f2deb411a1eb529a810c544aaf1101581e14d006aedbaca8d58e9c07cbfb6e5",
+    "vendor/three/LICENSE": "852e0e8699169bf9f6fdc6bda3e682d078dcbc738b5d33e74df594721bff271d",
+    "vendor/three/manifest.json": "7b004bdfd8306035f5efa0762537b8aafc65401ff1d0fcee1cb5e2d7c5ed218d",
+    "vendor/three/three.module.js": "76dea8151bc9352aef3528b4262e249b2604f62543828328db978d060d61a495",
+    ".github/workflows/pages.yml": "cbb0b7496daf56cb2f79c28f33f7c57ed0eb5532b10dc76494bd7cf55bffa540",
+    "legacy/app.js": "70ec8e7c38ee6a3e5b384c9f1dc4ae175aba93d3b1419c5afb2a6df24b8746a7",
+    "legacy/browser-test.html": "69fc0cf6b4eff781c34a571648bdbb777fa183bf611ae4f0a00b785acea53af7",
+    "legacy/datasets.js": "3d569ade2eca44d0d6b16227e83190c43248bf56c366735d57a5a95bd8d0fbd4",
+    "legacy/exploration.js": "5090c2342d7d5c52d4895d8eeab6aecbabff6f5a5b8adfa6efc40626907189a1",
+    "legacy/fog.js": "37d0fe5f7398c11de06e259b24604443685a54bb7b0ebd95f5c98aef5fbf8e9d",
+    "legacy/fog.test.js": "4d8da1e3c34a1436e3daef6e30644788193d3eee5a81bb7a69803c4297a731ee",
+    "legacy/geo.js": "c925a129884b22b2a129da3a208329a38753117cc47550b3c7e5c4b55ee956bc",
+    "legacy/geo.test.js": "f0411b308645c162593201e39fbcfef1947f5747130a6d5bbaf9ff35837e0ee2",
+    "legacy/index.html": "9e3705bd50ce44fd058d04b8f13fae6cec051bdf789de8fbab1c557cc09be83d",
+    "legacy/map-crs.js": "99ca7c24e077f6d8719d97e21bf6a68d21b0deba56f284ede2075b19c7e0079a",
+    "legacy/map.js": "75b2fa374b170f84becd7ab6a4468ab76a4e6dee3e0477408c153a6c66574611",
+    "legacy/mission-controls.js": "fc6e3a48a204c6f4bd17c5130726f7719847bc639fe969bdc913d0bd8257f6b2",
+    "legacy/mission.js": "910f7df16c95704f6f7df76b4563cca19da1a02141fee16d9582c7d4b54f5dac",
+    "legacy/mission.test.js": "5fb5554198087b47989b2125c6595a2c223318b1599fb295927409b6e9f71178",
+    "legacy/package.json": "3a7379c4175b9ade3744e3e924ecf396067358efe22ee44616f4d5630e65d62c",
+    "legacy/pathfinding.js": "a7efd2d491fc05a200e4e3e3113912984c7314330c43921f3110eede2af09753",
+    "legacy/pathfinding.test.js": "fe37511f70198531be7afffeefda921e769cb234c9df04dca51baefb53e1e953",
+    "legacy/plan.js": "290a55f14fc2c0f9fe88cf00d67925860e0f0bc08854dea1c95fb478afaf4be5",
+    "legacy/plan.test.js": "e31da8e122d935da1340c5ca0b7e8c26bb56baa8e29d31e6c04b8554e6da16e9",
+    "legacy/sector-layers.js": "a3d37aececec7c56002184aaa8d0b8ea3af3ea2b89e0e8c569f193ec37b107b6",
+    "legacy/sector.js": "c2cf9a86963fd31b839aa7272d59483b7871df75ef2cd991f16a48b1c6e91d8f",
+    "legacy/serve.py": "a8a10b38813d1049dc1c2405feba6b05c8a0f8e75b681e0e3f768cb663aedfd8",
+    "legacy/sols.js": "1cffbc84824daa853bd641711ff7c059cb2606fd83186859265221f510567c56",
+    "legacy/sols.test.js": "6ed8756526d315309817452b70cbfbfee09e28d14264173b41d68b5edba83fee",
+    "legacy/styles.css": "f223f2fbaf04c58c65ac92023d355a752c76c930d2090645610c932f51eec7ba",
+    "legacy/tablet.html": "df11200dc59739e5c9ed80e9fc1e16ed0d1b48d91ae917cbbf8c9e2e29b1be98",
+    "legacy/tablet.js": "4c14e36a87a258a853e136d84d804aa9a66faba4ad8ec39d1b8a01a504c55b25",
+    "legacy/assets/geology-service.json": "dab5d4b53ead3106d50f4d24bf2d878d63c86c63d4375d72c3389cf67de5fc75",
+    "legacy/assets/jezero-geology.pdf": "d4d52e2bde4ec36cfc3a64091c5c7c4bd49b3e3f84add6db942cfac299bf3646",
+    "legacy/assets/jezero-themis.jpg": "9d5c31ef7f77d2543d8bacbeae713d7afbf71211f29953404eaf9aa5ff9a9998",
+    "legacy/assets/perseverance-delta.jpg": "be26297f637ed2bcb06d2f2a70cf1baa6e383ea94d1cf82dbff51a4e64d79696",
+    "legacy/assets/trek-capabilities.xml": "aeb623627236fc77bbe62c45a8db6e8c148cba7f70c02006eeb30c4fa377598c",
+    "legacy/assets/trek-catalog.json": "5f6d60b0c3a8afd468bbb01773d472ba77cc50b2c7022c15de470ebd315f0cda",
+    "legacy/assets/trek-source.json": "0c1875969be3bbb59d5d52f21ab733b619d6b40e8c3a0f4c4214cb4c1405bc2d",
+    "legacy/initial-files/app.js": "2c01d468bda9338d87f3aa06f829dacdaaf66b12a4807fee340e0412a2e6b800",
+    "legacy/initial-files/index.html": "62f466b34fdd46e6a9c1d63346b11f06875f609cf4b42672250defa1f4050b6a",
+    "legacy/initial-files/LICENSE": "f1945cd6c19e56b3c1c78943ef5ec18116907a4ca1efc40a57d48ab1db7adfc5",
+    "legacy/initial-files/package.json": "61dc933a130c796a78ad772a5b851058a4f408aa024049f0ec86af43f3d40ffb",
+    "legacy/initial-files/pathfinding.js": "a7efd2d491fc05a200e4e3e3113912984c7314330c43921f3110eede2af09753",
+    "legacy/initial-files/pathfinding.test.js": "fe37511f70198531be7afffeefda921e769cb234c9df04dca51baefb53e1e953",
+    "legacy/initial-files/styles.css": "48a5b303135ce112c9c4ef9417be260481f5b3e977dd40c69916b846ab6549f4",
+    "legacy/migration-scripts/finalize-layout.py": "e8ed3a3769f0594a807a2fcde74de154d11f3283067a73878ea4ea2bad5989c6",
+    "legacy/migration-scripts/finish-layout.py": "3cc6ab6d5f1640c736c5bdfdd29e95c013ddb2fadb153c2f5dd33dc796482510",
+    "legacy/migration-scripts/migrate-layout.py": "1b5aa79e543e63368baa9cfefa613a0ced4fdee0efbe01e2ddbe96e700e1de0b",
+    "legacy/migration-scripts/record-migration.py": "5bd93f00a2c2322d46dcf0745096bf67f77cd54875dbb7079f7b85f62bd37330",
+    "legacy/migration-scripts/write-migration-docs.py": "2db1bcb57cee7fcfd2d8e22c8022128dd164ac8b4d8ba185e5d283ffb95469f1",
+    "legacy/UI/index.html": "1f8ff711f3aa9743f4c1f132aa7e48fa351731fd42445adfb769b2bdbd25e7c2",
+    "legacy/UI/package-lock.json": "e204da969b4dee71b39b397f1f8f820331dbf4af07c0443e766ff5a632130772",
+    "legacy/UI/package.json": "70fc0594f789727eeee40bbcca40ab75ccbc569107d25ff251e3fa30ad722c34",
+    "legacy/vendor/leaflet/leaflet.css": "a7837102824184820dfa198d1ebcd109ff6d0ff9a2672a074b9a1b4d147d04c6",
+    "legacy/vendor/leaflet/leaflet.js": "db49d009c841f5ca34a888c96511ae936fd9f5533e90d8b2c4d57596f4e5641a",
+    "legacy/vendor/leaflet/LICENSE": "53e8dc25862014e4324741ca18fbe3611e11d42ef69f59f86ea8c5389647d4cb",
+    "legacy/vendor/leaflet/images/layers-2x.png": "066daca850d8ffbef007af00b06eac0015728dee279c51f3cb6c716df7c42edf",
+    "legacy/vendor/leaflet/images/layers.png": "1dbbe9d028e292f36fcba8f8b3a28d5e8932754fc2215b9ac69e4cdecf5107c6",
+    "legacy/vendor/leaflet/images/marker-icon-2x.png": "00179c4c1ee830d3a108412ae0d294f55776cfeb085c60129a39aa6fc4ae2528",
+    "legacy/vendor/leaflet/images/marker-icon.png": "574c3a5cca85f4114085b6841596d62f00d7c892c7b03f28cbfa301deb1dc437",
+    "legacy/vendor/leaflet/images/marker-shadow.png": "264f5c640339f042dd729062cfc04c17f8ea0f29882b538e3848ed8f10edb4da",
+    "legacy/UI/src/App.jsx": "01ae1a448582d39b52ef592b8f66616af3af5f5d0817e07465e9e56bc58927e0",
+    "legacy/UI/src/main.jsx": "af121e6aebb9321a63f598fe94b80ef4f2fa8bee61516d89e1202e15417acb68",
+    "legacy/UI/src/styles.css": "86fc5908240e460b56d4eada1a0f26ee91529f3d222ea67c85096ddc88e0d61a",
+    "legacy/assets/trek/manifest.json": "9a36924f1a2f76121160654d0294303c0abda140499ae150facad2508e5630c9",
+    "legacy/assets/trek/10/406-1464.png": "6dbd5d2f00f0676f8f821c3830cf2b8c321a68b16e4ef2b96050103feaf90895",
+    "legacy/assets/trek/10/407-1464.png": "82491f0b929a2df137fe1faab5911b8b0074765cef406eace9d167266f12b0ee",
+    "legacy/assets/trek/11/812-2928.png": "94bcebfcd2f64cbaeb4dc3af6fc0f1c04eb0acdc4aa51106a75c0e71c9954478",
+    "legacy/assets/trek/11/812-2929.png": "341bca64cf42981a15cc71f9a48ea94cff443fd1f3f24230d92b0ee53dd8fac6",
+    "legacy/assets/trek/11/813-2928.png": "a24124de716a4681f5c0a3e12fec5ce47686eb1e9be502012f1cf0d7852d0316",
+    "legacy/assets/trek/11/813-2929.png": "7e0ad5c3a2b34b432a325848dd1728cbb9de22050258ffe823419cee06a21311",
+    "legacy/assets/trek/11/814-2928.png": "2ca588f62568cc4fdd20c15c3ef26e50742b75dccf820bd88333b4df77dd329e",
+    "legacy/assets/trek/11/814-2929.png": "38bd3135c2ddc9b0e79b0a4217c3609b55fb7e18cb6b68f4c5bc083592e6295a",
+    "legacy/assets/trek/12/1625-5856.png": "480c4b74507af0b796f10a6cedf10439820e7d779bcb97e3aa6ebfcb71eb96f7",
+    "legacy/assets/trek/12/1625-5857.png": "61ee56770dbdcf5314e926baa17985b5447a8446adb04d14c27f9b49eff35df6",
+    "legacy/assets/trek/12/1625-5858.png": "a032b6aaf8fe107cba516eba96dd207d0d5523c3cf548bbb672e91c16bc7b819",
+    "legacy/assets/trek/12/1625-5859.png": "9ad4af0233fef44f07fdabdc3d0586e538d30c82645decb31bc708224e9558aa",
+    "legacy/assets/trek/12/1626-5856.png": "c3a2406434289bb698c899120f4689f3e59ef453f647192ccb980ee5a17859ff",
+    "legacy/assets/trek/12/1626-5857.png": "82ab84688ea059df0837631526576519d58e4c3fbf633c6d6dcd71294fe8f579",
+    "legacy/assets/trek/12/1626-5858.png": "053822d023f3ba2a45d307f744ba5f285ca17897fcb161cdbf5b1534f00b3859",
+    "legacy/assets/trek/12/1626-5859.png": "92ea9b17d4097a4e029b57d63e8fd02cb0c30ae8ab563f600277497d4b7a7cb7",
+    "legacy/assets/trek/12/1627-5856.png": "8c8a3916870c668f2c792c06edb8e91d3633cc7788f962329c2d3ebbefb546aa",
+    "legacy/assets/trek/12/1627-5857.png": "33392b61ae9ee1fd7cacf06efe6e1ca3188a24faa24d91487c2dd6d82a7a55dc",
+    "legacy/assets/trek/12/1627-5858.png": "2bf771f5af6a6af560f9940cef1e372004020cf71ec6ebfe70d49c543df98a7f",
+    "legacy/assets/trek/12/1627-5859.png": "df21b0dbb1e0fc5b5dfee23c6732a97a3f9c32569b21271925216473c9459baa",
+    "legacy/assets/trek/12/1628-5856.png": "a1b8cab872bbb471e917fb191be347032a5c1d66338f4b486182409fb982b0a8",
+    "legacy/assets/trek/12/1628-5857.png": "60141a07442794af224b3e77b847a524e7294ee77ff14812f0503aec14ebb221",
+    "legacy/assets/trek/12/1628-5858.png": "5c2040a462feb6d96b40d381e94769d9d3c4c5c5bf12d0d9a6d228f0689bb596",
+    "legacy/assets/trek/12/1628-5859.png": "cedcb5b6530dafc1fdb876e99d70a6c1dd4e950e03c7840e9ef8a100b4138273",
+    "public/assets/geology-service.json": "dab5d4b53ead3106d50f4d24bf2d878d63c86c63d4375d72c3389cf67de5fc75",
+    "public/assets/jezero-geology.pdf": "d4d52e2bde4ec36cfc3a64091c5c7c4bd49b3e3f84add6db942cfac299bf3646",
+    "public/assets/jezero-themis.jpg": "9d5c31ef7f77d2543d8bacbeae713d7afbf71211f29953404eaf9aa5ff9a9998",
+    "public/assets/perseverance-delta.jpg": "be26297f637ed2bcb06d2f2a70cf1baa6e383ea94d1cf82dbff51a4e64d79696",
+    "public/assets/trek-capabilities.xml": "aeb623627236fc77bbe62c45a8db6e8c148cba7f70c02006eeb30c4fa377598c",
+    "public/assets/trek-catalog.json": "5f6d60b0c3a8afd468bbb01773d472ba77cc50b2c7022c15de470ebd315f0cda",
+    "public/assets/trek-source.json": "0c1875969be3bbb59d5d52f21ab733b619d6b40e8c3a0f4c4214cb4c1405bc2d",
+    "public/assets/trek/manifest.json": "9a36924f1a2f76121160654d0294303c0abda140499ae150facad2508e5630c9",
+    "public/assets/trek/10/406-1464.png": "6dbd5d2f00f0676f8f821c3830cf2b8c321a68b16e4ef2b96050103feaf90895",
+    "public/assets/trek/10/407-1464.png": "82491f0b929a2df137fe1faab5911b8b0074765cef406eace9d167266f12b0ee",
+    "public/assets/trek/11/812-2928.png": "94bcebfcd2f64cbaeb4dc3af6fc0f1c04eb0acdc4aa51106a75c0e71c9954478",
+    "public/assets/trek/11/812-2929.png": "341bca64cf42981a15cc71f9a48ea94cff443fd1f3f24230d92b0ee53dd8fac6",
+    "public/assets/trek/11/813-2928.png": "a24124de716a4681f5c0a3e12fec5ce47686eb1e9be502012f1cf0d7852d0316",
+    "public/assets/trek/11/813-2929.png": "7e0ad5c3a2b34b432a325848dd1728cbb9de22050258ffe823419cee06a21311",
+    "public/assets/trek/11/814-2928.png": "2ca588f62568cc4fdd20c15c3ef26e50742b75dccf820bd88333b4df77dd329e",
+    "public/assets/trek/11/814-2929.png": "38bd3135c2ddc9b0e79b0a4217c3609b55fb7e18cb6b68f4c5bc083592e6295a",
+    "public/assets/trek/12/1625-5856.png": "480c4b74507af0b796f10a6cedf10439820e7d779bcb97e3aa6ebfcb71eb96f7",
+    "public/assets/trek/12/1625-5857.png": "61ee56770dbdcf5314e926baa17985b5447a8446adb04d14c27f9b49eff35df6",
+    "public/assets/trek/12/1625-5858.png": "a032b6aaf8fe107cba516eba96dd207d0d5523c3cf548bbb672e91c16bc7b819",
+    "public/assets/trek/12/1625-5859.png": "9ad4af0233fef44f07fdabdc3d0586e538d30c82645decb31bc708224e9558aa",
+    "public/assets/trek/12/1626-5856.png": "c3a2406434289bb698c899120f4689f3e59ef453f647192ccb980ee5a17859ff",
+    "public/assets/trek/12/1626-5857.png": "82ab84688ea059df0837631526576519d58e4c3fbf633c6d6dcd71294fe8f579",
+    "public/assets/trek/12/1626-5858.png": "053822d023f3ba2a45d307f744ba5f285ca17897fcb161cdbf5b1534f00b3859",
+    "public/assets/trek/12/1626-5859.png": "92ea9b17d4097a4e029b57d63e8fd02cb0c30ae8ab563f600277497d4b7a7cb7",
+    "public/assets/trek/12/1627-5856.png": "8c8a3916870c668f2c792c06edb8e91d3633cc7788f962329c2d3ebbefb546aa",
+    "public/assets/trek/12/1627-5857.png": "33392b61ae9ee1fd7cacf06efe6e1ca3188a24faa24d91487c2dd6d82a7a55dc",
+    "public/assets/trek/12/1627-5858.png": "2bf771f5af6a6af560f9940cef1e372004020cf71ec6ebfe70d49c543df98a7f",
+    "public/assets/trek/12/1627-5859.png": "df21b0dbb1e0fc5b5dfee23c6732a97a3f9c32569b21271925216473c9459baa",
+    "public/assets/trek/12/1628-5856.png": "a1b8cab872bbb471e917fb191be347032a5c1d66338f4b486182409fb982b0a8",
+    "public/assets/trek/12/1628-5857.png": "60141a07442794af224b3e77b847a524e7294ee77ff14812f0503aec14ebb221",
+    "public/assets/trek/12/1628-5858.png": "5c2040a462feb6d96b40d381e94769d9d3c4c5c5bf12d0d9a6d228f0689bb596",
+    "public/assets/trek/12/1628-5859.png": "cedcb5b6530dafc1fdb876e99d70a6c1dd4e950e03c7840e9ef8a100b4138273",
+    "package.json": "b54e9e4ded09a1af69dc07d36a075529d6be41f76e524ad26e1eb3a2a9b2a0a5",
+    "package-lock.json": "a0b1ca50a940d2d5a3b33f74ee12b5b1f70c84db3e44ef3f30ca4615decb5204",
+    "vite.config.js": "6d12d781a7c7aefa9ab86a7028c50b6b79f1076b2aa71d3520de932af70d945f",
+    "index.html": "a36529817e28a7fd19d678f346acbf3c1d97ca19d0ef3067fc2496e60d5eddb6",
+    "tablet.html": "7a632e46b12744e8629464ca8cdfcfcbd72045d9b28c746a91fa945bcf0c28f8",
+    "LICENSE": "479d3610adcbedf00e7668fe245512ff3d1608d108970ab7165aae375e899907",
+    "public/assets/icon/ARES-HUD-icon.svg": "9ab12202de87839d23464324185d42f0980351be11226fdff725d521b81dc61d"
+  },
+  "completedAt": "2026-11-15T01:37:41.313047+00:00",
+  "finalHead": "de93039325e55092956744d0af10ba346e591d32",
+  "markdown": {
+    "at": "2026-11-15T01:37:41.098074+00:00",
+    "documents": 21,
+    "localLinks": 145,
+    "externalLinks": 50,
+    "broken": [],
+    "encodingIssues": [],
+    "scope": "Root AGENTS/README/STATUS, all docs/ Markdown and retained legacy README. Removed historical handoff input excluded; template examples/generated copies/dependency caches excluded."
+  },
+  "sourceIntegrity": {
+    "finalSnapshotFilesCompared": 168,
+    "changesAfterPreservedConcurrentIconSnapshot": [],
+    "documentationAgentProductionEdits": 0,
+    "concurrentChangesRecordedSeparately": true
+  },
+  "changedDocumentation": [
+    "README.md",
+    "STATUS.md",
+    "docs/README.md",
+    "docs/DATA_SOURCES.md",
+    "docs/THIRD_PARTY.md",
+    "docs/assets/README.md",
+    "docs/CHANGELOG.md"
+  ],
+  "newEvidenceFiles": [
+    "docs/qa/final-release/audit.json",
+    "docs/qa/final-release/before-icon-npm-build.log",
+    "docs/qa/final-release/before-icon-npm-test-production.log",
+    "docs/qa/final-release/before-icon-production-browser.json",
+    "docs/qa/final-release/latest-build.log",
+    "docs/qa/final-release/latest-production-browser.json",
+    "docs/qa/final-release/latest-production.log",
+    "docs/qa/final-release/npm-build.log",
+    "docs/qa/final-release/npm-test-production.log",
+    "docs/qa/final-release/npm-test.log",
+    "docs/qa/final-release/production-browser.json"
+  ],
+  "originalProvenanceTablesPreserved": true,
+  "sourceTermsLicenseFilesOrDeploymentBehaviorChangedByAgent": false,
+  "ownerIconStatementRecorded": true,
+  "remainingRisks": [
+    "Several current supporting docs are untracked; include approved docs in final commit without caches/profiles/generated outputs",
+    "Owner confirmed generated icon; exact generator and specific reuse terms not specified",
+    "Full public-site/private-window acceptance and exact deployed revision/Actions run not certified",
+    "Physical devices, screen-reader, broad browser matrix and sustained GPU/heap profiling limited/unverified",
+    "Original scientific Task 7 and numerical elevation blocked/future",
+    "Historical NASA/USGS URLs/terms and official eligibility/submission not freshly certified"
+  ],
+  "commitBoundary": {
+    "commitStagingPushPublicationOrSettingsChangeByAgent": false,
+    "ownerReviewRequiredBeforeCommit": true
+  },
+  "buildOutputs": "dist/, public/docs/ and runtime disclosures regenerated by requested build; not to be committed",
+  "technicalNotes": [
+    "Original npm test exit 0; console summary display encountered Windows cp1252, while exact UTF-8 log was already saved",
+    "Original successful build/production runs before concurrent favicon are retained as before-icon evidence",
+    "Observed external HEAD change from 3d20ff4 to de93039; no user source changes reverted",
+    "Temporary extra public/ favicon segment observed during concurrency; final source and build both use assets/icon/ with all references existing; latest production rerun passed",
+    "No historical evidence deleted or archived during this task"
+  ]
+}

@@ -1,0 +1,51 @@
+
+> ares-hud@0.3.0 test
+> node --test tests/*.test.js
+
+✔ reveals are deterministic and monotonic (5.5726ms)
+✔ zero uncertainty reproduces base paths without mutation (44.9069ms)
+✔ uncertainty prefers known corridor and newly revealed route remains valid (6.8589ms)
+✔ grid to latlng and back round-trips for corners and centre (5.7006ms)
+✔ grid points stay inside the sector bounds (0.6022ms)
+✔ corners are the sector bounds and row 0 is north (0.853ms)
+✔ sector spans 4000 m north-south and east-west within 1 m (0.6598ms)
+✔ cell size is 100 m nominal within 1 m (1.1189ms)
+✔ metersBetween and bearing agree with the sphere (0.6234ms)
+✔ tileIndex matches the WMTS matrix at levels 10, 11 and 12 (1.1703ms)
+✔ tile ranges cover the sector margin and match the cached set (2.408ms)
+✔ coordinates outside the sector return null (1.8978ms)
+✔ adapter selection, ordering, mission metrics and arrival use original routing (57.8182ms)
+✔ dust recomputes a detour and impossible routes cannot simulate arrival (16.8923ms)
+✔ handoff validates inputs and isolated tablet recomputes, hazards/return/reset stay local (53.6106ms)
+✔ eight Sol scrubs and recon handoff preserve reached-cell independent calculations (315.7745ms)
+✔ subscribers clean up and paused handoff never activates timeline (38.8689ms)
+✔ all 24 migrated NASA tiles retain original manifest bytes and SHA-256 (31.1849ms)
+✔ ordered stops and cumulative cost (46.9402ms)
+✔ hazard recalculates traverse and return (99.5402ms)
+✔ unreachable mission yields no misleading partial route (1.0018ms)
+✔ layer state is independent and immutable (0.5534ms)
+✔ dataset identifiers, attribution and local assets (10.8058ms)
+✔ straight and diagonal optimal routes (15.6735ms)
+✔ symmetric blocked detour is deterministic (10.3762ms)
+✔ enclosed goal has no path (0.6477ms)
+✔ blocked endpoints and empty grid return null (0.4668ms)
+✔ diagonal cannot cut either blocked corner (0.5051ms)
+✔ fixed dust zone changes route and permits return (53.1216ms)
+✔ penalties influence routing and negatives clamp to zero (0.7164ms)
+✔ same endpoint returns zero cost (1.0636ms)
+✔ plan round-trip and snapshot independence (15.6592ms)
+✔ tampered plan is rejected (1.3346ms)
+✔ unsupported versions, bad grid coordinates, unsafe ids rejected (23.7333ms)
+✔ malformed and oversized payloads fail safely (1.1078ms)
+✔ recon snapshot preserves inputs (1.6288ms)
+✔ eight deterministic excursions start and finish at Hab (276.6339ms)
+✔ interpolation stays on current path edge and trail joins marker (3.3773ms)
+✔ hazard day route avoids blocked cells; no-route is explicit (11.6194ms)
+ℹ tests 39
+ℹ suites 0
+ℹ pass 39
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1855.7063

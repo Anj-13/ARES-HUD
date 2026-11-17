@@ -1,0 +1,79 @@
+{
+  "url": "http://127.0.0.1:5175/ares-hud/",
+  "browser": "157.0.4341.60",
+  "runs": [
+    {
+      "width": 1440,
+      "reduced": false,
+      "checks": [
+        "NASA tiles decoded; attribution, scale and genuine metrics",
+        "registered map keyboard zoom and pan",
+        "waypoint selection, ordering, inclusion and traverse metrics",
+        "dust reroutes; arrival and Return to Hab; reset restores",
+        "fullscreen and Globe preserve map identity, centre and zoom",
+        "eight Sol timeline, scrub, playback, reconnaissance and mission logs",
+        "tablet validates and independently calculates; local hazard, return, reset",
+        "Sources retains verified citations, science notes, accessible modal focus",
+        "responsive layout, no runtime errors or failed local assets, no external runtime requests"
+      ],
+      "errors": [],
+      "badRequests": [],
+      "font": "Inter, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif"
+    },
+    {
+      "width": 768,
+      "reduced": false,
+      "checks": [
+        "NASA tiles decoded; attribution, scale and genuine metrics",
+        "registered map keyboard zoom and pan",
+        "waypoint selection, ordering, inclusion and traverse metrics",
+        "dust reroutes; arrival and Return to Hab; reset restores",
+        "fullscreen and Globe preserve map identity, centre and zoom",
+        "eight Sol timeline, scrub, playback, reconnaissance and mission logs",
+        "tablet validates and independently calculates; local hazard, return, reset",
+        "Sources retains verified citations, science notes, accessible modal focus",
+        "responsive layout, no runtime errors or failed local assets, no external runtime requests"
+      ],
+      "errors": [],
+      "badRequests": [],
+      "font": "Inter, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif"
+    },
+    {
+      "width": 360,
+      "reduced": false,
+      "checks": [
+        "NASA tiles decoded; attribution, scale and genuine metrics",
+        "registered map keyboard zoom and pan",
+        "waypoint selection, ordering, inclusion and traverse metrics",
+        "dust reroutes; arrival and Return to Hab; reset restores",
+        "fullscreen and Globe preserve map identity, centre and zoom",
+        "eight Sol timeline, scrub, playback, reconnaissance and mission logs",
+        "tablet validates and independently calculates; local hazard, return, reset",
+        "Sources retains verified citations, science notes, accessible modal focus",
+        "responsive layout, no runtime errors or failed local assets, no external runtime requests"
+      ],
+      "errors": [],
+      "badRequests": [],
+      "font": "Inter, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif"
+    },
+    {
+      "width": 360,
+      "reduced": true,
+      "checks": [
+        "NASA tiles decoded; attribution, scale and genuine metrics",
+        "registered map keyboard zoom and pan",
+        "waypoint selection, ordering, inclusion and traverse metrics",
+        "dust reroutes; arrival and Return to Hab; reset restores",
+        "fullscreen and Globe preserve map identity, centre and zoom",
+        "eight Sol timeline, scrub, playback, reconnaissance and mission logs",
+        "tablet validates and independently calculates; local hazard, return, reset",
+        "Sources retains verified citations, science notes, accessible modal focus",
+        "responsive layout, no runtime errors or failed local assets, no external runtime requests"
+      ],
+      "errors": [],
+      "badRequests": [],
+      "font": "Inter, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif"
+    }
+  ],
+  "failures": []
+}

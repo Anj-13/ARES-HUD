@@ -1,0 +1,52 @@
+{
+  "at": "2026-11-15T01:02:08.091263+00:00",
+  "head": "3d20ff4acddd6827637159c138b5d400c68e24ca",
+  "scope": "Final documentation review before owner README template. No application edits, browser run, build, staging, commit or deployment.",
+  "tests": {
+    "command": "npm.cmd test",
+    "passed": 39,
+    "failed": 0,
+    "skipped": 0,
+    "cancelled": 0,
+    "duration_ms": 3798.0355
+  },
+  "markdown": {
+    "at": "2026-11-15T01:02:07.935683+00:00",
+    "documents": 21,
+    "localLinks": 137,
+    "externalLinks": 49,
+    "broken": [],
+    "encodingIssues": []
+  },
+  "supportingMarkdown": 17,
+  "indexOmissions": [],
+  "optionalMissingHistoricalInputs": [
+    "react-ui-handoff/README.md"
+  ],
+  "sourceConfigurationAssetFilesCompared": 95,
+  "sourceFilesChanged": [],
+  "buildSourceDisclosuresTracked": [
+    "docs/DATA_SOURCES.md",
+    "docs/THIRD_PARTY.md",
+    "docs/assets/README.md"
+  ],
+  "publicHttpEvidence": "public-deployment-check.json",
+  "rendererIntegrity": "vendor/three/manifest.json: source/license sizes and SHA-256 matched",
+  "corrections": [
+    "Reconciled merged illustrative SIMULATED globe versus blocked original scientific Task 7",
+    "Updated HEAD/test evidence while preserving dated browser results",
+    "Labeled old Pages failure and branch NO-GO as dated reports",
+    "Consolidated stale STATUS appended histories",
+    "Corrected removed scaffold state and docs inventory",
+    "Updated Git history and source/renderer distinction",
+    "Root README factual corrections only; template organization pending"
+  ],
+  "unverified": [
+    "Full live-browser/private-window acceptance",
+    "Exact deployed commit mapping",
+    "Physical phone/touch and assistive technology/cross-browser acceptance",
+    "Sustained GPU/heap profiling",
+    "Official event-account/submission acceptance"
+  ],
+  "untrackedSupportingDocs": "Several current policies/reports are untracked; preserve/include them in final documentation commit."
+}

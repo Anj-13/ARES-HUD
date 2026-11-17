@@ -193,7 +193,7 @@ Fresh source probes at 21:37 UTC returned 200 `image/png` for level 11 row 814 c
 
 All three local PDF pages were rendered and compared with the existing CTX contact tiles, current registered sector and THEMIS JPEG. Page 2 contains the unit key (NHjf1, NHjf2, Aeb), not a map sketch; drawings are on pages 1 and 3. Older claims of a page-2 sketch are corrected by the baseline closure report. Comparison confirms qualitative inlet/fan morphology only; no georeferencing transform for the educational PDF or THEMIS JPEG was derived, and no geological unit is assigned to a hypothetical waypoint.
 
-Evidence and source-linked figure lineage: [BASELINE_CLOSURE_REPORT.md](BASELINE_CLOSURE_REPORT.md), [source probe JSON](qa/baseline-closure/source-probes.json), [local integrity/geometry](qa/baseline-closure/geography-integrity.json). PDF renders and raw contact-sheet screenshots are documentation evidence under `docs/qa/`, excluded from production assets.
+Evidence and source-linked figure lineage: [BASELINE_CLOSURE_REPORT.md](HISTORY.md#baseline-closure-report), [source probe JSON](qa/baseline-closure/source-probes.json), [local integrity/geometry](qa/baseline-closure/geography-integrity.json). PDF renders and raw contact-sheet screenshots are documentation evidence under `docs/qa/`, excluded from production assets.
 
 ## Current illustrative Globe source distinction - 15 November 2026
 

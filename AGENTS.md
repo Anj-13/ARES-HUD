@@ -2,7 +2,7 @@
 
 # ARES-HUD documentation workflow
 
-Read [the working README](docs/README.md) and [the full project operating instructions](docs/AGENTS.md) before making changes. Read the [owner rules addendum](docs/AGENT_RULES_ADDENDUM.md) immediately after the full instructions, then the [feature plan](docs/FEATURE_PLAN.md) and [task prompts](docs/AGENT_TASKS.md). The addendum overrides the full instructions only for its explicitly listed items; its schedule and verification gates still apply.
+Read [the working README](docs/README.md) and [the full project operating instructions](docs/AGENTS.md) before making changes. Read the [owner rules addendum](docs/AGENT_RULES_ADDENDUM.md) immediately after the full instructions, then the [feature plan](docs/HISTORY.md#feature-plan) and [task prompts](docs/HISTORY.md#agent-tasks). The addendum overrides the full instructions only for its explicitly listed items; its schedule and verification gates still apply.
 
 - Keep supporting Markdown documentation in `docs/`, including the asset register at `docs/assets/README.md`; retain root `AGENTS.md`, `README.md` and `STATUS.md` as the approved entry points.
 - Update `docs/README.md` as implementation, test evidence, sources and owner requirements change. Keep claims aligned with verified behavior.
